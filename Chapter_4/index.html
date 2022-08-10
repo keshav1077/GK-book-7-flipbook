@@ -1,0 +1,646 @@
+﻿<!doctype html>
+<!--[if lt IE 8 ]><html lang="en" class="no-js ie ie7"><![endif]-->
+<!--[if IE 8 ]><html lang="en" class="no-js ie"><![endif]-->
+<!--[if (gt IE 8)|!(IE)]><!-->
+<html lang="en" class="no-js" id="pt">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Welcome to Eupheus</title>
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Global stylesheets -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="../css/reset.css" rel="stylesheet" type="text/css">
+<link href="../css/common.css" rel="stylesheet" type="text/css">
+<link href="../css/standard.css" rel="stylesheet" type="text/css">
+<link href="../css/block-lists.css" rel="stylesheet" type="text/css">
+<!-- Comment/uncomment one of these files to toggle between fixed and fluid layout -->
+<!--<link href="css/960.gs.css" rel="stylesheet" type="text/css">-->
+<link href="../css/960.gs.fluid.css" rel="stylesheet" type="text/css">
+<link href="../css/main-slider.css" rel="stylesheet" type="text/css">
+<link href="../css/bookblock.css" rel="stylesheet" type="text/css">
+<link href="../css/demo_bookblock.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" type="image/x-icon" href="../images/favicon.png">
+		<link href="../GK_7_CH__1-17-web-resources/css/idGeneratedStyles.css" rel="stylesheet" type="text/css" />
+		<script src="../GK_7_CH__1-17-web-resources/script/FontData.js" type="text/javascript"></script>
+		<script>function onDOMContentLoaded() { window.top.onFrameDOMLoaded(); } document.addEventListener("DOMContentLoaded", onDOMContentLoaded, false);</script>
+<script src="../js/jquery-1.12.1.min.js" type="text/javascript"></script>
+<script src="../js/jquery-ui.js" type="text/javascript"></script>
+<script src="../js/jquery.easing.1.3.js" type="text/javascript"></script>
+<script src="../js/drag-drop.js" type="text/javascript"></script>
+<script src="../js/CustomFunction.js" type="text/javascript"></script>
+<script type="text/javascript" src="../js/jquery.line.js"></script>
+<script type="text/javascript" src="../js/p9.js"></script>
+<script>
+ $(function(){
+	dragdrop('box1','text1');
+	dragdrop('box2','text2');
+	dragdrop('box3','text3');
+	dragdrop('box4','text4');
+	dragdrop('box5','text5');
+	dragdrop('box6','text6');
+	dragdrop('box7','text7');
+    dragdrop('box8','text8');
+	dragdrop('box9','text9');
+ });
+
+ function ShowAnsEx1() {
+     for (i = 1; i < 10; i++) {
+         $('#box' + i + ' span').css('visibility', 'visible');
+         $('#box' + i + ' span').css('color', '#0000ff');
+         $('#text' + i).css('visibility', 'hidden');
+     }
+	  $('.text .highlightsearch').removeClass('highlightsearch');
+ }
+
+	</script>
+<style>
+.input1 span {
+    visibility: hidden;
+    text-align: center;
+    font-family: "Cabrito Sans Norm Book", sans-serif;
+    font-size: 12px;
+    line-height: 19px !important;
+}
+	.book-wrapper {
+    height: 855px;
+}
+</style>
+</head>
+
+<body>
+<div id="et">
+  <div id="upper">
+    <header>
+      <div class="container_12">
+        <div class="">
+          <div class="server-info"> <img src="../images/logo.png" class="logo"/> </div>
+          <nav id="main-nav" class="container_10">
+            <ul>
+              <li class="home current"> <a href="#" title="WOW">General Knowledge</a> </li>
+              <li class="write"> <a href="javascript:void(0)" class="this" onClick="highlightStart()" title="Highlight Text">Highlighter</a> </li>
+              <li class="users"> <a href="#" title="Zoom" id="zoom">Zoom</a>
+                <div class="zoomdiv">
+                  <div class="block-border">
+                    <div class="block-content" style="padding-top: 2px;"> <a id="closezoom" class="float-right" style="margin-top: -9px;margin-right: 3px;"><img src="../images/icons/fugue/cross-circle.png"></a>
+                      <div class=""><a id="zoom-in"><img src="../images/icons/zoomplus.png"></a><a id="zoom-out"><img src="../images/icons/zoomminus.png"></a></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="stats"><a href="javascript:void(0)" onClick="ChangePageViewMode()" title="Page View">Page View</a></li>
+              <li class="print"><a href="#" title="Print" id="btnPrint" onClick="printDiv();">Print</a></li>
+              <li class="backup"><a href="#" title="Help" onClick="openModal(); return false;">Help</a></li>
+              <li class="fullscreen"><a href="#" class="requestfullscreen" title="Full Screen">Full Screen</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    
+    <!-- Header --> 
+    
+    <!-- End server status --> 
+    <!-- Main nav --> 
+    
+  </div>
+  <!-- End main nav -->
+  <div class="clear"></div>
+  <!-- Sub nav -->
+  <div id="sub-nav">
+    <div class="container_12">
+      <div class="">
+        <div class="grid_6">
+          <ul id="breadcrumb">
+           <li><a href="#">General Knowledge</a></li>
+            <li><a href="#">Book 7</a></li>
+          </ul>
+        </div>
+        <div class="grid_6">
+          <ul id="status-infos">
+            <li> <a href="#" class="button"><img src="../images/icons/fugue/folder.png" width="16" height="16"> <strong>22</strong></a>
+                <div id="messages-list" class="result-block"> <span class="arrow"><span></span></span>
+					<ul class="small-files-list icon-mail">
+					  <li> <a href="../Chapter_1/index.html"> <strong>Chapter </strong> 1<br>
+						  <small>In the wilderness</small> </a> </li>
+					  <li> <a href="../Chapter_2/index.html"> <strong>Chapter </strong> 2<br>
+						  <small> Endangered and extinct</small> </a> </li>
+					  <li> <a href="../Chapter_3/index.html"> <strong>Chapter </strong> 3<br>
+						  <small> Marine life </small> </a> </li>
+					  <li> <a href="../Chapter_4/index.html"> <strong>Chapter </strong> 4<br>
+						  <small> Nobel Prize</small> </a> </li>
+					  <li> <a href="../Chapter_5/index.html"> <strong>Chapter </strong> 5<br>
+						  <small> United Nations </small> </a> </li>
+					  <li> <a href="../Chapter_6/index.html"> <strong>Chapter </strong> 6<br>
+						  <small> Express yourself </small> </a> </li>
+					  <li> <a href="../Chapter_7/index.html"> <strong>Chapter </strong> 7<br>
+						  <small>Global warning </small> </a> </li>
+					  <li> <a href="../Chapter_7/index.html#page1"> <strong>Chapter </strong> 8<br>
+						  <small> Risks and thrills </small> </a> </li>
+					  <li> <a href="../Chapter_9/index.html"> <strong>Chapter </strong> 9<br>
+						  <small> Quest for discovery </small> </a> </li>
+					  <li> <a href="../Chapter_10/index.html"> <strong>Chapter </strong> 10<br>
+						  <small> Around the world </small> </a> </li>
+					  <li> <a href="../Chapter_11/index.html"> <strong>Chapter </strong> 11<br>
+						  <small>Alluring Australia </small> </a> </li>
+					  <li> <a href="../Chapter_12/index.html"> <strong>Chapter </strong> 12<br>
+						  <small> Castles, palaces, and forts </small> </a> </li>
+					  <li> <a href="../Chapter_13/index.html"> <strong>Chapter </strong> 13<br>
+						  <small> Blast from the past </small> </a> </li>
+					  <li> <a href="../Chapter_14/index.html"> <strong>Chapter </strong> 14<br>
+						  <small>War of words </small> </a> </li>
+					  <li> <a href="../Chapter_15/index.html"> <strong>Chapter </strong> 15<br>
+						  <small> Bookworm </small> </a> </li>
+					  <li> <a href="../Chapter_16/index.html"> <strong>Chapter</strong> 16<br>
+						  <small> Music euphony </small> </a> </li>
+					  <li> <a href="../Chapter_17/index.html"> <strong>Chapter </strong> 17<br>
+						  <small> Art zone </small> </a> </li>
+					  <li> <a href="../Chapter_17/index.html#page1"> <strong>Chapter </strong> 18<br>
+						  <small> Time to play </small> </a> </li>
+					  <li> <a href="../Chapter_19/index.html"> <strong>Chapter </strong> 19<br>
+						  <small> Math-a-thon </small> </a> </li>
+					  <li> <a href="../Chapter_20/index.html"> <strong>Chapter </strong> 20<br>
+						  <small> Science quiz </small> </a> </li>
+					  <li> <a href="../Chapter_21/index.html"> <strong>Chapter </strong> 21<br>
+						  <small> Tech trivia </small> </a> </li>
+					  <li> <a href="../Chapter_22/index.html"> <strong>Chapter </strong> 22<br>
+						  <small> Money, money, money </small> </a> </li>
+  
+					  <li> <a href="../Activity/index.html"> <strong>Activity 1</strong> <br>
+						  <small>Over the years</small> </a> </li>
+					  <li> <a href="../Activity/index.html#page1"> <strong>Activity 2</strong> <br>
+						  <small> Tryst with Destiny </small> </a> </li>
+  
+					  <li> <a href="../chapter23/index.html"> <strong>Chapter </strong> 23<br>
+						  <small> Champions at Tokyo Olympics 2020 </small> </a> </li>
+  
+					  <li> <a href="../chapter24/index.html"> <strong>Chapter </strong> 24<br>
+						  <small> Knowing and fighting COVID-19 </small> </a> </li>
+					  <li> <a href="../Testpapers/index.html"> <strong>Test Paper 1 </strong> <br>
+						</a> </li>
+					  <li> <a href="../Testpapers/index.html#page1"> <strong>Test Paper 2</strong> <br>
+						</a> </li>
+					  <li> <a href="../Testpapers/index.html#page1"> <strong>Test Paper 3</strong> <br>
+						</a> </li>
+					  <li> <a href="../Testpapers/index.html#page2"> <strong>Test Paper 4</strong> <br>
+						</a> </li>
+					</ul>
+					<p id="messages-info" class="result-info"><a href="javascript:void()"
+						onclick="url('../Cover/index.html#page2');">Go to Table of Contents &raquo;</a></p>
+				  </div>
+            </li>
+            <li>
+              <form id="search-form" name="search-form">
+                <input type="text" name="s" id="SearchText" value="" autocomplete="off">
+                <input type="text" name="s" id="SearchCount" value="" class="button" autocomplete="off" style="position: relative;width:25px;" disabled>
+                <div class="tooltip" id="tooltip"> <span class="tooltiptext"> Not found!</span> </div>
+                <input type="submit" onClick="SearchTextFunc()" title="Search" class="nav-button" value="Search" id=searchtextbtn/>
+              </form>
+            </li>
+            <li class="panel"><a href="#" class="button"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="header-shadow"></div>
+<!-- End header --> 
+<!-- Always visible control bar --> 
+
+<!-- End control bar --> 
+<!-- Content -->
+<div class="fullscreen1">
+  <article class="container_12" id="book">
+    <div class="grid_10">
+      <div class="block-border" id="blockborder">
+        <div class="block-content">
+          <div class="flibook_own_wrapper">
+            <div class="fullscreenicon"><a href="#" class="requestfullscreen1" title="Full Screen"><img src="../images/fullscreen.png" style="display: none"></a><a href="#" title="Exit Full Screen" class="exitfullscreen" style=""><img src="../images/icons/fullscreen.png" /></a> </div>
+            <!--Book Pages Start -->
+            
+            <div class="book-wrapper">
+              <div class="bb-custom-wrapper scene">
+                <div id="bb-bookblock" name="bb-bookblock" class="bb-bookblock book" onClick="clickonCantainer(event)" onMouseUp="mouseupContainer(event)" onMouseDown="mousedownOnContainer(event)" onMouseMove="mousemoveOnContainer(event)"> 
+                  
+                  <!--Book Pages 1, 2 Start -->
+                  <div class="bb-item active page" id="page0">
+                    <div class="bb-custom-side front first" onmouseenter="SetMarkedPageOne()">
+                      <div style="position:absolute;overflow:hidden;left:0px;top:0px;-webkit-transform:translate(0.00px,0.00px);-ms-transform:translate(0.00px,0.00px);transform:translate(0.00px,0.00px);width:612px;height:841.89px;z-index: 99;">
+                      
+			<div id="_idContainer358">
+				<img class="_idGenObjectAttribute-1 _idGenObjectAttribute-2" src="../GK_7_CH__1-17-web-resources/image/ch_4_shutterstock_615035840.png" alt="">
+			</div>
+			<div id="_idContainer362" class="Basic-Text-Frame">
+				<div style="width:9864.57px;height:1143.29px;position:absolute;top:0px;left:0px;-webkit-transform-origin: 0% 0%; -webkit-transform: translate(0px,10.37px) rotate(0deg) scale(0.05);transform-origin: 0% 0%; transform: translate(0px,10.37px) rotate(0deg) scale(0.05);">
+					<p class="Body_Rubric-text ParaOverride-1"><span id="_idTextSpan1999" class="CharOverride-2" style="position:absolute;top:108.09px;left:616.04px;">	</span><span id="_idTextSpan2000" class="CharOverride-2" style="position:absolute;top:108.09px;left:659.95px;letter-spacing:-0.42px;">The </span><span id="_idTextSpan2001" class="CharOverride-2" style="position:absolute;top:108.09px;left:1161.15px;letter-spacing:-0.42px;">Nobel </span><span id="_idTextSpan2002" class="CharOverride-2" style="position:absolute;top:108.09px;left:1917.7px;letter-spacing:-0.65px;">Prize </span><span id="_idTextSpan2003" class="CharOverride-2" style="position:absolute;top:108.09px;left:2580.73px;">is </span><span id="_idTextSpan2004" class="CharOverride-2" style="position:absolute;top:108.09px;left:2831.6px;letter-spacing:-1.22px;">awarded </span><span id="_idTextSpan2005" class="CharOverride-2" style="position:absolute;top:108.09px;left:3946.55px;letter-spacing:-2.57px;">every </span><span id="_idTextSpan2006" class="CharOverride-2" style="position:absolute;top:108.09px;left:4669.78px;letter-spacing:-2.13px;">year </span><span id="_idTextSpan2007" class="CharOverride-2" style="position:absolute;top:108.09px;left:5266.46px;letter-spacing:-2.1px;">for </span><span id="_idTextSpan2008" class="CharOverride-2" style="position:absolute;top:108.09px;left:5676.65px;">pioneering </span><span id="_idTextSpan2009" class="CharOverride-2" style="position:absolute;top:108.09px;left:7020.35px;letter-spacing:-0.56px;">work </span><span id="_idTextSpan2010" class="CharOverride-2" style="position:absolute;top:108.09px;left:7692.34px;">in </span><span id="_idTextSpan2011" class="CharOverride-2" style="position:absolute;top:108.09px;left:7964.77px;letter-spacing:-0.72px;">Physics, </span><span id="_idTextSpan2012" class="CharOverride-2" style="position:absolute;top:508.09px;left:659.95px;letter-spacing:-0.25px;">Medicine, </span><span id="_idTextSpan2013" class="CharOverride-2" style="position:absolute;top:508.09px;left:1877.66px;letter-spacing:-0.94px;">Chemistry, </span><span id="_idTextSpan2014" class="CharOverride-2" style="position:absolute;top:508.09px;left:3234.52px;letter-spacing:-0.54px;">Literature, </span><span id="_idTextSpan2015" class="CharOverride-2" style="position:absolute;top:508.09px;left:4574.86px;letter-spacing:-0.36px;">Economics, </span><span id="_idTextSpan2016" class="CharOverride-2" style="position:absolute;top:508.09px;left:5970.92px;">and </span><span id="_idTextSpan2017" class="CharOverride-2" style="position:absolute;top:508.09px;left:6477.72px;letter-spacing:-0.72px;">Peace. </span><span id="_idTextSpan2018" class="CharOverride-2" style="position:absolute;top:508.09px;left:7319.67px;letter-spacing:-1.03px;">Identify </span><span id="_idTextSpan2019" class="CharOverride-2" style="position:absolute;top:508.09px;left:8307.22px;">these </span><span id="_idTextSpan2020" class="CharOverride-2" style="position:absolute;top:908.09px;left:659.95px;letter-spacing:-0.2px;">famous </span><span id="_idTextSpan2021" class="CharOverride-2" style="position:absolute;top:908.09px;left:1620.62px;letter-spacing:-0.42px;">Nobel </span><span id="_idTextSpan2022" class="CharOverride-2" style="position:absolute;top:908.09px;left:2377.17px;letter-spacing:-0.65px;">Prize </span><span id="_idTextSpan2023" class="CharOverride-2" style="position:absolute;top:908.09px;left:3039.08px;">winners </span><span id="_idTextSpan2024" class="CharOverride-2" style="position:absolute;top:908.09px;left:4056.02px;">and </span><span id="_idTextSpan2025" class="CharOverride-2" style="position:absolute;top:908.09px;left:4561.7px;">write </span><span id="_idTextSpan2026" class="CharOverride-2" style="position:absolute;top:908.09px;left:5254.12px;letter-spacing:-0.98px;">their </span><span id="_idTextSpan2027" class="CharOverride-2" style="position:absolute;top:908.09px;left:5877.96px;">names </span><span id="_idTextSpan2028" class="CharOverride-2" style="position:absolute;top:908.09px;left:6729.15px;">in </span><span id="_idTextSpan2029" class="CharOverride-2" style="position:absolute;top:908.09px;left:7000.46px;">the </span><span id="_idTextSpan2030" class="CharOverride-2" style="position:absolute;top:908.09px;left:7454.61px;">blanks.</span></p>
+					<div id="_idContainer361">
+						<div id="_idContainer359" class="Icon _idGenObjectStyle-Disabled">
+							<img class="_idGenObjectAttribute-1 _idGenObjectAttribute-2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADkAAAA4CAYAAABHRFAgAAAACXBIWXMAABcRAAAXEQHKJvM/AAAB60lEQVRoQ+2aXXHDMBAGA6EQMoegFMqgEAohEPJQAIFQCIEgCIFgCGHgSjNKqzo+f6df+6w+7PTlGmvTzK2b8WEcx0Mt6PPty3L3P9/RfC3gQCpW6mwZJzyEX9HvlwQOpGAlPmYEpwyWSwthOBCLO7RAcMrNcrIc0eunAAdi8IJ3gRQSdp+EF3Q9KXBAijuUPyCSiOFaQhgOSKkgGJK1oeGABH8AdNBSRG9oOICg+VS0QrShoQQQlKSiFeyGhiILgimpaMWfDQ1lFgRzU9GKCxSaEayRipoYKDUjqUnQESdJbVNRCrkkrZuKHGSStK1UxIIladupkLAsSbpSwcFLkr5UcCxK7kHQMS9JOlPB8SxJelPBYaaCmlPBYUJB7angMHtKBYd5pGIQDGvF7CkVHP1I7uXOhqOTxdNNQrq5Gejmtq6bG/RAdC8bt/N/moONqz0t/19khaKa0yKT9KJa0yKX9KIa0xIn6UW1bdwkSW1piZf0oprSkiYZiKILrI37Q5yhDBDdYlqcmFuQP8/8QBEEbSMtT2IhUEICrZOWgQTP8BST9KItNq5YrJZkrbTcUsSqSDrsQY5UJi1O7ESFnn+FA7FQekOLioXAgRRInpZrLbEQOJCKPzwn5t6ErAd1Y4ADOdBvWpqLhXwDjK1rpSL6B94AAAAASUVORK5CYII=" alt="">
+						</div>
+						<div id="_idContainer360" class="Basic-Text-Frame">
+							<div style="width:481.04px;height:594.93px;position:absolute;top:0px;left:0px;-webkit-transform-origin: 0% 0%; -webkit-transform: translate(0px,1.37px) rotate(0deg) scale(0.05);transform-origin: 0% 0%; transform: translate(0px,1.37px) rotate(0deg) scale(0.05);">
+								<p class="Body_Rubric-text ParaOverride-1"><span id="_idTextSpan1998" class="ABC CharOverride-1" style="position:absolute;top:58.88px;left:0px;">A.</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="_idContainer370">
+				<div id="_idContainer363" class="_idGenObjectStyle-Disabled">
+					<img class="_idGenObjectAttribute-1 _idGenObjectAttribute-2" src="data:image/png;base64,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" alt="">
+				</div>
+				<div id="_idContainer364" class="_idGenObjectStyle-Disabled">
+					<img class="_idGenObjectAttribute-1 _idGenObjectAttribute-2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOAAAABECAYAAACYoDkZAAAACXBIWXMAABcRAAAXEQHKJvM/AAAEs0lEQVR4Xu3dwXXbOBDGcZegElSCSmAJKoElqASWoBJUgrcDlqBrbizB57loNSIRQTCIIRlS483+D7+XFxsjAiA+ArKjlw/59c9t0N2d7na32+0j5/69491XVJM6Ju27Qtvr2LXuX98P12ru2qTuM2nbFK7Rxtcw2nbD90vjP8j4mJqozdg1Uofk9Utzexu+v7urJ7x2cI7undU2Vid9S+9D6hC1rSa8fpiv3dC+dG9i6RrTtXIttO+S9lbfrpn7PqVvem/2Sb+s+/lomH6xLSzA0kBVlSxWq9OnkeuMLXJ1nrkw6hltVWn8pfrrxBscix8OU+vmLNbgMKH/366TjN1qf5mz8NJryLQHxOMBFNXotXQuSuulTcYxZe4uSc1lQs1L3dSa3MSWFuDYC+nE1JLsHlIO7GXkGnWhRhdQumtM3pWlfyjoAi5NztLxpzuA9qu0ML6dAKQfe2ksj/FLv/AqeYaxVPMpzwCGOmtxnCV6mg+1pRq9/im5ho6/uDPJ673RulrKc3ZK+qQ11vgvmZpzof2jRr4/HD8L7b+GfqRroDVq6o/MN5oFC7AaaV8tqGnGagr9Ghtou6BmyfizNfK+8Y/VLBl/qeYd4x+tWTD+Us3m459SQwDXGX+2Rt43fgI4v2bz8U+pyTUIx8kqMdZh1Ul/5IjbW0eQNlNTi32cSvvVGDVNpqZ0BHkcpzI1pSOIjj+dMx1bac6ukh9/V6hpk/ZK+1oa/zlT0xTah+NUWnMxauaOv5P8mrHGP3fNXJL2Yfxz14w1/tyascafPYICeBMCCDgigIAjAgg4IoCAIwIIOCKAgCMCCDgigIAjAgg4IoCAIwIIOCKAgCMCCDgigIAjAgg4IoCAIwIIOCKAgCMCCDgigIAjAgg4IoCAIwIIOCKAgCMCCDgigIAjAgg4IoCAIwIIOCKAgCMCCDgigIAjAgg4IoCAIw1g6f9xB7AhDeDFagRgGxrA2moEYBsawL3VCMA2Pm433gcCXkIAT1ZDAOsLAeQYCjh4BHAI4afVGMC64gBWVmMA6/odwCGErVUAYD1pAA9WAYD1vARwCGFjFQFYx7cA8ntB4H3GAri766xiAH8mG8Do/SAhBDY0GsBoJ+Qno8BGigGMgqifmGA3BFZmhi8J4lH6zw/yQxpgBWboCmHU46n+6xn9tYWGkqMqMJMZtCWk/wHOWTi2AkVmmP6U9Luk7pBfVmc2psdm3aX1H503Cf04VjU4Zr7/Kezw2IAZoDXJc3G30Z9qzZ1Sgx5CpoHaW/2aQ567u/cDBX8Bc8G9k7zuQGHXsRZ6N7TVXexgXWMt0r8H/r99hEvnOjw898M8hB/MWfcJGeZC+0mk/+CwhvRtQbPI3/MrGg1QOJFooDRkv4/mE+ZBH0g6Fz/toRQeGNq3arDL9L2KxG9DwkawyT02FximkedOsMmNmiAOUJB7vxsvtL01rqWG1z/J6yIOYYi/djXGNZfOg96Ho9XHJeS5CdSZsZzlda5N5gWxjPTvFcNCT2+UtYhyOnkG6iiZJ/l/mTwDe5H5D7GvYW5q6zo/jdkA25A+oOGo08rr+93wd32i1rLhTvVTSb/ThPlJj4Hx/Gyy073LvyE8kmGxfzmHAAAAAElFTkSuQmCC" alt="">
+				</div>
+				<div id="_idContainer365" class="Basic-Text-Frame">
+					<div style="width:1884.76px;height:288px;position:absolute;top:0px;left:0px;-webkit-transform-origin: 0% 0%; -webkit-transform: translate(0px,7.55px) rotate(0deg) scale(0.05);transform-origin: 0% 0%; transform: translate(0px,7.55px) rotate(0deg) scale(0.05);">
+						<p class="Body_Rubric_Did-you-know ParaOverride-1"><span id="_idTextSpan2031" class="CharOverride-7" style="position:absolute;top:-12.32px;left:0px;">Did </span><span id="_idTextSpan2032" class="CharOverride-7" style="position:absolute;top:-12.32px;left:420.83px;letter-spacing:-5.11px;">you </span><span id="_idTextSpan2033" class="CharOverride-7" style="position:absolute;top:-12.32px;left:971.57px;letter-spacing:-6.86px;">know</span></p>
+					</div>
+				</div>
+				<div id="_idContainer366">
+					<div style="width:9039.69px;height:903.6px;position:absolute;top:0px;left:0px;-webkit-transform-origin: 0% 0%; -webkit-transform: translate(0px,3.27px) rotate(0deg) scale(0.05);transform-origin: 0% 0%; transform: translate(0px,3.27px) rotate(0deg) scale(0.05);">
+						<p class="Body_Did-You-Know ParaOverride-1"><span id="_idTextSpan2034" class="CharOverride-4" style="position:absolute;top:-18px;left:0px;letter-spacing:-0.44px;">Marie </span><span id="_idTextSpan2035" class="CharOverride-4" style="position:absolute;top:-18px;left:692.63px;letter-spacing:-0.6px;">Curie </span><span id="_idTextSpan2036" class="CharOverride-4" style="position:absolute;top:-18px;left:1322.62px;letter-spacing:-0.66px;">was </span><span id="_idTextSpan2037" class="CharOverride-4" style="position:absolute;top:-18px;left:1824.7px;">the </span><span id="_idTextSpan2038" class="CharOverride-4" style="position:absolute;top:-18px;left:2240.61px;text-rendering:optimizeLegibility;letter-spacing:-0.24px;">first </span><span id="_idTextSpan2039" class="CharOverride-4" style="position:absolute;top:-18px;left:2735px;letter-spacing:-0.58px;">female </span><span id="_idTextSpan2040" class="CharOverride-4" style="position:absolute;top:-18px;left:3541.39px;letter-spacing:-0.44px;">Nobel </span><span id="_idTextSpan2041" class="CharOverride-4" style="position:absolute;top:-18px;left:4239.54px;letter-spacing:-0.76px;">Prize </span><span id="_idTextSpan2042" class="CharOverride-4" style="position:absolute;top:-18px;left:4835.45px;letter-spacing:-1.53px;">winner. </span><span id="_idTextSpan2043" class="CharOverride-4" style="position:absolute;top:-18px;left:5692.96px;letter-spacing:-2.04px;">Her </span><span id="_idTextSpan2044" class="CharOverride-4" style="position:absolute;top:-18px;left:6140.79px;letter-spacing:-0.82px;">family </span><span id="_idTextSpan2045" class="CharOverride-4" style="position:absolute;top:-18px;left:6864.14px;">has </span><span id="_idTextSpan2046" class="CharOverride-4" style="position:absolute;top:-18px;left:7308.62px;letter-spacing:-0.72px;">won </span><span id="_idTextSpan2047" class="CharOverride-4" style="position:absolute;top:-18px;left:7834.93px;text-rendering:optimizeLegibility;letter-spacing:-0.82px;">five </span><span id="_idTextSpan2048" class="CharOverride-4" style="position:absolute;top:-18px;left:8286.6px;letter-spacing:-0.44px;">Nobel </span><span id="_idTextSpan2049" class="CharOverride-4" style="position:absolute;top:342px;left:0px;letter-spacing:-0.57px;">Prizes. </span><span id="_idTextSpan2050" class="CharOverride-4" style="position:absolute;top:342px;left:773.51px;letter-spacing:-0.36px;">She </span><span id="_idTextSpan2051" class="CharOverride-4" style="position:absolute;top:342px;left:1233.82px;letter-spacing:-0.72px;">won </span><span id="_idTextSpan2052" class="CharOverride-4" style="position:absolute;top:342px;left:1759.42px;letter-spacing:-1.1px;">two, </span><span id="_idTextSpan2053" class="CharOverride-4" style="position:absolute;top:342px;left:2296.77px;letter-spacing:-1.38px;">her </span><span id="_idTextSpan2054" class="CharOverride-4" style="position:absolute;top:342px;left:2719.88px;">husband, </span><span id="_idTextSpan2055" class="CharOverride-4" style="position:absolute;top:342px;left:3776.11px;letter-spacing:-0.93px;">Pierre </span><span id="_idTextSpan2056" class="CharOverride-4" style="position:absolute;top:342px;left:4486.97px;letter-spacing:-0.51px;">Curie, </span><span id="_idTextSpan2057" class="CharOverride-4" style="position:absolute;top:342px;left:5175.76px;letter-spacing:-0.72px;">won </span><span id="_idTextSpan2058" class="CharOverride-4" style="position:absolute;top:342px;left:5705.43px;">one. </span><span id="_idTextSpan2059" class="CharOverride-4" style="position:absolute;top:342px;left:6232.46px;letter-spacing:-2.04px;">Her </span><span id="_idTextSpan2060" class="CharOverride-4" style="position:absolute;top:342px;left:6683.66px;letter-spacing:-1.37px;">daughter, </span><span id="_idTextSpan2061" class="CharOverride-4" style="position:absolute;top:342px;left:7789.8px;letter-spacing:-1.08px;">Irène </span><span id="_idTextSpan2062" class="CharOverride-4" style="position:absolute;top:702px;left:0px;letter-spacing:-0.99px;">Joliot-Curie, </span><span id="_idTextSpan2063" class="CharOverride-4" style="position:absolute;top:702px;left:1373.26px;">also </span><span id="_idTextSpan2064" class="CharOverride-4" style="position:absolute;top:702px;left:1875.81px;letter-spacing:-0.72px;">won </span><span id="_idTextSpan2065" class="CharOverride-4" style="position:absolute;top:702px;left:2405.49px;letter-spacing:-3px;">a </span><span id="_idTextSpan2066" class="CharOverride-4" style="position:absolute;top:702px;left:2597px;letter-spacing:-0.44px;">Nobel </span><span id="_idTextSpan2067" class="CharOverride-4" style="position:absolute;top:702px;left:3295.16px;">in </span><span id="_idTextSpan2068" class="CharOverride-4" style="position:absolute;top:702px;left:3550.51px;letter-spacing:-0.53px;">1935 </span><span id="_idTextSpan2069" class="CharOverride-4" style="position:absolute;top:702px;left:4054.98px;letter-spacing:-2.4px;">for </span><span id="_idTextSpan2070" class="CharOverride-4" style="position:absolute;top:702px;left:4429.13px;letter-spacing:-0.94px;">chemistry, </span><span id="_idTextSpan2071" class="CharOverride-4" style="position:absolute;top:702px;left:5622.63px;">along </span><span id="_idTextSpan2072" class="CharOverride-4" style="position:absolute;top:702px;left:6282.38px;">with </span><span id="_idTextSpan2073" class="CharOverride-4" style="position:absolute;top:702px;left:6818.77px;letter-spacing:-1.38px;">her </span><span id="_idTextSpan2074" class="CharOverride-4" style="position:absolute;top:702px;left:7241.88px;">husband.</span></p>
+					</div>
+				</div>
+				<div id="_idContainer367" class="Icon">
+					<img class="_idGenObjectAttribute-1 _idGenObjectAttribute-2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA7kAAAAGCAYAAAAG01n9AAAACXBIWXMAABcRAAAXEQHKJvM/AAAARUlEQVR4Xu3XMREAMAzEsPAJo7IuogZC5/xp0GYCrnv6AQAAQIL6BQAAALCFyQUAACCGyQUAACCGyQUAACCGyQUAACDGAJwnGZs5v2rNAAAAAElFTkSuQmCC" alt="">
+				</div>
+				<div id="_idContainer368" class="_idGenObjectStyle-Disabled">
+					<img class="_idGenObjectAttribute-1 _idGenObjectAttribute-2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAA1CAYAAADCvfKlAAAACXBIWXMAABcRAAAXEQHKJvM/AAADFElEQVRoQ+2YzZGzMAyGUwIl7F72nBIoISVQQkqgBEqgBBrQDCW4BEqgg3wWWEEY2ZJJJvsd9vBO1llbeqy/hFwej8elVPD98+XVeHVeo9fDa/Zy4W8ufK8P+yvNNpe6IQK6CwCzAJTT4FVr/kxwAao3OC0VRvx6Cs4frF6AmoJoPQfx90htERzeKBgqTRkHIZgYaobjXkz1oR4lsMYAIDnSRJAucc5l4RhYiVNKYekZKc29CAdr4eOBMajEGTl0II+TnOJ6bCS40WDIqlz6LKDVE84vavZPzUCppA6VgPi643DvjNoZUVpRVFIVr7XSqJXut4qa5U4dqoVeEt2WXyxuBr5Hs8fhBq8R4TrDAc0YGbzBWr+onu2hKVDSybNUb2dS/Gx/w0BHfwieyxb6dwRXGnp+iVYCY4C9cJYgB9h/5doxXE5AcbgpBxbgroqPCfYpp73Tq3CdBhcAczZS66XmznYq6mYAqwz2YoZdzWmH+SEOdzfAYVM4+D5EKQVJPbDAdYZDEuRS0AY4su/AFgiyvcDdwHarlLLRg2PKLGW08FhrQhKNn2TdwTqMKRLWADz3kRFruPnfLSiPerDOOLKNac1FLbY/86KNN0o3dRaoYPPKbFCRxxCxJtjmXc+NSdGbYUufCSqyZ02lBHlL3ZQ2oINGAxHA7gaAOAiOr9GOlIo2GP/SIBJgNXOoQcWAHaxBaQ9wrwq26OcKX4LCV8fW2zPEOwTrvKT6LInaBFsjYBm1ZFN1qgnWOdkxZw70kRHDOxK3rTpXwGp269ihFj1+hl53P+yoABmoePRoEctFEdXEflSQCKqB/PzSopVSL/lTgVikHDN2FsIMVgJH0XKC8TOiy2W/0ahgDE5zqMHQmKG1+i1aBSuEo4agKEsdPIDxM1rdUAhHAATl2Fl8rTVfZ+FKxkQMmP1h+h1wGpAEiOdMKXwFrrRLKcqtZvsdcLnBm9L4P8MNn4TTYCT9waXgtFT/KlxO06fgSkcJRfUjcBaQX4PTIsc/rrg+AmepuUkA/AhcFwBj9bA+hEtq4OSDOekf6V23zKY3iygAAAAASUVORK5CYII=" alt="">
+				</div>
+				<div id="_idContainer369" class="_idGenObjectStyle-Disabled">
+					<img class="_idGenObjectAttribute-1 _idGenObjectAttribute-2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAABcRAAAXEQHKJvM/AAAAmElEQVQ4T2P4//8/AzLeq6hWAMQXgPg/EgbxJwCxArp6ZI0GQPwATSM23IBhAFTzByI0w/ACdAMekGgA3CUwPxNSjAsrgAxADzBS8AQGIhThwwcoNeA/JQaAAv4BuQbAYu0AOYEIi26QIQXkRuMGqEECIAME9hKXhNFxAfWSMgmZCWQJZmZCMgTknQQgPoDmIhAfFFYY2RkAoLIRJBuWjP0AAAAASUVORK5CYII=" alt="">
+				</div>
+			</div>
+			<div id="_idContainer373">
+				<div id="_idContainer371"><img xmlns="http://www.w3.org/1999/xhtml" src="img/video.png" class="vdo_icon" alt="vdo_icon" onClick="Openmodel('video2')" style="left: 33% !important;top: 35% !important;">
+					<img class="_idGenObjectAttribute-1 _idGenObjectAttribute-2" src="../GK_7_CH__1-17-web-resources/image/Malala_Yousafzai_shutterstock_164156168.png" alt="">
+				</div>
+				<div id="_idContainer372" class="Basic-Text-Frame"><div class="input1 ui-droppable" id="box7" style="top: 68px;left: 33px;width: 196px;"><span>  Malala Yousafzai</span></div>
+					<div style="width:8390.55px;height:1623.6px;position:absolute;top:0px;left:0px;-webkit-transform-origin: 0% 0%; -webkit-transform: translate(0px,3.27px) rotate(0deg) scale(0.05);transform-origin: 0% 0%; transform: translate(0px,3.27px) rotate(0deg) scale(0.05);">
+						<p class="Body_body-para-right-number ParaOverride-1"><span id="_idTextSpan2075" class="CharOverride-4" style="position:absolute;top:-18px;left:0px;">	</span><span id="_idTextSpan2076" class="CharOverride-4" style="position:absolute;top:-18px;left:331.28px;letter-spacing:-1.04px;">1.	</span><span id="_idTextSpan2077" class="CharOverride-4" style="position:absolute;top:-18px;left:639.94px;">In </span><span id="_idTextSpan2078" class="CharOverride-4" style="position:absolute;top:-18px;left:905.13px;letter-spacing:-0.4px;">2014, </span><span id="_idTextSpan2079" class="CharOverride-4" style="position:absolute;top:-18px;left:1478px;">this </span><span id="_idTextSpan2080" class="CharOverride-4" style="position:absolute;top:-18px;left:1936.39px;letter-spacing:-0.29px;">Pakistani </span><span id="_idTextSpan2081" class="CharOverride-4" style="position:absolute;top:-18px;left:2969.81px;letter-spacing:-0.11px;">human-rights </span><span id="_idTextSpan2082" class="CharOverride-4" style="position:absolute;top:-18px;left:4512.03px;">activist </span><span id="_idTextSpan2083" class="CharOverride-4" style="position:absolute;top:-18px;left:5353.93px;">became </span><span id="_idTextSpan2084" class="CharOverride-4" style="position:absolute;top:-18px;left:6280.8px;">the </span><span id="_idTextSpan2085" class="CharOverride-4" style="position:absolute;top:-18px;left:6694.32px;letter-spacing:-0.43px;">youngest </span><span id="_idTextSpan2086" class="CharOverride-4" style="position:absolute;top:342px;left:639.94px;letter-spacing:-0.21px;">person </span><span id="_idTextSpan2087" class="CharOverride-4" style="position:absolute;top:342px;left:1456.64px;">to </span><span id="_idTextSpan2088" class="CharOverride-4" style="position:absolute;top:342px;left:1746.07px;letter-spacing:-2.64px;">ever </span><span id="_idTextSpan2089" class="CharOverride-4" style="position:absolute;top:342px;left:2281.98px;letter-spacing:-1.65px;">receive </span><span id="_idTextSpan2090" class="CharOverride-4" style="position:absolute;top:342px;left:3127.73px;letter-spacing:-3px;">a </span><span id="_idTextSpan2091" class="CharOverride-4" style="position:absolute;top:342px;left:3319.25px;letter-spacing:-0.44px;">Nobel </span><span id="_idTextSpan2092" class="CharOverride-4" style="position:absolute;top:342px;left:4017.4px;letter-spacing:-0.76px;">Prize </span><span id="_idTextSpan2093" class="CharOverride-4" style="position:absolute;top:342px;left:4617.87px;">at </span><span id="_idTextSpan2094" class="CharOverride-4" style="position:absolute;top:342px;left:4897.71px;">the </span><span id="_idTextSpan2095" class="CharOverride-4" style="position:absolute;top:342px;left:5316.98px;">age </span><span id="_idTextSpan2096" class="CharOverride-4" style="position:absolute;top:342px;left:5786.17px;letter-spacing:-2.48px;">of </span><span id="_idTextSpan2097" class="CharOverride-4" style="position:absolute;top:342px;left:6066.73px;letter-spacing:-5.04px;">17. </span><span id="_idTextSpan2098" class="CharOverride-4" style="position:absolute;top:342px;left:6335.28px;letter-spacing:-0.36px;">She </span><span id="_idTextSpan2099" class="CharOverride-4" style="position:absolute;top:342px;left:6800.15px;letter-spacing:-0.45px;">survived </span><span id="_idTextSpan2100" class="CharOverride-4" style="position:absolute;top:342px;left:7781.73px;">an </span><span id="_idTextSpan2101" class="CharOverride-4" style="position:absolute;top:702px;left:639.94px;">assassination </span><span id="_idTextSpan2102" class="CharOverride-4" style="position:absolute;top:702px;left:2172.79px;letter-spacing:-0.21px;">attempt </span><span id="_idTextSpan2103" class="CharOverride-4" style="position:absolute;top:702px;left:3107.1px;">at </span><span id="_idTextSpan2104" class="CharOverride-4" style="position:absolute;top:702px;left:3386.93px;">the </span><span id="_idTextSpan2105" class="CharOverride-4" style="position:absolute;top:702px;left:3806.2px;">age </span><span id="_idTextSpan2106" class="CharOverride-4" style="position:absolute;top:702px;left:4275.39px;letter-spacing:-2.48px;">of </span><span id="_idTextSpan2107" class="CharOverride-4" style="position:absolute;top:702px;left:4555.95px;">15 </span><span id="_idTextSpan2108" class="CharOverride-4" style="position:absolute;top:702px;left:4795.46px;">when </span><span id="_idTextSpan2109" class="CharOverride-4" style="position:absolute;top:702px;left:5457.85px;">she </span><span id="_idTextSpan2110" class="CharOverride-4" style="position:absolute;top:702px;left:5907.37px;text-rendering:optimizeLegibility;">defied </span><span id="_idTextSpan2111" class="CharOverride-4" style="position:absolute;top:702px;left:6648px;">the </span><span id="_idTextSpan2112" class="CharOverride-4" style="position:absolute;top:702px;left:7060.55px;letter-spacing:-3.67px;">Taliban's </span><span id="_idTextSpan2113" class="CharOverride-4" style="position:absolute;top:1062px;left:639.94px;letter-spacing:-0.54px;">prohibition </span><span id="_idTextSpan2114" class="CharOverride-4" style="position:absolute;top:1062px;left:1869.67px;">on </span><span id="_idTextSpan2115" class="CharOverride-4" style="position:absolute;top:1062px;left:2204.23px;letter-spacing:-0.58px;">female </span><span id="_idTextSpan2116" class="CharOverride-4" style="position:absolute;top:1062px;left:3010.62px;">education </span><span id="_idTextSpan2117" class="CharOverride-4" style="position:absolute;top:1062px;left:4151.8px;">in </span><span id="_idTextSpan2118" class="CharOverride-4" style="position:absolute;top:1062px;left:4407.16px;letter-spacing:-1.54px;">Swat </span><span id="_idTextSpan2119" class="CharOverride-4" style="position:absolute;top:1062px;left:5004.03px;letter-spacing:-3.27px;">Valley, </span><span id="_idTextSpan2120" class="CharOverride-4" style="position:absolute;top:1062px;left:5751.38px;letter-spacing:-0.29px;">Pakistan. </span><span id="_idTextSpan2121" class="CharOverride-4" style="position:absolute;top:1422px;left:639.94px;">......................................................................</span></p>
+					</div>
+				</div>
+			</div>
+			<div id="_idContainer377">
+				<div id="_idContainer375">
+					<div class="_idGenObjectAttribute-10">
+						<div id="_idContainer374">
+							<img class="_idGenObjectAttribute-1 _idGenObjectAttribute-2" src="../GK_7_CH__1-17-web-resources/image/Rabindranath_Tagore.png" alt="">
+						</div>
+					</div>
+				</div>
+				<div id="_idContainer376" class="Basic-Text-Frame">
+<div class="input1 ui-droppable" id="box1" style="    top: 70px;
+    left: 82px;
+    width: 198px;"><span> Rabindranath Tagore</span></div>
+					<div style="width:7653.54px;height:1623.6px;position:absolute;top:0px;left:0px;-webkit-transform-origin: 0% 0%; -webkit-transform: translate(0px,3.27px) rotate(0deg) scale(0.05);transform-origin: 0% 0%; transform: translate(0px,3.27px) rotate(0deg) scale(0.05);">
+						<p class="Body_body-para-right-number ParaOverride-1"><span id="_idTextSpan2122" class="CharOverride-4" style="position:absolute;top:-18px;left:0px;">	</span><span id="_idTextSpan2123" class="CharOverride-4" style="position:absolute;top:-18px;left:261.2px;">2.	</span><span id="_idTextSpan2124" class="CharOverride-4" style="position:absolute;top:-18px;left:639.94px;letter-spacing:-3.6px;">A </span><span id="_idTextSpan2125" class="CharOverride-4" style="position:absolute;top:-18px;left:842.97px;letter-spacing:-0.79px;">writer </span><span id="_idTextSpan2126" class="CharOverride-4" style="position:absolute;top:-18px;left:1563.19px;letter-spacing:-2.48px;">of </span><span id="_idTextSpan2127" class="CharOverride-4" style="position:absolute;top:-18px;left:1840.39px;text-rendering:optimizeLegibility;letter-spacing:0px;">fiction, </span><span id="_idTextSpan2128" class="CharOverride-4" style="position:absolute;top:-18px;left:2635.74px;letter-spacing:-1.29px;">poetry, </span><span id="_idTextSpan2129" class="CharOverride-4" style="position:absolute;top:-18px;left:3470.2px;">songs, </span><span id="_idTextSpan2130" class="CharOverride-4" style="position:absolute;top:-18px;left:4239.14px;">and </span><span id="_idTextSpan2131" class="CharOverride-4" style="position:absolute;top:-18px;left:4710.98px;">dramas, </span><span id="_idTextSpan2132" class="CharOverride-4" style="position:absolute;top:-18px;left:5658.72px;">he </span><span id="_idTextSpan2133" class="CharOverride-4" style="position:absolute;top:-18px;left:5991.6px;">is </span><span id="_idTextSpan2134" class="CharOverride-4" style="position:absolute;top:-18px;left:6228.71px;">one </span><span id="_idTextSpan2135" class="CharOverride-4" style="position:absolute;top:-18px;left:6699.35px;letter-spacing:-2.48px;">of </span><span id="_idTextSpan2136" class="CharOverride-4" style="position:absolute;top:342px;left:639.94px;letter-spacing:-1.83px;">India's </span><span id="_idTextSpan2137" class="CharOverride-4" style="position:absolute;top:342px;left:1393.52px;">most </span><span id="_idTextSpan2138" class="CharOverride-4" style="position:absolute;top:342px;left:2006.95px;letter-spacing:-0.24px;">celebrated </span><span id="_idTextSpan2139" class="CharOverride-4" style="position:absolute;top:342px;left:3237.42px;">and </span><span id="_idTextSpan2140" class="CharOverride-4" style="position:absolute;top:342px;left:3709.25px;">distinguished </span><span id="_idTextSpan2141" class="CharOverride-4" style="position:absolute;top:342px;left:5212.11px;text-rendering:optimizeLegibility;letter-spacing:-0.72px;">figures. </span><span id="_idTextSpan2142" class="CharOverride-4" style="position:absolute;top:342px;left:6081.85px;">In </span><span id="_idTextSpan2143" class="CharOverride-4" style="position:absolute;top:342px;left:6347.05px;letter-spacing:-0.64px;">1913, </span><span id="_idTextSpan2144" class="CharOverride-4" style="position:absolute;top:342px;left:6844.55px;">he </span><span id="_idTextSpan2145" class="CharOverride-4" style="position:absolute;top:702px;left:639.94px;">became </span><span id="_idTextSpan2146" class="CharOverride-4" style="position:absolute;top:702px;left:1566.8px;">the </span><span id="_idTextSpan2147" class="CharOverride-4" style="position:absolute;top:702px;left:1982.72px;text-rendering:optimizeLegibility;letter-spacing:-0.24px;">first </span><span id="_idTextSpan2148" class="CharOverride-4" style="position:absolute;top:702px;left:2480.46px;letter-spacing:-0.74px;">non-European, </span><span id="_idTextSpan2149" class="CharOverride-4" style="position:absolute;top:702px;left:4143.16px;">the </span><span id="_idTextSpan2150" class="CharOverride-4" style="position:absolute;top:702px;left:4559.08px;text-rendering:optimizeLegibility;letter-spacing:-0.24px;">first </span><span id="_idTextSpan2151" class="CharOverride-4" style="position:absolute;top:702px;left:5049.62px;">Asian, </span><span id="_idTextSpan2152" class="CharOverride-4" style="position:absolute;top:702px;left:5762.17px;">and </span><span id="_idTextSpan2153" class="CharOverride-4" style="position:absolute;top:702px;left:6229.93px;">the </span><span id="_idTextSpan2154" class="CharOverride-4" style="position:absolute;top:702px;left:6645.84px;text-rendering:optimizeLegibility;letter-spacing:-0.24px;">first </span><span id="_idTextSpan2155" class="CharOverride-4" style="position:absolute;top:1062px;left:639.94px;">Indian </span><span id="_idTextSpan2156" class="CharOverride-4" style="position:absolute;top:1062px;left:1362.81px;">to </span><span id="_idTextSpan2157" class="CharOverride-4" style="position:absolute;top:1062px;left:1647.68px;">win </span><span id="_idTextSpan2158" class="CharOverride-4" style="position:absolute;top:1062px;left:2097.67px;letter-spacing:-3px;">a </span><span id="_idTextSpan2159" class="CharOverride-4" style="position:absolute;top:1062px;left:2289.19px;letter-spacing:-0.44px;">Nobel </span><span id="_idTextSpan2160" class="CharOverride-4" style="position:absolute;top:1062px;left:2987.34px;letter-spacing:-0.76px;">Prize </span><span id="_idTextSpan2161" class="CharOverride-4" style="position:absolute;top:1062px;left:3584.46px;letter-spacing:-2.4px;">for </span><span id="_idTextSpan2162" class="CharOverride-4" style="position:absolute;top:1062px;left:3958.61px;">his </span><span id="_idTextSpan2163" class="CharOverride-4" style="position:absolute;top:1062px;left:4330.6px;letter-spacing:-0.24px;">collection </span><span id="_idTextSpan2164" class="CharOverride-4" style="position:absolute;top:1062px;left:5432.18px;letter-spacing:-2.48px;">of </span><span id="_idTextSpan2165" class="CharOverride-4" style="position:absolute;top:1062px;left:5712.74px;">poems </span><span id="_idTextSpan2166" class="CharOverride-4" style="position:absolute;top:1062px;left:6511.69px;">called </span><span id="_idTextSpan2167" class="Italics-Manual CharOverride-4" style="position:absolute;top:1422px;left:639.94px;letter-spacing:-0.16px;">Gitanjali</span><span id="_idTextSpan2168" class="CharOverride-4" style="position:absolute;top:1422px;left:1518.81px;">. </span><span id="_idTextSpan2169" class="CharOverride-4" style="position:absolute;top:1422px;left:1640.48px;">......................................................................</span></p>
+					</div>
+				</div>
+			</div>
+			<div id="_idContainer381">
+				<div id="_idContainer379">
+					<div class="_idGenObjectAttribute-11">
+                        <img xmlns="http://www.w3.org/1999/xhtml" src="img/video.png" class="vdo_icon" alt="vdo_icon" onClick="Openmodel('video3')" style="left: 34% !important;top: 35% !important;">
+						<div id="_idContainer378">
+							<img class="_idGenObjectAttribute-1 _idGenObjectAttribute-2" src="../GK_7_CH__1-17-web-resources/image/kailash-satyarthi1.png" alt="">
+						</div>
+					</div>
+				</div>
+				<div id="_idContainer380" class="Basic-Text-Frame"><div class="input1 ui-droppable" id="box5" style="top: 51px;
+    left: 205px;
+    width: 198px;"><span>Kailash Satyarthi</span></div>
+					<div style="width:8175.12px;height:1263.6px;position:absolute;top:0px;left:0px;-webkit-transform-origin: 0% 0%; -webkit-transform: translate(0px,3.27px) rotate(0deg) scale(0.05);transform-origin: 0% 0%; transform: translate(0px,3.27px) rotate(0deg) scale(0.05);">
+						<p class="Body_body-para-right-number ParaOverride-1"><span id="_idTextSpan2170" class="CharOverride-4" style="position:absolute;top:-18px;left:0px;-webkit-transform-origin: 0% 201.60px;-webkit-transform:matrix(0.98,0,0,1,0,0);transform-origin: 0% 201.60px;transform:matrix(0.98,0,0,1,0,0);">	</span><span id="_idTextSpan2171" class="CharOverride-4" style="position:absolute;top:-18px;left:261.25px;letter-spacing:-1.28px;-webkit-transform-origin: 0% 201.60px;-webkit-transform:matrix(0.98,0,0,1,0,0);transform-origin: 0% 201.60px;transform:matrix(0.98,0,0,1,0,0);">3.	</span><span id="_idTextSpan2172" class="CharOverride-4" style="position:absolute;top:-18px;left:639.94px;letter-spacing:-0.88px;-webkit-transform-origin: 0% 201.60px;-webkit-transform:matrix(0.98,0,0,1,0,0);transform-origin: 0% 201.60px;transform:matrix(0.98,0,0,1,0,0);">He </span><span id="_idTextSpan2173" class="CharOverride-4" style="position:absolute;top:-18px;left:993.67px;-webkit-transform-origin: 0% 201.60px;-webkit-transform:matrix(0.98,0,0,1,0,0);transform-origin: 0% 201.60px;transform:matrix(0.98,0,0,1,0,0);">is </span><span id="_idTextSpan2174" class="CharOverride-4" style="position:absolute;top:-18px;left:1222.05px;letter-spacing:0px;-webkit-transform-origin: 0% 201.60px;-webkit-transform:matrix(0.98,0,0,1,0,0);transform-origin: 0% 201.60px;transform:matrix(0.98,0,0,1,0,0);">the </span><span id="_idTextSpan2175" class="CharOverride-4" style="position:absolute;top:-18px;left:1629.64px;letter-spacing:-1.2px;-webkit-transform-origin: 0% 201.60px;-webkit-transform:matrix(0.98,0,0,1,0,0);transform-origin: 0% 201.60px;transform:matrix(0.98,0,0,1,0,0);">founder </span><span id="_idTextSpan2176" class="CharOverride-4" style="position:absolute;top:-18px;left:2527.85px;letter-spacing:-2.48px;-webkit-transform-origin: 0% 201.60px;-webkit-transform:matrix(0.98,0,0,1,0,0);transform-origin: 0% 201.60px;transform:matrix(0.98,0,0,1,0,0);">of </span><span id="_idTextSpan2177" class="CharOverride-4" style="position:absolute;top:-18px;left:2798.8px;-webkit-transform-origin: 0% 201.60px;-webkit-transform:matrix(0.98,0,0,1,0,0);transform-origin: 0% 201.60px;transform:matrix(0.98,0,0,1,0,0);">the </span><span id="_idTextSpan2178" class="CharOverride-4" style="position:absolute;top:-18px;left:3209.69px;-webkit-transform-origin: 0% 201.60px;-webkit-transform:matrix(0.98,0,0,1,0,0);transform-origin: 0% 201.60px;transform:matrix(0.98,0,0,1,0,0);">'Bachpan </span><span id="_idTextSpan2179" class="CharOverride-4" style="position:absolute;top:-18px;left:4257.02px;-webkit-transform-origin: 0% 201.60px;-webkit-transform:matrix(0.98,0,0,1,0,0);transform-origin: 0% 201.60px;transform:matrix(0.98,0,0,1,0,0);">Bachao </span><span id="_idTextSpan2180" class="CharOverride-4" style="position:absolute;top:-18px;left:5105.61px;letter-spacing:-0.75px;-webkit-transform-origin: 0% 201.60px;-webkit-transform:matrix(0.98,0,0,1,0,0);transform-origin: 0% 201.60px;transform:matrix(0.98,0,0,1,0,0);">Andolan' </span><span id="_idTextSpan2181" class="CharOverride-4" style="position:absolute;top:-18px;left:6087.55px;letter-spacing:0px;-webkit-transform-origin: 0% 201.60px;-webkit-transform:matrix(0.98,0,0,1,0,0);transform-origin: 0% 201.60px;transform:matrix(0.98,0,0,1,0,0);">and </span><span id="_idTextSpan2182" class="CharOverride-4" style="position:absolute;top:-18px;left:6549.95px;-webkit-transform-origin: 0% 201.60px;-webkit-transform:matrix(0.98,0,0,1,0,0);transform-origin: 0% 201.60px;transform:matrix(0.98,0,0,1,0,0);">has </span><span id="_idTextSpan2183" class="CharOverride-4" style="position:absolute;top:-18px;left:6986.71px;letter-spacing:-0.79px;-webkit-transform-origin: 0% 201.60px;-webkit-transform:matrix(0.98,0,0,1,0,0);transform-origin: 0% 201.60px;transform:matrix(0.98,0,0,1,0,0);">fought </span><span id="_idTextSpan2184" class="CharOverride-4" style="position:absolute;top:-18px;left:7745.92px;letter-spacing:-2.4px;-webkit-transform-origin: 0% 201.60px;-webkit-transform:matrix(0.98,0,0,1,0,0);transform-origin: 0% 201.60px;transform:matrix(0.98,0,0,1,0,0);">for </span><span id="_idTextSpan2185" class="CharOverride-4" style="position:absolute;top:342px;left:639.94px;-webkit-transform-origin: 0% 201.60px;-webkit-transform:matrix(0.98,0,0,1,0,0);transform-origin: 0% 201.60px;transform:matrix(0.98,0,0,1,0,0);">the </span><span id="_idTextSpan2186" class="CharOverride-4" style="position:absolute;top:342px;left:1050.82px;-webkit-transform-origin: 0% 201.60px;-webkit-transform:matrix(0.98,0,0,1,0,0);transform-origin: 0% 201.60px;transform:matrix(0.98,0,0,1,0,0);">cause </span><span id="_idTextSpan2187" class="CharOverride-4" style="position:absolute;top:342px;left:1740.89px;letter-spacing:-2.48px;-webkit-transform-origin: 0% 201.60px;-webkit-transform:matrix(0.98,0,0,1,0,0);transform-origin: 0% 201.60px;transform:matrix(0.98,0,0,1,0,0);">of </span><span id="_idTextSpan2188" class="CharOverride-4" style="position:absolute;top:342px;left:2015.83px;-webkit-transform-origin: 0% 201.60px;-webkit-transform:matrix(0.98,0,0,1,0,0);transform-origin: 0% 201.60px;transform:matrix(0.98,0,0,1,0,0);">child </span><span id="_idTextSpan2189" class="CharOverride-4" style="position:absolute;top:342px;left:2576.3px;letter-spacing:-0.21px;-webkit-transform-origin: 0% 201.60px;-webkit-transform:matrix(0.98,0,0,1,0,0);transform-origin: 0% 201.60px;transform:matrix(0.98,0,0,1,0,0);">rights </span><span id="_idTextSpan2190" class="CharOverride-4" style="position:absolute;top:342px;left:3254.14px;letter-spacing:-0.44px;-webkit-transform-origin: 0% 201.60px;-webkit-transform:matrix(0.98,0,0,1,0,0);transform-origin: 0% 201.60px;transform:matrix(0.98,0,0,1,0,0);">since </span><span id="_idTextSpan2191" class="CharOverride-4" style="position:absolute;top:342px;left:3865.65px;letter-spacing:-1.24px;-webkit-transform-origin: 0% 201.60px;-webkit-transform:matrix(0.98,0,0,1,0,0);transform-origin: 0% 201.60px;transform:matrix(0.98,0,0,1,0,0);">1980. </span><span id="_idTextSpan2192" class="CharOverride-4" style="position:absolute;top:342px;left:4447.28px;letter-spacing:-0.42px;-webkit-transform-origin: 0% 201.60px;-webkit-transform:matrix(0.98,0,0,1,0,0);transform-origin: 0% 201.60px;transform:matrix(0.98,0,0,1,0,0);">The </span><span id="_idTextSpan2193" class="CharOverride-4" style="position:absolute;top:342px;left:4897.92px;letter-spacing:-0.79px;-webkit-transform-origin: 0% 201.60px;-webkit-transform:matrix(0.98,0,0,1,0,0);transform-origin: 0% 201.60px;transform:matrix(0.98,0,0,1,0,0);">winner </span><span id="_idTextSpan2194" class="CharOverride-4" style="position:absolute;top:342px;left:5689.59px;letter-spacing:-2.48px;-webkit-transform-origin: 0% 201.60px;-webkit-transform:matrix(0.98,0,0,1,0,0);transform-origin: 0% 201.60px;transform:matrix(0.98,0,0,1,0,0);">of </span><span id="_idTextSpan2195" class="CharOverride-4" style="position:absolute;top:342px;left:5960.54px;-webkit-transform-origin: 0% 201.60px;-webkit-transform:matrix(0.98,0,0,1,0,0);transform-origin: 0% 201.60px;transform:matrix(0.98,0,0,1,0,0);">the </span><span id="_idTextSpan2196" class="CharOverride-4" style="position:absolute;top:342px;left:6371.42px;letter-spacing:-0.44px;-webkit-transform-origin: 0% 201.60px;-webkit-transform:matrix(0.98,0,0,1,0,0);transform-origin: 0% 201.60px;transform:matrix(0.98,0,0,1,0,0);">Nobel </span><span id="_idTextSpan2197" class="CharOverride-4" style="position:absolute;top:342px;left:7055.61px;letter-spacing:-1.24px;-webkit-transform-origin: 0% 201.60px;-webkit-transform:matrix(0.98,0,0,1,0,0);transform-origin: 0% 201.60px;transform:matrix(0.98,0,0,1,0,0);">Peace </span><span id="_idTextSpan2198" class="CharOverride-4" style="position:absolute;top:702px;left:639.94px;letter-spacing:-0.76px;-webkit-transform-origin: 0% 201.60px;-webkit-transform:matrix(0.98,0,0,1,0,0);transform-origin: 0% 201.60px;transform:matrix(0.98,0,0,1,0,0);">Prize </span><span id="_idTextSpan2199" class="CharOverride-4" style="position:absolute;top:702px;left:1228.4px;-webkit-transform-origin: 0% 201.60px;-webkit-transform:matrix(0.98,0,0,1,0,0);transform-origin: 0% 201.60px;transform:matrix(0.98,0,0,1,0,0);">in </span><span id="_idTextSpan2200" class="CharOverride-4" style="position:absolute;top:702px;left:1478.65px;letter-spacing:-0.4px;-webkit-transform-origin: 0% 201.60px;-webkit-transform:matrix(0.98,0,0,1,0,0);transform-origin: 0% 201.60px;transform:matrix(0.98,0,0,1,0,0);">2014, </span><span id="_idTextSpan2201" class="CharOverride-4" style="position:absolute;top:702px;left:2044.05px;-webkit-transform-origin: 0% 201.60px;-webkit-transform:matrix(0.98,0,0,1,0,0);transform-origin: 0% 201.60px;transform:matrix(0.98,0,0,1,0,0);">his </span><span id="_idTextSpan2202" class="CharOverride-4" style="position:absolute;top:702px;left:2408.61px;-webkit-transform-origin: 0% 201.60px;-webkit-transform:matrix(0.98,0,0,1,0,0);transform-origin: 0% 201.60px;transform:matrix(0.98,0,0,1,0,0);">activism </span><span id="_idTextSpan2203" class="CharOverride-4" style="position:absolute;top:702px;left:3352.21px;-webkit-transform-origin: 0% 201.60px;-webkit-transform:matrix(0.98,0,0,1,0,0);transform-origin: 0% 201.60px;transform:matrix(0.98,0,0,1,0,0);">led </span><span id="_idTextSpan2204" class="CharOverride-4" style="position:absolute;top:702px;left:3732.99px;-webkit-transform-origin: 0% 201.60px;-webkit-transform:matrix(0.98,0,0,1,0,0);transform-origin: 0% 201.60px;transform:matrix(0.98,0,0,1,0,0);">to </span><span id="_idTextSpan2205" class="CharOverride-4" style="position:absolute;top:702px;left:4016.63px;letter-spacing:-1.32px;-webkit-transform-origin: 0% 201.60px;-webkit-transform:matrix(0.98,0,0,1,0,0);transform-origin: 0% 201.60px;transform:matrix(0.98,0,0,1,0,0);">reforms </span><span id="_idTextSpan2206" class="CharOverride-4" style="position:absolute;top:702px;left:4923.78px;-webkit-transform-origin: 0% 201.60px;-webkit-transform:matrix(0.98,0,0,1,0,0);transform-origin: 0% 201.60px;transform:matrix(0.98,0,0,1,0,0);">in </span>
+							<span id="_idTextSpan2207" class="CharOverride-4" style="position:absolute;top:702px;left:5174.03px;letter-spacing:-0.42px;-webkit-transform-origin: 0% 201.60px;-webkit-transform:matrix(0.98,0,0,1,0,0);transform-origin: 0% 201.60px;transform:matrix(0.98,0,0,1,0,0);">child-labour </span><span id="_idTextSpan2208" class="CharOverride-4" style="position:absolute;top:702px;left:6513.94px;letter-spacing:-1.12px;-webkit-transform-origin: 0% 201.60px;-webkit-transform:matrix(0.98,0,0,1,0,0);transform-origin: 0% 201.60px;transform:matrix(0.98,0,0,1,0,0);">laws, </span><span id="_idTextSpan2209" class="CharOverride-4" style="position:absolute;top:702px;left:7113.22px;-webkit-transform-origin: 0% 201.60px;-webkit-transform:matrix(0.98,0,0,1,0,0);transform-origin: 0% 201.60px;transform:matrix(0.98,0,0,1,0,0);">which </span><span id="_idTextSpan2210" class="CharOverride-4" style="position:absolute;top:1062px;left:639.94px;letter-spacing:-1.87px;-webkit-transform-origin: 0% 201.60px;-webkit-transform:matrix(0.98,0,0,1,0,0);transform-origin: 0% 201.60px;transform:matrix(0.98,0,0,1,0,0);">were </span><span id="_idTextSpan2211" class="CharOverride-4" style="position:absolute;top:1062px;left:1239.45px;-webkit-transform-origin: 0% 201.60px;-webkit-transform:matrix(0.98,0,0,1,0,0);transform-origin: 0% 201.60px;transform:matrix(0.98,0,0,1,0,0);">enacted </span><span id="_idTextSpan2212" class="CharOverride-4" style="position:absolute;top:1062px;left:2166.12px;-webkit-transform-origin: 0% 201.60px;-webkit-transform:matrix(0.98,0,0,1,0,0);transform-origin: 0% 201.60px;transform:matrix(0.98,0,0,1,0,0);">all </span><span id="_idTextSpan2213" class="CharOverride-4" style="position:absolute;top:1062px;left:2467.88px;letter-spacing:-1.92px;-webkit-transform-origin: 0% 201.60px;-webkit-transform:matrix(0.98,0,0,1,0,0);transform-origin: 0% 201.60px;transform:matrix(0.98,0,0,1,0,0);">over </span><span id="_idTextSpan2214" class="CharOverride-4" style="position:absolute;top:1062px;left:2997.54px;-webkit-transform-origin: 0% 201.60px;-webkit-transform:matrix(0.98,0,0,1,0,0);transform-origin: 0% 201.60px;transform:matrix(0.98,0,0,1,0,0);">the </span><span id="_idTextSpan2215" class="CharOverride-4" style="position:absolute;top:1062px;left:3403.95px;letter-spacing:-0.41px;-webkit-transform-origin: 0% 201.60px;-webkit-transform:matrix(0.98,0,0,1,0,0);transform-origin: 0% 201.60px;transform:matrix(0.98,0,0,1,0,0);">world. </span><span id="_idTextSpan2216" class="CharOverride-4" style="position:absolute;top:1062px;left:4130.7px;-webkit-transform-origin: 0% 201.60px;-webkit-transform:matrix(0.98,0,0,1,0,0);transform-origin: 0% 201.60px;transform:matrix(0.98,0,0,1,0,0);">......................................................................</span></p>
+					</div>
+				</div>
+			</div>
+			<div id="_idContainer385">
+				<div id="_idContainer383">
+					<div class="_idGenObjectAttribute-12">
+						<div id="_idContainer382">
+							<img class="_idGenObjectAttribute-1 _idGenObjectAttribute-2" src="../GK_7_CH__1-17-web-resources/image/c-v-raman.png" alt="">
+						</div>
+					</div>
+				</div>
+				<div id="_idContainer384" class="Basic-Text-Frame"><div class="input1 ui-droppable" id="box6" style="    top: 70px;
+    left: 32px;
+    width: 198px;"><span>  CV Raman</span></div>
+					<div style="width:8064.57px;height:1623.6px;position:absolute;top:0px;left:0px;-webkit-transform-origin: 0% 0%; -webkit-transform: translate(0px,3.27px) rotate(0deg) scale(0.05);transform-origin: 0% 0%; transform: translate(0px,3.27px) rotate(0deg) scale(0.05);">
+						<p class="Body_body-para-right-number ParaOverride-1"><span id="_idTextSpan2217" class="CharOverride-4" style="position:absolute;top:-18px;left:0px;">	</span><span id="_idTextSpan2218" class="CharOverride-4" style="position:absolute;top:-18px;left:261.68px;letter-spacing:-0.8px;">4.	</span><span id="_idTextSpan2219" class="CharOverride-4" style="position:absolute;top:-18px;left:639.94px;">In </span><span id="_idTextSpan2220" class="CharOverride-4" style="position:absolute;top:-18px;left:905.13px;letter-spacing:-1.68px;">1930, </span><span id="_idTextSpan2221" class="CharOverride-4" style="position:absolute;top:-18px;left:1494.08px;">he </span><span id="_idTextSpan2222" class="CharOverride-4" style="position:absolute;top:-18px;left:1826.95px;letter-spacing:0px;">became </span><span id="_idTextSpan2223" class="CharOverride-4" style="position:absolute;top:-18px;left:2753.82px;">the </span><span id="_idTextSpan2224" class="CharOverride-4" style="position:absolute;top:-18px;left:3169.74px;text-rendering:optimizeLegibility;letter-spacing:-0.24px;">first </span><span id="_idTextSpan2225" class="CharOverride-4" style="position:absolute;top:-18px;left:3660.28px;">Asian </span><span id="_idTextSpan2226" class="CharOverride-4" style="position:absolute;top:-18px;left:4314.03px;">and </span><span id="_idTextSpan2227" class="CharOverride-4" style="position:absolute;top:-18px;left:4781.79px;">the </span><span id="_idTextSpan2228" class="CharOverride-4" style="position:absolute;top:-18px;left:5197.7px;text-rendering:optimizeLegibility;letter-spacing:-0.24px;">first </span><span id="_idTextSpan2229" class="CharOverride-4" style="position:absolute;top:-18px;left:5695.44px;">Indian </span><span id="_idTextSpan2230" class="CharOverride-4" style="position:absolute;top:-18px;left:6422.4px;letter-spacing:-0.14px;">scientist </span><span id="_idTextSpan2231" class="CharOverride-4" style="position:absolute;top:-18px;left:7388.14px;">to </span><span id="_idTextSpan2232" class="CharOverride-4" style="position:absolute;top:-18px;left:7673.01px;">win </span><span id="_idTextSpan2233" class="CharOverride-4" style="position:absolute;top:342px;left:639.94px;">the </span><span id="_idTextSpan2234" class="CharOverride-4" style="position:absolute;top:342px;left:1059.21px;letter-spacing:-0.44px;">Nobel </span><span id="_idTextSpan2235" class="CharOverride-4" style="position:absolute;top:342px;left:1757.36px;letter-spacing:-0.76px;">Prize </span><span id="_idTextSpan2236" class="CharOverride-4" style="position:absolute;top:342px;left:2354.47px;letter-spacing:-2.4px;">for </span><span id="_idTextSpan2237" class="CharOverride-4" style="position:absolute;top:342px;left:2728.62px;letter-spacing:-0.78px;">Physics </span><span id="_idTextSpan2238" class="CharOverride-4" style="position:absolute;top:342px;left:3598.37px;letter-spacing:-2.4px;">for </span><span id="_idTextSpan2239" class="CharOverride-4" style="position:absolute;top:342px;left:3972.53px;">his </span><span id="_idTextSpan2240" class="CharOverride-4" style="position:absolute;top:342px;left:4344.52px;">pioneering </span><span id="_idTextSpan2241" class="CharOverride-4" style="position:absolute;top:342px;left:5562.5px;letter-spacing:-0.58px;">work </span><span id="_idTextSpan2242" class="CharOverride-4" style="position:absolute;top:342px;left:6171.37px;">on </span><span id="_idTextSpan2243" class="CharOverride-4" style="position:absolute;top:342px;left:6505.2px;">the </span><span id="_idTextSpan2244" class="CharOverride-4" style="position:absolute;top:342px;left:6924.47px;">scattering </span><span id="_idTextSpan2245" class="CharOverride-4" style="position:absolute;top:702px;left:639.94px;letter-spacing:-2.48px;">of </span><span id="_idTextSpan2246" class="CharOverride-4" style="position:absolute;top:702px;left:920.49px;letter-spacing:-0.24px;">light </span><span id="_idTextSpan2247" class="CharOverride-4" style="position:absolute;top:702px;left:1454.96px;letter-spacing:-1.52px;">rays. </span><span id="_idTextSpan2248" class="CharOverride-4" style="position:absolute;top:702px;left:2041.03px;letter-spacing:-0.88px;">He </span><span id="_idTextSpan2249" class="CharOverride-4" style="position:absolute;top:702px;left:2397.43px;letter-spacing:-0.66px;">was </span><span id="_idTextSpan2250" class="CharOverride-4" style="position:absolute;top:702px;left:2903.58px;">so </span><span id="_idTextSpan2251" class="CharOverride-4" style="position:absolute;top:702px;left:3223.25px;text-rendering:optimizeLegibility;letter-spacing:-0.41px;">confident </span><span id="_idTextSpan2252" class="CharOverride-4" style="position:absolute;top:702px;left:4307.56px;letter-spacing:-2.48px;">of </span><span id="_idTextSpan2253" class="CharOverride-4" style="position:absolute;top:702px;left:4583.56px;">winning </span><span id="_idTextSpan2254" class="CharOverride-4" style="position:absolute;top:702px;left:5493.39px;">the </span><span id="_idTextSpan2255" class="CharOverride-4" style="position:absolute;top:702px;left:5912.66px;letter-spacing:-0.44px;">prize </span><span id="_idTextSpan2256" class="CharOverride-4" style="position:absolute;top:702px;left:6510.25px;">that </span><span id="_idTextSpan2257" class="CharOverride-4" style="position:absolute;top:702px;left:7015.44px;">he </span><span id="_idTextSpan2258" class="CharOverride-4" style="position:absolute;top:1062px;left:639.94px;letter-spacing:-1.2px;">booked </span><span id="_idTextSpan2259" class="CharOverride-4" style="position:absolute;top:1062px;left:1501.52px;">his </span><span id="_idTextSpan2260" class="CharOverride-4" style="position:absolute;top:1062px;left:1869.44px;letter-spacing:-1.05px;">tickets </span><span id="_idTextSpan2261" class="CharOverride-4" style="position:absolute;top:1062px;left:2643.9px;letter-spacing:-1.51px;">before </span><span id="_idTextSpan2262" class="CharOverride-4" style="position:absolute;top:1062px;left:3417.17px;">the </span><span id="_idTextSpan2263" class="CharOverride-4" style="position:absolute;top:1062px;left:3836.44px;letter-spacing:-0.81px;">results </span><span id="_idTextSpan2264" class="CharOverride-4" style="position:absolute;top:1062px;left:4629.39px;letter-spacing:-1.87px;">were </span><span id="_idTextSpan2265" class="CharOverride-4" style="position:absolute;top:1062px;left:5241.14px;letter-spacing:-1.54px;">even </span><span id="_idTextSpan2266" class="CharOverride-4" style="position:absolute;top:1062px;left:5821.69px;letter-spacing:-0.24px;">announced! </span><span id="_idTextSpan2267" class="CharOverride-4" style="position:absolute;top:1422px;left:639.94px;">......................................................................</span></p>
+					</div>
+				</div>
+			</div>
+			<div id="_idContainer388">
+				<div id="_idContainer386" class="Icon _idGenObjectStyle-Disabled">
+					<img class="_idGenObjectAttribute-1 _idGenObjectAttribute-2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADoAAAA6CAYAAADhu0ooAAAACXBIWXMAABcRAAAXEQHKJvM/AAAD20lEQVRoQ+2bz4oUMRDG8wjzAC408wSCeh8Wj4vMZfGm40nByyh4EcE5iHiSAY8i9lEEYa4iQj+Bjm+wj+AblPmSVG9NpnuSnr+d4AfFLtvpnfy6KpVKOqOISB3CtEbaptrm2iptS23k2ZW7ttA2c/cMQv97Gws2iDV0UNsEnT67ceYDdTU8FDykIvS5sRZsEDJ0Rtvch7t96w5dXt6nZ89f0MdPn439+v2HpL58/Wb+/vLVa3r85Cmdn99tgoa3R6F+hCzYoPVG68HSh0OHAbCt8DDevH1nHpIHXO0CHGzQeJMOK+nBi4t7xjP71vcfP+nBw0fkRQs83HkcBxusNLZhWvGHItQOAegLXgYwf64DH1NEn9mCDeqGOmz4yeInxtWxhSHhjeM5RfSdYkGVzaa1FxFSpxTygIAtY0K5EyTCx8+cpxISloBdhmA7QfZNyA8iUS1oG1Blq5TeQrIwbmUYUxdQrYKfVJ8hWV4YT6gDaKVc4unLmAwJFZi6nnpuUghU2RrT3LBLhXMKoXBxXl3SJlCtAYfsKebJXYVpTySnlRD2QUsO2VTlhXA95awkIB7QxyjrDiksLhzLjBpAjTcR56mLs/BwOPxLPijHdureZAmvmrHK3pzgj7iYi3isKlcxMSjWeKZYzkXIwJxzkJRWwja1eTMksaQbw5uj3MKWJZZz2Im0lRD2aHLT+/kHBq2UozWDNzd549QW8LlMK74k6DJnUJGQLHEqy7GuEisaC5qr/oPmJgl6pTKsilgSNOvpRew42II+xa2TGPHQBOgMv+S0cmEhSh0kagVb1Ke8T9QmsSYtATpg9+ZWNIhENOWFtykDsdeSi+A0MT6LlU3rHDbGWOI1hdnMXtvqPPW7z31JFPNT8rY7K1xI4aVSSCLbwswmtgQd4QIm2NSTkkhCJfn7upSJVz1vFtQCOuJGqda+YmzW3iQflCysKQlTLCDaXjBRC2j96jClstAL2bUzSGugZGHHfFMKRYT3XrTx0EYjKFnYOcP2eQmHGUKMy9ZjOK2gZGFLjvk+JicJ6TxaUBtL2wWyoAMlDhT3KYwRrh7k2gENaRtB6Rp2wbB92NGXB6liICkGtG4ozuai8jhVTSzWmDwmC4rpf6jBSmOlJvJJHtO78KJ3srPTud1gg7UbdJgocWYXrxsPOXYBKGrXrc7q0jag9Y3CuwyMAmMfIc3HzSWgs7KLF6UFG2y82SaqGU5/yA4hxACN95Ox4PAchkIDHAMWFNGnNgs2iDXlvgrS0MkaHhC+bfjqCH8lZCsPrvUv1KCrOS+jhERlVbWBt4CVas/fd2H7B8iHeICqvZhEAAAAAElFTkSuQmCC" alt="">
+				</div>
+				<div id="_idContainer387">
+					<div style="width:560.18px;height:401.47px;position:absolute;top:0px;left:0px;-webkit-transform-origin: 0% 0%; -webkit-transform: translate(0px,1.09px) rotate(0deg) scale(0.05);transform-origin: 0% 0%; transform: translate(0px,1.09px) rotate(0deg) scale(0.05);">
+						<p class="ParaOverride-1"><span id="_idTextSpan2268" class="CharOverride-6" style="position:absolute;top:54.33px;left:157.37px;">16</span></p>
+					</div>
+				</div>
+			</div>
+			<div id="_idContainer393">
+				<div id="_idContainer389">
+					<img class="_idGenObjectAttribute-1 _idGenObjectAttribute-2" src="../GK_7_CH__1-17-web-resources/image/tree.png" alt="">
+				</div>
+				<div id="_idContainer390">
+					<img class="_idGenObjectAttribute-1 _idGenObjectAttribute-2" src="../GK_7_CH__1-17-web-resources/image/frame_21.png" alt="">
+				</div>
+				<div id="_idContainer391">
+					<img class="_idGenObjectAttribute-1 _idGenObjectAttribute-2" src="../GK_7_CH__1-17-web-resources/image/stone.png" alt="">
+				</div>
+				<div id="_idContainer392" class="Basic-Text-Frame">
+					<div style="width:4087.01px;height:861.73px;position:absolute;top:0px;left:0px;-webkit-transform-origin: 0% 0%; -webkit-transform: translate(0px,6.8px) rotate(0deg) scale(0.05);transform-origin: 0% 0%; transform: translate(0px,6.8px) rotate(0deg) scale(0.05);">
+						<p class="Body_CH ParaOverride-1"><span id="_idTextSpan2269" class="CharOverride-3" style="position:absolute;top:-17.65px;left:0px;letter-spacing:12px;-webkit-transform-origin: 0% 497.16px;-webkit-transform:matrix(0.84,0,0,1,0,0);transform-origin: 0% 497.16px;transform:matrix(0.84,0,0,1,0,0);">4. </span><span id="_idTextSpan2270" class="CharOverride-3" style="position:absolute;top:-17.65px;left:683.26px;letter-spacing:15px;-webkit-transform-origin: 0% 497.16px;-webkit-transform:matrix(0.84,0,0,1,0,0);transform-origin: 0% 497.16px;transform:matrix(0.84,0,0,1,0,0);">Nobel </span><span id="_idTextSpan2271" class="CharOverride-3" style="position:absolute;top:-17.65px;left:2254.27px;letter-spacing:14.4px;-webkit-transform-origin: 0% 497.16px;-webkit-transform:matrix(0.84,0,0,1,0,0);transform-origin: 0% 497.16px;transform:matrix(0.84,0,0,1,0,0);">Prize</span></p>
+					</div><img xmlns="http://www.w3.org/1999/xhtml" src="img/video.png" class="vdo_icon" alt="vdo_icon" onClick="Openmodel('video1')" style="left: 188px !important;top: 9px !important;  height: 30px;">
+				</div>
+			</div>
+		</div>
+                    </div>
+                    <div class="bb-custom-side second back" onmouseenter="SetMarkedPageSecond()">
+                      <div class="secondsub" style="position:absolute;left:-5px;top:0px;-webkit-transform:translate(612px,0.00px);-ms-transform:translate(612px,0.00px);transform:translate(612px,0.00px);width:612px;height:841.89px">
+			<div id="_idContainer394">
+				<img class="_idGenObjectAttribute-1 _idGenObjectAttribute-2" src="../GK_7_CH__1-17-web-resources/image/ch_4_shutterstock_6150358401.png" alt="">
+			</div>
+			
+			<div id="_idContainer402">
+				<div id="_idContainer400">
+					<div class="_idGenObjectAttribute-13">
+						<div id="_idContainer399">
+							<img class="_idGenObjectAttribute-1 _idGenObjectAttribute-2" src="../GK_7_CH__1-17-web-resources/image/Amartya_Sen.png" alt="">
+						</div>
+					</div>
+				</div>
+				<div id="_idContainer401" class="Basic-Text-Frame"><div class="input1 ui-droppable" id="box9" style="    top: 33px;
+    left: 188px;
+    width: 166px;"><span>  Amartya Sen </span></div>
+					<div style="width:7511.81px;height:903.6px;position:absolute;top:0px;left:0px;-webkit-transform-origin: 0% 0%; -webkit-transform: translate(0px,3.27px) rotate(0deg) scale(0.05);transform-origin: 0% 0%; transform: translate(0px,3.27px) rotate(0deg) scale(0.05);">
+						<p class="Body_body-para-right-number ParaOverride-1"><span id="_idTextSpan2291" class="CharOverride-4" style="position:absolute;top:-18px;left:0px;">	</span><span id="_idTextSpan2292" class="CharOverride-4" style="position:absolute;top:-18px;left:253.04px;letter-spacing:-1.28px;">6.	</span><span id="_idTextSpan2293" class="CharOverride-4" style="position:absolute;top:-18px;left:639.94px;letter-spacing:-16.32px;">In </span><span id="_idTextSpan2294" class="CharOverride-4" style="position:absolute;top:-18px;left:905.13px;letter-spacing:-0.6px;">1998, </span><span id="_idTextSpan2295" class="CharOverride-4" style="position:absolute;top:-18px;left:1495.03px;">he </span><span id="_idTextSpan2296" class="CharOverride-4" style="position:absolute;top:-18px;left:1827.91px;letter-spacing:0px;">became </span><span id="_idTextSpan2297" class="CharOverride-4" style="position:absolute;top:-18px;left:2758.86px;letter-spacing:-1.83px;">India's </span><span id="_idTextSpan2298" class="CharOverride-4" style="position:absolute;top:-18px;left:3509.09px;text-rendering:optimizeLegibility;letter-spacing:-0.24px;">first </span><span id="_idTextSpan2299" class="CharOverride-4" style="position:absolute;top:-18px;left:4006.84px;">and </span><span id="_idTextSpan2300" class="CharOverride-4" style="position:absolute;top:-18px;left:4478.67px;letter-spacing:-1.15px;">only </span><span id="_idTextSpan2301" class="CharOverride-4" style="position:absolute;top:-18px;left:4994.9px;letter-spacing:-0.26px;">economist </span><span id="_idTextSpan2302" class="CharOverride-4" style="position:absolute;top:-18px;left:6184.09px;">to </span><span id="_idTextSpan2303" class="CharOverride-4" style="position:absolute;top:-18px;left:6468.96px;">win </span><span id="_idTextSpan2304" class="CharOverride-4" style="position:absolute;top:-18px;left:6914.87px;">the </span><span id="_idTextSpan2305" class="CharOverride-4" style="position:absolute;top:342px;left:639.94px;letter-spacing:-0.44px;">Nobel </span><span id="_idTextSpan2306" class="CharOverride-4" style="position:absolute;top:342px;left:1338.09px;letter-spacing:-0.76px;">Prize </span><span id="_idTextSpan2307" class="CharOverride-4" style="position:absolute;top:342px;left:1935.2px;letter-spacing:-2.4px;">for </span><span id="_idTextSpan2308" class="CharOverride-4" style="position:absolute;top:342px;left:2309.35px;">his </span><span id="_idTextSpan2309" class="CharOverride-4" style="position:absolute;top:342px;left:2676.79px;letter-spacing:-0.58px;">work </span><span id="_idTextSpan2310" class="CharOverride-4" style="position:absolute;top:342px;left:3285.66px;">on </span><span id="_idTextSpan2311" class="CharOverride-4" style="position:absolute;top:342px;left:3619.49px;">the </span><span id="_idTextSpan2312" class="CharOverride-4" style="position:absolute;top:342px;left:4038.76px;">causes </span><span id="_idTextSpan2313" class="CharOverride-4" style="position:absolute;top:342px;left:4859.55px;">and </span><span id="_idTextSpan2314" class="CharOverride-4" style="position:absolute;top:342px;left:5331.38px;text-rendering:optimizeLegibility;letter-spacing:-0.51px;">effects </span><span id="_idTextSpan2315" class="CharOverride-4" style="position:absolute;top:342px;left:6136.09px;letter-spacing:-2.48px;">of </span><span id="_idTextSpan2316" class="CharOverride-4" style="position:absolute;top:342px;left:6413.29px;">famine, </span><span id="_idTextSpan2317" class="CharOverride-4" style="position:absolute;top:702px;left:639.94px;letter-spacing:-1.6px;">poverty, </span><span id="_idTextSpan2318" class="CharOverride-4" style="position:absolute;top:702px;left:1592.95px;">and </span><span id="_idTextSpan2319" class="CharOverride-4" style="position:absolute;top:702px;left:2061.43px;letter-spacing:-0.82px;">food </span><span id="_idTextSpan2320" class="CharOverride-4" style="position:absolute;top:702px;left:2622.54px;letter-spacing:-0.86px;">insecurity. </span><span id="_idTextSpan2321" class="CharOverride-4" style="position:absolute;top:702px;left:3796.83px;">.........................................................</span></p>
+					</div>
+				</div>
+			</div>
+			<div id="_idContainer406">
+				<div id="_idContainer404">
+					<div class="_idGenObjectAttribute-14">
+						<div id="_idContainer403"><img xmlns="http://www.w3.org/1999/xhtml" src="img/video.png" class="vdo_icon" alt="vdo_icon" onClick="Openmodel('video4')" style="top: 18px;
+    left: 5px;">
+							<img class="_idGenObjectAttribute-1 _idGenObjectAttribute-2" src="../GK_7_CH__1-17-web-resources/image/Wangari-Maathai-by-Martin-Rowe.png" alt="">
+						</div>
+					</div>
+				</div>
+				<div id="_idContainer405" class="Basic-Text-Frame"><div class="input1 ui-droppable" id="box8" style="    top: 69px;
+    left: 289px;
+    width: 106px;"><span> Wangari maathai </span></div>
+					<div style="width:8050.39px;height:1623.6px;position:absolute;top:0px;left:0px;-webkit-transform-origin: 0% 0%; -webkit-transform: translate(0px,3.27px) rotate(0deg) scale(0.05);transform-origin: 0% 0%; transform: translate(0px,3.27px) rotate(0deg) scale(0.05);">
+						<p class="Body_body-para-right-number ParaOverride-1"><span id="_idTextSpan2322" class="CharOverride-4" style="position:absolute;top:-18px;left:0px;">	</span><span id="_idTextSpan2323" class="CharOverride-4" style="position:absolute;top:-18px;left:264.08px;letter-spacing:-1.28px;">5.	</span><span id="_idTextSpan2324" class="CharOverride-4" style="position:absolute;top:-18px;left:639.94px;letter-spacing:-0.36px;">She </span><span id="_idTextSpan2325" class="CharOverride-4" style="position:absolute;top:-18px;left:1104.81px;">is </span><span id="_idTextSpan2326" class="CharOverride-4" style="position:absolute;top:-18px;left:1337.85px;">the </span><span id="_idTextSpan2327" class="CharOverride-4" style="position:absolute;top:-18px;left:1753.76px;text-rendering:optimizeLegibility;letter-spacing:-0.24px;">first </span><span id="_idTextSpan2328" class="CharOverride-4" style="position:absolute;top:-18px;left:2244.31px;letter-spacing:-0.84px;">African </span><span id="_idTextSpan2329" class="CharOverride-4" style="position:absolute;top:-18px;left:3072.77px;letter-spacing:-0.48px;">woman </span><span id="_idTextSpan2330" class="CharOverride-4" style="position:absolute;top:-18px;left:3942.04px;">and </span><span id="_idTextSpan2331" class="CharOverride-4" style="position:absolute;top:-18px;left:4409.8px;">the </span><span id="_idTextSpan2332" class="CharOverride-4" style="position:absolute;top:-18px;left:4825.71px;text-rendering:optimizeLegibility;letter-spacing:-0.24px;">first </span><span id="_idTextSpan2333" class="CharOverride-4" style="position:absolute;top:-18px;left:5323.46px;letter-spacing:-0.59px;">environmentalist </span><span id="_idTextSpan2334" class="CharOverride-4" style="position:absolute;top:-18px;left:7195.43px;">to </span><span id="_idTextSpan2335" class="CharOverride-4" style="position:absolute;top:342px;left:639.94px;">win </span><span id="_idTextSpan2336" class="CharOverride-4" style="position:absolute;top:342px;left:1085.85px;">the </span><span id="_idTextSpan2337" class="CharOverride-4" style="position:absolute;top:342px;left:1505.12px;letter-spacing:-0.44px;">Nobel </span><span id="_idTextSpan2338" class="CharOverride-4" style="position:absolute;top:342px;left:2203.27px;letter-spacing:-1.24px;">Peace </span><span id="_idTextSpan2339" class="CharOverride-4" style="position:absolute;top:342px;left:2920.63px;letter-spacing:-0.76px;">Prize </span><span id="_idTextSpan2340" class="CharOverride-4" style="position:absolute;top:342px;left:3517.74px;letter-spacing:-2.4px;">for </span><span id="_idTextSpan2341" class="CharOverride-4" style="position:absolute;top:342px;left:3891.89px;letter-spacing:-1.38px;">her </span><span id="_idTextSpan2342" class="CharOverride-4" style="position:absolute;top:342px;left:4310.45px;letter-spacing:-0.58px;">work </span><span id="_idTextSpan2343" class="CharOverride-4" style="position:absolute;top:342px;left:4919.32px;">in </span><span id="_idTextSpan2344" class="CharOverride-4" style="position:absolute;top:342px;left:5170.59px;">the </span><span id="_idTextSpan2345" class="CharOverride-4" style="position:absolute;top:342px;left:5586.5px;text-rendering:optimizeLegibility;">fields </span><span id="_idTextSpan2346" class="CharOverride-4" style="position:absolute;top:342px;left:6230.89px;letter-spacing:-2.48px;">of </span><span id="_idTextSpan2347" class="CharOverride-4" style="position:absolute;top:342px;left:6511.45px;letter-spacing:-0.94px;">democracy, </span><span id="_idTextSpan2348" class="CharOverride-4" style="position:absolute;top:702px;left:639.94px;">human </span><span id="_idTextSpan2349" class="CharOverride-4" style="position:absolute;top:702px;left:1449.93px;letter-spacing:-0.18px;">rights, </span><span id="_idTextSpan2350" class="CharOverride-4" style="position:absolute;top:702px;left:2200.39px;">and </span><span id="_idTextSpan2351" class="CharOverride-4" style="position:absolute;top:702px;left:2672.23px;letter-spacing:-0.72px;">environmental </span><span id="_idTextSpan2352" class="CharOverride-4" style="position:absolute;top:702px;left:4290.05px;letter-spacing:-0.45px;">conservation. </span><span id="_idTextSpan2353" class="CharOverride-4" style="position:absolute;top:702px;left:5814.26px;">In </span><span id="_idTextSpan2354" class="CharOverride-4" style="position:absolute;top:702px;left:6079.46px;letter-spacing:-2.92px;">1977, </span><span id="_idTextSpan2355" class="CharOverride-4" style="position:absolute;top:702px;left:6601.21px;">she </span><span id="_idTextSpan2356" class="CharOverride-4" style="position:absolute;top:1062px;left:639.94px;">established </span><span id="_idTextSpan2357" class="CharOverride-4" style="position:absolute;top:1062px;left:1941.91px;">the </span><span id="_idTextSpan2358" class="CharOverride-4" style="position:absolute;top:1062px;left:2361.19px;letter-spacing:-1.4px;">Green </span><span id="_idTextSpan2359" class="CharOverride-4" style="position:absolute;top:1062px;left:3087.9px;">Belt </span><span id="_idTextSpan2360" class="CharOverride-4" style="position:absolute;top:1062px;left:3576.29px;letter-spacing:-0.91px;">Movement </span><span id="_idTextSpan2361" class="CharOverride-4" style="position:absolute;top:1062px;left:4801.96px;">in </span><span id="_idTextSpan2362" class="CharOverride-4" style="position:absolute;top:1062px;left:5057.31px;letter-spacing:-1.38px;">her </span><span id="_idTextSpan2363" class="CharOverride-4" style="position:absolute;top:1062px;left:5480.42px;letter-spacing:-0.58px;">native </span><span id="_idTextSpan2364" class="CharOverride-4" style="position:absolute;top:1062px;left:6205.69px;letter-spacing:-1.6px;">country, </span><span id="_idTextSpan2365" class="CharOverride-4" style="position:absolute;top:1062px;left:7156.32px;letter-spacing:-1.68px;">Kenya, </span><span id="_idTextSpan2366" class="CharOverride-4" style="position:absolute;top:1422px;left:639.94px;">to </span><span id="_idTextSpan2367" class="CharOverride-4" style="position:absolute;top:1422px;left:929.37px;letter-spacing:-1.08px;">promote </span><span id="_idTextSpan2368" class="CharOverride-4" style="position:absolute;top:1422px;left:1922.95px;">sustainable </span><span id="_idTextSpan2369" class="CharOverride-4" style="position:absolute;top:1422px;left:3224.45px;letter-spacing:-0.76px;">development </span><span id="_idTextSpan2370" class="CharOverride-4" style="position:absolute;top:1422px;left:4701.63px;letter-spacing:-0.24px;">practices. </span><span id="_idTextSpan2371" class="CharOverride-4" style="position:absolute;top:1422px;left:5822.65px;">...................................</span></p>
+					</div>
+				</div>
+			</div>
+			<div id="_idContainer410">
+				<div id="_idContainer408">
+					<div class="_idGenObjectAttribute-15">
+						<div id="_idContainer407">
+							<img class="_idGenObjectAttribute-1 _idGenObjectAttribute-2" src="../GK_7_CH__1-17-web-resources/image/Mohammad_Yunus.png" alt="">
+						</div>
+					</div>
+				</div>
+				<div id="_idContainer409" class="Basic-Text-Frame"><div class="input1 ui-droppable" id="box4" style="    top: 70px;
+    left: 211px;
+    width: 146px;"><span>  Mohammad Yunus</span></div>
+					<div style="width:7154.65px;height:1623.6px;position:absolute;top:0px;left:0px;-webkit-transform-origin: 0% 0%; -webkit-transform: translate(0px,3.27px) rotate(0deg) scale(0.05);transform-origin: 0% 0%; transform: translate(0px,3.27px) rotate(0deg) scale(0.05);">
+						<p class="Body_body-para-right-number ParaOverride-1"><span id="_idTextSpan2372" class="CharOverride-4" style="position:absolute;top:-18px;left:0px;">	</span><span id="_idTextSpan2373" class="CharOverride-4" style="position:absolute;top:-18px;left:292.16px;letter-spacing:-6.72px;">7.	</span><span id="_idTextSpan2374" class="CharOverride-4" style="position:absolute;top:-18px;left:639.94px;letter-spacing:-9.33px;">Often </span><span id="_idTextSpan2375" class="CharOverride-4" style="position:absolute;top:-18px;left:1337.6px;">called </span><span id="_idTextSpan2376" class="CharOverride-4" style="position:absolute;top:-18px;left:2039.59px;">'the </span><span id="_idTextSpan2377" class="CharOverride-4" style="position:absolute;top:-18px;left:2514.79px;letter-spacing:-0.79px;">father </span><span id="_idTextSpan2378" class="CharOverride-4" style="position:absolute;top:-18px;left:3241.49px;letter-spacing:-2.48px;">of </span><span id="_idTextSpan2379" class="CharOverride-4" style="position:absolute;top:-18px;left:3522.05px;letter-spacing:-1.08px;">micro </span><span id="_idTextSpan2380" class="CharOverride-4" style="position:absolute;top:-18px;left:4198.84px;letter-spacing:-4px;">credit', </span><span id="_idTextSpan2381" class="CharOverride-4" style="position:absolute;top:-18px;left:4977.87px;">he </span><span id="_idTextSpan2382" class="CharOverride-4" style="position:absolute;top:-18px;left:5310.74px;">is </span><span id="_idTextSpan2383" class="CharOverride-4" style="position:absolute;top:-18px;left:5543.78px;">the </span><span id="_idTextSpan2384" class="CharOverride-4" style="position:absolute;top:-18px;left:5959.69px;letter-spacing:-1.2px;">founder </span><span id="_idTextSpan2385" class="CharOverride-4" style="position:absolute;top:-18px;left:6876.23px;letter-spacing:-2.48px;">of </span><span id="_idTextSpan2386" class="CharOverride-4" style="position:absolute;top:342px;left:639.94px;">the </span><span id="_idTextSpan2387" class="CharOverride-4" style="position:absolute;top:342px;left:1059.21px;letter-spacing:-0.64px;">'Grameen </span><span id="_idTextSpan2388" class="CharOverride-4" style="position:absolute;top:342px;left:2187.44px;letter-spacing:-0.36px;">Bank' </span><span id="_idTextSpan2389" class="CharOverride-4" style="position:absolute;top:342px;left:2844.31px;">in </span><span id="_idTextSpan2390" class="CharOverride-4" style="position:absolute;top:342px;left:3099.67px;">Bangladesh, </span><span id="_idTextSpan2391" class="CharOverride-4" style="position:absolute;top:342px;left:4489.73px;">an </span><span id="_idTextSpan2392" class="CharOverride-4" style="position:absolute;top:342px;left:4822.12px;letter-spacing:-0.55px;">organization </span><span id="_idTextSpan2393" class="CharOverride-4" style="position:absolute;top:342px;left:6233.06px;">which </span><span id="_idTextSpan2394" class="CharOverride-4" style="position:absolute;top:702px;left:639.94px;letter-spacing:-0.72px;">provides </span><span id="_idTextSpan2395" class="CharOverride-4" style="position:absolute;top:702px;left:1638.08px;">small </span><span id="_idTextSpan2396" class="CharOverride-4" style="position:absolute;top:702px;left:2269.99px;">loans, </span><span id="_idTextSpan2397" class="CharOverride-4" style="position:absolute;top:702px;left:2966.7px;">totalling</span><span id="_idTextSpan2398" class="CharOverride-4" style="position:absolute;top:702px;left:3252.05px;"> </span><span id="_idTextSpan2399" class="CharOverride-4" style="position:absolute;top:702px;left:3975.4px;">an </span><span id="_idTextSpan2400" class="CharOverride-4" style="position:absolute;top:702px;left:4307.79px;">estimated </span><span id="_idTextSpan2401" class="CharOverride-4" style="position:absolute;top:702px;left:5462.17px;">$20 </span><span id="_idTextSpan2402" class="CharOverride-4" style="position:absolute;top:702px;left:5925.36px;">billion </span><span id="_idTextSpan2403" class="CharOverride-4" style="position:absolute;top:702px;left:6622.79px;">so </span><span id="_idTextSpan2404" class="CharOverride-4" style="position:absolute;top:1062px;left:639.94px;letter-spacing:-2.45px;">far, </span><span id="_idTextSpan2405" class="CharOverride-4" style="position:absolute;top:1062px;left:1060.65px;">to </span><span id="_idTextSpan2406" class="CharOverride-4" style="position:absolute;top:1062px;left:1346px;">the </span><span id="_idTextSpan2407" class="CharOverride-4" style="position:absolute;top:1062px;left:1765.27px;letter-spacing:-0.81px;">poorest </span><span id="_idTextSpan2408" class="CharOverride-4" style="position:absolute;top:1062px;left:2670.29px;letter-spacing:-2.48px;">of </span><span id="_idTextSpan2409" class="CharOverride-4" style="position:absolute;top:1062px;left:2946.77px;">the </span><span id="_idTextSpan2410" class="CharOverride-4" style="position:absolute;top:1062px;left:3366.04px;letter-spacing:-2.04px;">poor. </span><span id="_idTextSpan2411" class="CharOverride-4" style="position:absolute;top:1062px;left:3985.94px;letter-spacing:-0.88px;">He </span><span id="_idTextSpan2412" class="CharOverride-4" style="position:absolute;top:1062px;left:4342.34px;letter-spacing:-0.66px;">was </span><span id="_idTextSpan2413" class="CharOverride-4" style="position:absolute;top:1062px;left:4848.49px;letter-spacing:-1.74px;">awarded </span><span id="_idTextSpan2414" class="CharOverride-4" style="position:absolute;top:1062px;left:5862.24px;">the </span><span id="_idTextSpan2415" class="CharOverride-4" style="position:absolute;top:1062px;left:6281.51px;letter-spacing:-0.44px;">Nobel </span><span id="_idTextSpan2416" class="CharOverride-4" style="position:absolute;top:1422px;left:639.94px;letter-spacing:-1.24px;">Peace </span><span id="_idTextSpan2417" class="CharOverride-4" style="position:absolute;top:1422px;left:1357.29px;letter-spacing:-0.76px;">Prize </span><span id="_idTextSpan2418" class="CharOverride-4" style="position:absolute;top:1422px;left:1957.76px;">in </span><span id="_idTextSpan2419" class="CharOverride-4" style="position:absolute;top:1422px;left:2213.12px;">2006 </span><span id="_idTextSpan2420" class="CharOverride-4" style="position:absolute;top:1422px;left:2838.07px;letter-spacing:-2.4px;">for </span><span id="_idTextSpan2421" class="CharOverride-4" style="position:absolute;top:1422px;left:3212.22px;">his </span><span id="_idTextSpan2422" class="CharOverride-4" style="position:absolute;top:1422px;left:3579.65px;letter-spacing:-0.48px;">work. </span><span id="_idTextSpan2423" class="CharOverride-4" style="position:absolute;top:1422px;left:4244.92px;">..................................................</span></p>
+					</div>
+				</div>
+			</div>
+			<div id="_idContainer414">
+				<div id="_idContainer412">
+					<div class="_idGenObjectAttribute-16">
+						<div id="_idContainer411"><img xmlns="http://www.w3.org/1999/xhtml" src="img/video.png" class="vdo_icon" alt="vdo_icon" onClick="Openmodel('video5')" style="    left: 10px;
+    top: 10px;">
+							<img class="_idGenObjectAttribute-1 _idGenObjectAttribute-2" src="../GK_7_CH__1-17-web-resources/image/Tu_Youyou.png" alt="">
+						</div>
+					</div>
+				</div>
+				<div id="_idContainer413" class="Basic-Text-Frame"><div class="input1 ui-droppable" id="box3" style="    top: 70px;
+    left: 126px;
+    width: 200px;"><span> Tu Youyou</span></div>
+					<div style="width:7579.69px;height:1623.6px;position:absolute;top:0px;left:0px;-webkit-transform-origin: 0% 0%; -webkit-transform: translate(0px,3.27px) rotate(0deg) scale(0.05);transform-origin: 0% 0%; transform: translate(0px,3.27px) rotate(0deg) scale(0.05);">
+						<p class="Body_body-para-right-number ParaOverride-1"><span id="_idTextSpan2424" class="CharOverride-4" style="position:absolute;top:-18px;left:0px;">	</span><span id="_idTextSpan2425" class="CharOverride-4" style="position:absolute;top:-18px;left:246.33px;letter-spacing:-1.2px;">8.	</span><span id="_idTextSpan2426" class="CharOverride-4" style="position:absolute;top:-18px;left:639.94px;letter-spacing:-24.16px;">A </span><span id="_idTextSpan2427" class="CharOverride-4" style="position:absolute;top:-18px;left:847.53px;letter-spacing:-0.18px;">pharmaceutical </span><span id="_idTextSpan2428" class="CharOverride-4" style="position:absolute;top:-18px;left:2592.79px;">chemist, </span><span id="_idTextSpan2429" class="CharOverride-4" style="position:absolute;top:-18px;left:3571.97px;">she </span><span id="_idTextSpan2430" class="CharOverride-4" style="position:absolute;top:-18px;left:4021.49px;">is </span><span id="_idTextSpan2431" class="CharOverride-4" style="position:absolute;top:-18px;left:4254.52px;">the </span><span id="_idTextSpan2432" class="CharOverride-4" style="position:absolute;top:-18px;left:4670.44px;text-rendering:optimizeLegibility;letter-spacing:-0.24px;">first </span><span id="_idTextSpan2433" class="CharOverride-4" style="position:absolute;top:-18px;left:5168.18px;">Chinese </span><span id="_idTextSpan2434" class="CharOverride-4" style="position:absolute;top:-18px;left:6089.77px;letter-spacing:-0.48px;">woman </span><span id="_idTextSpan2435" class="CharOverride-4" style="position:absolute;top:342px;left:639.94px;">to </span><span id="_idTextSpan2436" class="CharOverride-4" style="position:absolute;top:342px;left:924.81px;">win </span><span id="_idTextSpan2437" class="CharOverride-4" style="position:absolute;top:342px;left:1374.8px;letter-spacing:-3px;">a </span><span id="_idTextSpan2438" class="CharOverride-4" style="position:absolute;top:342px;left:1566.32px;letter-spacing:-0.44px;">Nobel </span><span id="_idTextSpan2439" class="CharOverride-4" style="position:absolute;top:342px;left:2264.47px;letter-spacing:-0.65px;">Prize. </span><span id="_idTextSpan2440" class="CharOverride-4" style="position:absolute;top:342px;left:2921.34px;letter-spacing:-2.04px;">Her </span><span id="_idTextSpan2441" class="CharOverride-4" style="position:absolute;top:342px;left:3372.53px;letter-spacing:-1.25px;">discovery </span><span id="_idTextSpan2442" class="CharOverride-4" style="position:absolute;top:342px;left:4476.28px;letter-spacing:-2.48px;">of </span><span id="_idTextSpan2443" class="CharOverride-4" style="position:absolute;top:342px;left:4756.84px;letter-spacing:-0.81px;">ground-breaking </span><span id="_idTextSpan2444" class="CharOverride-4" style="position:absolute;top:342px;left:6643.93px;letter-spacing:-0.29px;">anti-</span><span id="_idTextSpan2445" class="CharOverride-4" style="position:absolute;top:702px;left:639.94px;letter-spacing:-0.75px;">malaria </span><span id="_idTextSpan2446" class="CharOverride-4" style="position:absolute;top:702px;left:1509.45px;">medication </span><span id="_idTextSpan2447" class="CharOverride-4" style="position:absolute;top:702px;left:2777.83px;">has </span><span id="_idTextSpan2448" class="CharOverride-4" style="position:absolute;top:702px;left:3226.86px;letter-spacing:-1.56px;">saved </span><span id="_idTextSpan2449" class="CharOverride-4" style="position:absolute;top:702px;left:3926.45px;">millions </span><span id="_idTextSpan2450" class="CharOverride-4" style="position:absolute;top:702px;left:4809.16px;">in </span><span id="_idTextSpan2451" class="CharOverride-4" style="position:absolute;top:702px;left:5060.44px;">the </span><span id="_idTextSpan2452" class="CharOverride-4" style="position:absolute;top:702px;left:5479.71px;letter-spacing:-0.7px;">developing </span><span id="_idTextSpan2453" class="CharOverride-4" style="position:absolute;top:702px;left:6721.45px;letter-spacing:-0.41px;">world, </span><span id="_idTextSpan2454" class="CharOverride-4" style="position:absolute;top:1062px;left:639.94px;letter-spacing:-2.4px;">for </span><span id="_idTextSpan2455" class="CharOverride-4" style="position:absolute;top:1062px;left:1009.53px;">which </span><span id="_idTextSpan2456" class="CharOverride-4" style="position:absolute;top:1062px;left:1716.32px;">she </span><span id="_idTextSpan2457" class="CharOverride-4" style="position:absolute;top:1062px;left:2161.27px;letter-spacing:-0.66px;">was </span><span id="_idTextSpan2458" class="CharOverride-4" style="position:absolute;top:1062px;left:2667.43px;letter-spacing:-1.74px;">awarded </span><span id="_idTextSpan2459" class="CharOverride-4" style="position:absolute;top:1062px;left:3681.18px;">the </span><span id="_idTextSpan2460" class="CharOverride-4" style="position:absolute;top:1062px;left:4100.45px;letter-spacing:-0.44px;">Nobel </span><span id="_idTextSpan2461" class="CharOverride-4" style="position:absolute;top:1062px;left:4798.6px;letter-spacing:-0.76px;">Prize </span><span id="_idTextSpan2462" class="CharOverride-4" style="position:absolute;top:1062px;left:5399.07px;">in </span><span id="_idTextSpan2463" class="CharOverride-4" style="position:absolute;top:1062px;left:5654.43px;letter-spacing:-1.09px;">Physiology </span><span id="_idTextSpan2464" class="CharOverride-4" style="position:absolute;top:1062px;left:6881.77px;letter-spacing:-1.84px;">or </span><span id="_idTextSpan2465" class="CharOverride-4" style="position:absolute;top:1422px;left:639.94px;letter-spacing:-0.29px;">Medicine </span><span id="_idTextSpan2466" class="CharOverride-4" style="position:absolute;top:1422px;left:1688.73px;">in </span><span id="_idTextSpan2467" class="CharOverride-4" style="position:absolute;top:1422px;left:1944.08px;letter-spacing:-0.64px;">2015. </span><span id="_idTextSpan2468" class="CharOverride-4" style="position:absolute;top:1422px;left:2516.23px;">......................................................................</span></p>
+					</div>
+				</div>
+			</div>
+			<div id="_idContainer418">
+				<div id="_idContainer416">
+					<div class="_idGenObjectAttribute-17">
+						<div id="_idContainer415">
+							<img class="_idGenObjectAttribute-1 _idGenObjectAttribute-2" src="../GK_7_CH__1-17-web-resources/image/Charles_K._Kao.png" alt="">
+						</div>
+					</div>
+				</div>
+				<div id="_idContainer417" class="Basic-Text-Frame"><div class="input1 ui-droppable" id="box2" style="    top: 104px;
+    left: 33px;
+    width: 200px;"><span>  Charles K Kao</span></div>
+<div class="btnbar" style="        bottom: -243px;    text-align: center;    z-index: 999;"> <input type="button" value="Show Answers" onClick="ShowAnsEx1()"></div>
+					<div style="width:7480.96px;height:2343.6px;position:absolute;top:0px;left:0px;-webkit-transform-origin: 0% 0%; -webkit-transform: translate(0px,3.27px) rotate(0deg) scale(0.05);transform-origin: 0% 0%; transform: translate(0px,3.27px) rotate(0deg) scale(0.05);">
+						<p class="Body_body-para-right-number ParaOverride-1"><span id="_idTextSpan2469" class="CharOverride-4" style="position:absolute;top:-18px;left:0px;">	</span><span id="_idTextSpan2470" class="CharOverride-4" style="position:absolute;top:-18px;left:254.48px;letter-spacing:-2.48px;">9.	</span><span id="_idTextSpan2471" class="CharOverride-4" style="position:absolute;top:-18px;left:639.94px;letter-spacing:-16.98px;">He </span><span id="_idTextSpan2472" class="CharOverride-4" style="position:absolute;top:-18px;left:1000.89px;">is </span><span id="_idTextSpan2473" class="CharOverride-4" style="position:absolute;top:-18px;left:1238.01px;letter-spacing:-0.48px;">known </span><span id="_idTextSpan2474" class="CharOverride-4" style="position:absolute;top:-18px;left:2020.88px;">as </span><span id="_idTextSpan2475" class="CharOverride-4" style="position:absolute;top:-18px;left:2335.03px;letter-spacing:0px;">'the </span><span id="_idTextSpan2476" class="CharOverride-4" style="position:absolute;top:-18px;left:2810.22px;letter-spacing:-0.79px;">father </span><span id="_idTextSpan2477" class="CharOverride-4" style="position:absolute;top:-18px;left:3536.93px;letter-spacing:-2.48px;">of </span><span id="_idTextSpan2478" class="CharOverride-4" style="position:absolute;top:-18px;left:3814.13px;text-rendering:optimizeLegibility;letter-spacing:-0.74px;">fibreoptic </span><span id="_idTextSpan2479" class="CharOverride-4" style="position:absolute;top:-18px;left:4914.03px;letter-spacing:-0.42px;">communications' </span><span id="_idTextSpan2480" class="CharOverride-4" style="position:absolute;top:-18px;left:6813.61px;letter-spacing:-2.4px;">for </span><span id="_idTextSpan2481" class="CharOverride-4" style="position:absolute;top:342px;left:639.94px;letter-spacing:-0.7px;">developing </span><span id="_idTextSpan2482" class="CharOverride-4" style="position:absolute;top:342px;left:1882.16px;">the </span><span id="_idTextSpan2483" class="CharOverride-4" style="position:absolute;top:342px;left:2301.43px;">cables </span><span id="_idTextSpan2484" class="CharOverride-4" style="position:absolute;top:342px;left:3060.06px;">that </span><span id="_idTextSpan2485" class="CharOverride-4" style="position:absolute;top:342px;left:3565.24px;letter-spacing:-1.87px;">have </span><span id="_idTextSpan2486" class="CharOverride-4" style="position:absolute;top:342px;left:4143.64px;">enabled </span><span id="_idTextSpan2487" class="CharOverride-4" style="position:absolute;top:342px;left:5074.82px;letter-spacing:-1.05px;">super-fast </span><span id="_idTextSpan2488" class="CharOverride-4" style="position:absolute;top:342px;left:6270.72px;">long-</span><span id="_idTextSpan2489" class="CharOverride-4" style="position:absolute;top:702px;left:639.94px;letter-spacing:-0.29px;">distance </span><span id="_idTextSpan2490" class="CharOverride-4" style="position:absolute;top:702px;left:1622px;letter-spacing:-0.19px;">communication </span><span id="_idTextSpan2491" class="CharOverride-4" style="position:absolute;top:702px;left:3347.11px;letter-spacing:-1.5px;">via </span><span id="_idTextSpan2492" class="CharOverride-4" style="position:absolute;top:702px;left:3716.46px;">phones, </span><span id="_idTextSpan2493" class="CharOverride-4" style="position:absolute;top:702px;left:4636.61px;letter-spacing:-0.53px;">cell </span><span id="_idTextSpan2494" class="CharOverride-4" style="position:absolute;top:702px;left:5064.28px;">phones, </span><span id="_idTextSpan2495" class="CharOverride-4" style="position:absolute;top:702px;left:5984.43px;">and </span><span id="_idTextSpan2496" class="CharOverride-4" style="position:absolute;top:702px;left:6452.18px;">the </span><span id="_idTextSpan2497" class="CharOverride-4" style="position:absolute;top:1062px;left:639.94px;letter-spacing:-0.14px;">internet. </span><span id="_idTextSpan2498" class="CharOverride-4" style="position:absolute;top:1062px;left:1619.11px;letter-spacing:-0.88px;">He </span><span id="_idTextSpan2499" class="CharOverride-4" style="position:absolute;top:1062px;left:1975.51px;letter-spacing:-0.66px;">was </span><span id="_idTextSpan2500" class="CharOverride-4" style="position:absolute;top:1062px;left:2481.67px;letter-spacing:-1.74px;">awarded </span><span id="_idTextSpan2501" class="CharOverride-4" style="position:absolute;top:1062px;left:3495.41px;">the </span><span id="_idTextSpan2502" class="CharOverride-4" style="position:absolute;top:1062px;left:3914.69px;">2009 </span><span id="_idTextSpan2503" class="CharOverride-4" style="position:absolute;top:1062px;left:4545.15px;letter-spacing:-0.44px;">Nobel </span><span id="_idTextSpan2504" class="CharOverride-4" style="position:absolute;top:1062px;left:5243.3px;letter-spacing:-0.76px;">Prize </span><span id="_idTextSpan2505" class="CharOverride-4" style="position:absolute;top:1062px;left:5843.78px;">in </span><span id="_idTextSpan2506" class="CharOverride-4" style="position:absolute;top:1062px;left:6099.13px;letter-spacing:-0.78px;">Physics </span><span id="_idTextSpan2507" class="CharOverride-4" style="position:absolute;top:1422px;left:639.94px;letter-spacing:-2.4px;">for </span><span id="_idTextSpan2508" class="CharOverride-4" style="position:absolute;top:1422px;left:1014.09px;">his </span><span id="_idTextSpan2509" class="CharOverride-4" style="position:absolute;top:1422px;left:1386.08px;letter-spacing:-1.42px;">revolutionary </span><span id="_idTextSpan2510" class="CharOverride-4" style="position:absolute;top:1422px;left:2881.97px;letter-spacing:-1.25px;">discovery </span><span id="_idTextSpan2511" class="CharOverride-4" style="position:absolute;top:1422px;left:3981.64px;">that </span><span id="_idTextSpan2512" class="CharOverride-4" style="position:absolute;top:1422px;left:4486.83px;">has </span><span id="_idTextSpan2513" class="CharOverride-4" style="position:absolute;top:1422px;left:4935.86px;">made </span><span id="_idTextSpan2514" class="CharOverride-4" style="position:absolute;top:1422px;left:5612.89px;">sharing </span><span id="_idTextSpan2515" class="CharOverride-4" style="position:absolute;top:1422px;left:6486.72px;letter-spacing:-2.48px;">of </span><span id="_idTextSpan2516" class="CharOverride-4" style="position:absolute;top:1782px;left:639.94px;letter-spacing:-0.34px;">information </span><span id="_idTextSpan2517" class="CharOverride-4" style="position:absolute;top:1782px;left:1963.51px;letter-spacing:-0.79px;">easier </span><span id="_idTextSpan2518" class="CharOverride-4" style="position:absolute;top:1782px;left:2688.54px;">and </span><span id="_idTextSpan2519" class="CharOverride-4" style="position:absolute;top:1782px;left:3160.38px;letter-spacing:-1.3px;">more </span><span id="_idTextSpan2520" class="CharOverride-4" style="position:absolute;top:1782px;left:3792.77px;letter-spacing:-0.48px;">accessible </span><span id="_idTextSpan2521" class="CharOverride-4" style="position:absolute;top:1782px;left:4972.6px;">than </span><span id="_idTextSpan2522" class="CharOverride-4" style="position:absolute;top:1782px;left:5526.27px;letter-spacing:-2.64px;">ever </span><span id="_idTextSpan2523" class="CharOverride-4" style="position:absolute;top:1782px;left:6062.18px;letter-spacing:-1.32px;">before. </span><span id="_idTextSpan2524" class="CharOverride-4" style="position:absolute;top:2142px;left:639.94px;">......................................................................</span></p>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div id="_idContainer425"style="position:absolute; left:-86px; width:166px;">
+				<div id="_idContainer419" style="position:absolute; left:-10px; width:178px;">
+					<img class="_idGenObjectAttribute-1 _idGenObjectAttribute-2" src="../GK_7_CH__1-17-web-resources/image/frame_53.png" alt="">
+				</div>
+				<div id="_idContainer500"style="left:209px;top:-61px; height: 238px; width: 562px;">
+					<img class="rohit3" src="../GK_7_CH__1-17-web-resources/image/rohit img 17.JPG" style="top:140px; height: 96px; width: 211px;"alt="">
+				  </div>
+				<div id="_idContainer420" style="position:absolute; left:-2px; width:120px;">
+					<img class="_idGenObjectAttribute-1 _idGenObjectAttribute-2" src="data:image/png;base64,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" alt="">
+				</div>
+				<div id="_idContainer421" class="_idGenObjectStyle-Disabled">
+					<img class="_idGenObjectAttribute-1 _idGenObjectAttribute-2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAV0AAAACCAYAAAD7Jw8hAAAACXBIWXMAABcRAAAXEQHKJvM/AAAAUUlEQVRIS2NgSJ+VAMQbgPj/KCYJHxjFZOGGUUwyLgBih1FMMjb4//8/w2DDCEb6LAGG0QJ4FNMGX2AgXBiPYlQMyocNo5hkHMBAuDAeSGwAAPTJy8vSprtzAAAAAElFTkSuQmCC" alt="">
+				</div>
+				<div id="_idContainer422" class="Basic-Text-Frame">
+					<div style="width:3064.84px;height:288px;position:absolute;top:0px;left:-0px;-webkit-transform-origin: 0% 0%; -webkit-transform: translate(0px,3.91px) rotate(0deg) scale(0.05);transform-origin: 0% 0%; transform: translate(0px,3.91px) rotate(0deg) scale(0.05);">
+						<p class="Body_Rubric_Let's-Think- ParaOverride-1"><span id="_idTextSpan2525" class="CharOverride-5" style="position:absolute;top:-14.08px;left:0px;letter-spacing:-3.68px;">Let's </span><span id="_idTextSpan2526" class="CharOverride-5" style="position:absolute;top:-14.08px;left:727.67px;">Think!</span></p>
+					</div>
+				</div>
+				<div id="_idContainer423">
+					<div style="width:6120px;height:991.8px;position:absolute;top:0px;left:0px;-webkit-transform-origin: 0% 0%; -webkit-transform: translate(0px,3.27px) rotate(0deg) scale(0.05);transform-origin: 0% 0%; transform: translate(0px,3.27px) rotate(0deg) scale(0.05);">
+						<p class="Body_LETS-THINK-TEXT ParaOverride-1"><span id="_idTextSpan2527" class="CharOverride-4" style="position:absolute;top:-18px;left:0px;letter-spacing:-0.42px;">The Nobel Prize was not awarded<br>for particular periods of time, most <br>notable during 1914-1918 and later<br>during 1939-1945. Why?</span><span id="_idTextSpan2528" class="CharOverride-4" style="position:absolute;top:-18px;left:464.4px;letter-spacing:-0.44px;"></span><span id="_idTextSpan2529" class="CharOverride-4" style="position:absolute;top:-18px;left:1162.55px;letter-spacing:-0.76px;"></span><span id="_idTextSpan2530" class="CharOverride-4" style="position:absolute;top:-18px;left:1758.46px;letter-spacing:-0.66px;"></span><span id="_idTextSpan2531" class="CharOverride-4" style="position:absolute;top:-18px;left:2264.62px;letter-spacing:-0.54px;"></span><span id="_idTextSpan2532" class="CharOverride-4" style="position:absolute;top:-18px;left:2686.77px;letter-spacing:-1.74px;"></span><span id="_idTextSpan2533" class="CharOverride-4" style="position:absolute;top:-18px;left:3701.24px;letter-spacing:-2.4px;"></span><span id="_idTextSpan2534" class="CharOverride-4" style="position:absolute;top:-18px;left:4075.39px;letter-spacing:-0.5px;"></span><span id="_idTextSpan2535" class="CharOverride-4" style="position:absolute;top:-18px;left:5184.41px;"></span><span id="_idTextSpan2536" class="CharOverride-4" style="position:absolute;top:342px;left:0px;letter-spacing:-2.48px;"></span><span id="_idTextSpan2537" class="CharOverride-4" style="position:absolute;top:342px;left:276.48px;"></span><span id="_idTextSpan2538" class="CharOverride-4" style="position:absolute;top:342px;left:882.23px;"></span><span id="_idTextSpan2539" class="CharOverride-4" style="position:absolute;top:342px;left:1495.66px;letter-spacing:-0.27px;"></span><span id="_idTextSpan2540" class="CharOverride-4" style="position:absolute;top:342px;left:2376.68px;"></span><span id="_idTextSpan2541" class="CharOverride-4" style="position:absolute;top:342px;left:3141.55px;letter-spacing:-0.31px;"></span><span id="_idTextSpan2542" class="CharOverride-4" style="position:absolute;top:342px;left:4063.37px;"></span><span id="_idTextSpan2543" class="CharOverride-4" style="position:absolute;top:342px;left:4535.2px;letter-spacing:-0.92px;"></span><span id="_idTextSpan2544" class="CharOverride-4" style="position:absolute;top:342px;left:5097.27px;"></span><span id="_idTextSpan2545" class="CharOverride-4" style="position:absolute;top:702px;left:0px;letter-spacing:-0.59px;"></span><span id="_idTextSpan2546" class="CharOverride-4" style="position:absolute;top:702px;left:1112.86px;letter-spacing:-1.98px;"></span></p>
+					</div>
+				</div>
+				<div id="_idContainer424" class="Icon _idGenObjectStyle-Disabled">
+					<img class="_idGenObjectAttribute-1 _idGenObjectAttribute-2" src="data:image/png;base64,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" alt="" style="position: absolute;left:-29px;top:-11px;">
+				</div>
+			</div>
+			<div id="_idContainer428">
+				<div id="_idContainer426" class="Icon _idGenObjectStyle-Disabled">
+					<img class="_idGenObjectAttribute-1 _idGenObjectAttribute-2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADoAAAA6CAYAAADhu0ooAAAACXBIWXMAABcRAAAXEQHKJvM/AAAD20lEQVRoQ+2bz4oUMRDG8wjzAC408wSCeh8Wj4vMZfGm40nByyh4EcE5iHiSAY8i9lEEYa4iQj+Bjm+wj+AblPmSVG9NpnuSnr+d4AfFLtvpnfy6KpVKOqOISB3CtEbaptrm2iptS23k2ZW7ttA2c/cMQv97Gws2iDV0UNsEnT67ceYDdTU8FDykIvS5sRZsEDJ0Rtvch7t96w5dXt6nZ89f0MdPn439+v2HpL58/Wb+/vLVa3r85Cmdn99tgoa3R6F+hCzYoPVG68HSh0OHAbCt8DDevH1nHpIHXO0CHGzQeJMOK+nBi4t7xjP71vcfP+nBw0fkRQs83HkcBxusNLZhWvGHItQOAegLXgYwf64DH1NEn9mCDeqGOmz4yeInxtWxhSHhjeM5RfSdYkGVzaa1FxFSpxTygIAtY0K5EyTCx8+cpxISloBdhmA7QfZNyA8iUS1oG1Blq5TeQrIwbmUYUxdQrYKfVJ8hWV4YT6gDaKVc4unLmAwJFZi6nnpuUghU2RrT3LBLhXMKoXBxXl3SJlCtAYfsKebJXYVpTySnlRD2QUsO2VTlhXA95awkIB7QxyjrDiksLhzLjBpAjTcR56mLs/BwOPxLPijHdureZAmvmrHK3pzgj7iYi3isKlcxMSjWeKZYzkXIwJxzkJRWwja1eTMksaQbw5uj3MKWJZZz2Im0lRD2aHLT+/kHBq2UozWDNzd549QW8LlMK74k6DJnUJGQLHEqy7GuEisaC5qr/oPmJgl6pTKsilgSNOvpRew42II+xa2TGPHQBOgMv+S0cmEhSh0kagVb1Ke8T9QmsSYtATpg9+ZWNIhENOWFtykDsdeSi+A0MT6LlU3rHDbGWOI1hdnMXtvqPPW7z31JFPNT8rY7K1xI4aVSSCLbwswmtgQd4QIm2NSTkkhCJfn7upSJVz1vFtQCOuJGqda+YmzW3iQflCysKQlTLCDaXjBRC2j96jClstAL2bUzSGugZGHHfFMKRYT3XrTx0EYjKFnYOcP2eQmHGUKMy9ZjOK2gZGFLjvk+JicJ6TxaUBtL2wWyoAMlDhT3KYwRrh7k2gENaRtB6Rp2wbB92NGXB6liICkGtG4ozuai8jhVTSzWmDwmC4rpf6jBSmOlJvJJHtO78KJ3srPTud1gg7UbdJgocWYXrxsPOXYBKGrXrc7q0jag9Y3CuwyMAmMfIc3HzSWgs7KLF6UFG2y82SaqGU5/yA4hxACN95Ox4PAchkIDHAMWFNGnNgs2iDXlvgrS0MkaHhC+bfjqCH8lZCsPrvUv1KCrOS+jhERlVbWBt4CVas/fd2H7B8iHeICqvZhEAAAAAElFTkSuQmCC" alt="">
+				</div>
+				<div id="_idContainer427">
+					<div style="width:560.18px;height:401.47px;position:absolute;top:0px;left:0px;-webkit-transform-origin: 0% 0%; -webkit-transform: translate(0px,1.09px) rotate(0deg) scale(0.05);transform-origin: 0% 0%; transform: translate(0px,1.09px) rotate(0deg) scale(0.05);">
+						<p class="ParaOverride-1"><span id="_idTextSpan2547" class="CharOverride-6" style="position:absolute;top:54.33px;left:169.53px;">17</span></p>
+					</div>
+				</div>
+                
+			</div>
+						  <div id="_idContainer398" style="left: 60px;position: absolute;top: 580px;  transform: none;">
+				<div id="_idContainer395">
+					<img class="_idGenObjectAttribute-1 _idGenObjectAttribute-2" src="../GK_7_CH__1-17-web-resources/image/HB3.png" alt="">
+				</div>
+				<div id="_idContainer396">
+					<img class="_idGenObjectAttribute-1 _idGenObjectAttribute-2" src="../GK_7_CH__1-17-web-resources/image/HB4.png" alt="">
+				</div>
+				<div id="_idContainer397">
+					<div style="width:auto;height:auto;position:absolute;      top: 0px;
+    left: 0px;">
+					
+<div class="text" id="text1" style="top:0px;left: 0px;">Rabindranath Tagore</div>
+<div class="text" id="text2" style="top: 18px;left: 0px;">Charles K Kao</div>
+<div class="text" id="text3" style="top: 36px;left: 0px;">Tu Youyou</div>
+<div class="text" id="text4" style="top: 0px;left: 150px;">Mohammad Yunus</div>
+<div class="text" id="text5" style="top: 18px;left: 150px;">Kailash Satyarthi</div>
+<div class="text" id="text6" style="top: 36px;left: 150px;">CV Raman</div>
+<div class="text" id="text7" style="top: 0px;left: 300px;">Malala Yousafzai</div>
+<div class="text" id="text8" style="top: 18px;left: 300px;">Wangari Maathai</div>
+<div class="text" id="text9" style="top: 36px;left: 300px;">Amartya Sen</div>
+					</div>
+				</div>
+			</div>
+		</div>
+						
+                    </div>
+					  
+                  </div>
+                  
+                  <!-- Book Pages --> 
+                  <!--Book Pages 3, 4 Start -->
+                  
+                  
+                  <!-- Book Pages --> 
+                </div>
+                <nav> <a id="bb-nav-prev" href="javascript:void(0)" onClick="PageNavigation('prev')"  class="bb-custom-icon bb-custom-icon-arrow-left">Previous</a> <a id="bb-nav-next" href="javascript:void(0)" onClick="PageNavigation('next')" class="bb-custom-icon bb-custom-icon-arrow-right">Next</a> </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article><div id="commonmodel" class="modal" style="display: none;">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span xmlns="http://www.w3.org/1999/xhtml"><img class="close" src="img/close.png" alt="" onClick="CloseModel()"></span>
+            <video width="100%" height="345" controls="controls" id="myvideo" autoplay="autoplay">
+                <source src="" type="video/mp4" id="myvideosrc">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+  <div id="commonmodel" class="modal" style="display:none;">
+<!-- Modal content -->
+<div class="modal-content"> <span xmlns="http://www.w3.org/1999/xhtml"><img class="close" src="img/close.png" alt="" onClick="CloseModel()"></span>
+  <video width="100%" height="345" controls="controls" id="myvideo" autoplay="autoplay">
+    <source src="" type="video/mp4" id="myvideosrc">
+    Your browser does not support the video tag. </video>
+</div>
+</div>
+  <!-- Charts library --> 
+    <div id="browsermodel" class="modal">
+        <div class="modal-content" style="width:685px">
+            <div class="modal-body">
+                <img src="../img/opps browser check.jpg" style=" float:left;  width: 30%; margin-top: 19px;" />
+                <img src="../img/compatible.jpg" style="  margin-top: 35px;    margin-left: 35px;" />
+                <a href="https://www.google.co.in/chrome/" target="_blank" style="    margin-left: 40px;"><img src="../img/download.png" /></a>
+            </div>
+        </div>
+    </div>
+
+
+
+  <!--  <div id="Expiredmodel" class="modal" style="background-color: hsla(0, 0%, 0%, 0.92);">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img src="../img/oopsproductvalidity.png" style="width: 100%;" />
+            </div>
+        </div>
+    </div> -->
+  
+</div>
+
+<script type="text/javascript" src="../js/jquery.fullscreen.min.js"></script> 
+<script src="../js/common.js"></script> 
+<script src="../js/standard.js"></script> 
+<script src="../js/jquery.tip.js"></script> 
+<script src="../js/jquery.contextMenu.js"></script> 
+<script type='text/javascript' src="../js/modernizr.custom.js"></script> 
+<script src="../js/jquery.modal.js"></script> 
+<script type="text/javascript" src="../js/bxslider.js"></script><!-- BX Slider --> 
+<script type='text/javascript' src="../js/jquerypp.custom.js"></script> <!-- Bookblock Custom js --> 
+<script type='text/javascript' src="../js/bookblock.js"></script> <!-- Book Block js --> 
+<script type="text/javascript" src="../js/custom.js"></script><!-- Custom js --> 
+<script src="../js/ShellFunctions.js" type="text/javascript"></script>
+<div id="modal" style="display:none"></div>
+
+
+    
+    <script>
+        function Openmodel(videono) {
+            switch (videono) {
+                case 'video1':
+                    {
+                        document.getElementById('myvideosrc').setAttribute('src', '../Videos/Pg 16/Video Tittle.mp4');
+                        SetModel();
+                        break;
+                    }
+                case 'video2':
+                    {
+                        document.getElementById('myvideosrc').setAttribute('src', '../Videos/Pg 16/Video Pic 1.mp4');
+                        SetModel();
+                        break;
+                    }
+					 case 'video3':
+                    {
+                        document.getElementById('myvideosrc').setAttribute('src', '../Videos/Pg 16/Video Pic 2.mp4');
+                        SetModel();
+                        break;
+                    }
+					 case 'video4':
+                    {
+                        document.getElementById('myvideosrc').setAttribute('src', '../Videos/Pg 17/Video Pic 1.mp4');
+                        SetModel();
+                        break;
+                    }
+					 case 'video5':
+                    {
+                        document.getElementById('myvideosrc').setAttribute('src', '../Videos/Pg 17/Video Pic 4.mp4');
+                        SetModel();
+                        break;
+                    }
+					
+            }
+        }
+
+        function SetModel() {
+            document.getElementById('commonmodel').style.display = "block";
+            $('#myvideo').attr('autoplay', true);
+            $('#myvideo').load();
+        }
+
+        function CloseModel() {
+            document.getElementById('commonmodel').style.display = "none";
+            document.getElementById("myvideo").pause();
+        }
+    </script>
+    
+    </body>
+</html>

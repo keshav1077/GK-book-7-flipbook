@@ -1,0 +1,650 @@
+﻿<!doctype html>
+<!--[if lt IE 8 ]><html lang="en" class="no-js ie ie7"><![endif]-->
+<!--[if IE 8 ]><html lang="en" class="no-js ie"><![endif]-->
+<!--[if (gt IE 8)|!(IE)]><!-->
+<html lang="en" class="no-js" id="pt">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Welcome to Eupheus</title>
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Global stylesheets -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="../css/reset.css" rel="stylesheet" type="text/css">
+<link href="../css/common.css" rel="stylesheet" type="text/css">
+<link href="../css/standard.css" rel="stylesheet" type="text/css">
+<link href="../css/block-lists.css" rel="stylesheet" type="text/css">
+<!-- Comment/uncomment one of these files to toggle between fixed and fluid layout -->
+<!--<link href="css/960.gs.css" rel="stylesheet" type="text/css">-->
+<link href="../css/960.gs.fluid.css" rel="stylesheet" type="text/css">
+<link href="../css/main-slider.css" rel="stylesheet" type="text/css">
+<link href="../css/bookblock.css" rel="stylesheet" type="text/css">
+<link href="../css/demo_bookblock.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" type="image/x-icon" href="../images/favicon.png">
+<link href="../GK_Book_7_CH_18-22_Folder-web-resources/css/idGeneratedStyles.css" rel="stylesheet" type="text/css" />
+<script src="../GK_Book_7_CH_18-22_Folder-web-resources/script/FontData.js" type="text/javascript"></script>
+<script src="../GK_1_activity-web-resources/script/FontData.js" type="text/javascript"></script>
+<script>function onDOMContentLoaded() { window.top.onFrameDOMLoaded(); } document.addEventListener("DOMContentLoaded", onDOMContentLoaded, false);</script>
+<script src="../js/jquery-1.12.1.min.js" type="text/javascript"></script>
+<script src="../js/jquery-ui.js" type="text/javascript"></script>
+<script src="../js/jquery.easing.1.3.js" type="text/javascript"></script>
+<script type="text/javascript" src="../js/jquery.line.js"></script>
+<script type="text/javascript" src="../js/p9.js"></script>
+<script src="../js/drag-drop.js" type="text/javascript"></script>
+<script src="../js/CustomFunction.js" type="text/javascript"></script>
+<style>
+.book-wrapper {
+	height: 855px;
+}
+#_idContainer382 {
+	left: 7px;
+}
+.input1 {
+	height:auto;
+	margin-top: 2px
+}
+#l1 {
+	top: 235px;
+	left: 219px;
+}
+#l2 {
+	top: 270px;
+	left: 219px;
+}
+#l3 {
+	top: 305px;
+	left: 219px;
+}
+#l4 {
+	top: 340px;
+	left: 219px;
+}
+#l5 {
+	top: 375px;
+	left: 219px;
+}
+#r1 {
+	top: 235px;
+	left: 280px;
+}
+#r2 {
+	top: 270px;
+	left: 280px;
+}
+#r3 {
+	top: 305px;
+	left: 280px;
+}
+#r4 {
+	top: 340px;
+	left: 280px;
+}
+#r5 {
+	top: 375px;
+	left: 280px;
+}
+.match11 {
+	height: 303px;
+	display:none;
+}
+.match_image1 {
+	position: absolute;
+	top: 160px;
+	left: 355px;
+}
+#mtfGame {
+	position: absolute;
+	top: 224px;
+	left: 70px;
+	z-index: 9;
+}
+</style>
+<script>
+		$(function(){
+	dragdrop('box1','text8');
+	dragdrop('box2','text2');
+	dragdrop('box3','text3');
+	dragdrop('box4','text4');
+	dragdrop('box5','text5');
+	dragdrop('box6','text6');
+	dragdrop('box7','text7');
+	dragdrop('box8','text1');
+	dragdrop('box9','text9');
+
+
+	});
+			 
+        function Openmodel(videono) {
+            switch (videono) {
+                case 'video1':
+                    {
+                        document.getElementById('myvideosrc').setAttribute('src', '../Videos/Pg 64/Video Pic 1.mp4');
+                        SetModel();
+                        break;
+                    }
+                case 'video2':
+                    {
+                        document.getElementById('myvideosrc').setAttribute('src', '../Videos/Pg 64/Video Pic 2.mp4');
+                        SetModel();
+                        break;
+                    }
+					 case 'video3':
+                    {
+                        document.getElementById('myvideosrc').setAttribute('src', '../Videos/Pg 64/Video Pic 4.mp4');
+                        SetModel();
+                        break;
+                    }
+					 case 'video4':
+                    {
+                        document.getElementById('myvideosrc').setAttribute('src', '../Videos/Pg 65/Video Pic 1.mp4');
+                        SetModel();
+                        break;
+                    }
+					 
+					 
+					
+					
+            }
+        }
+
+        function SetModel() {
+            document.getElementById('commonmodel').style.display = "block";
+            $('#myvideo').attr('autoplay', true);
+            $('#myvideo').load();
+        }
+
+        function CloseModel() {
+            document.getElementById('commonmodel').style.display = "none";
+            document.getElementById("myvideo").pause();
+        }
+    
+        function ShowAnsEx2() {
+            for (i = 1; i < 10; i++) {
+                $('#box' + i + ' span').css('visibility', 'visible');
+                $('#box' + i + ' span').css('color', '#0000ff');
+                $('#text' + i).css('visibility', 'hidden');
+            } $('.text .highlightsearch').removeClass('highlightsearch');
+        }
+
+        function ShowAnsEx1() {
+            $('#matchpage65').css('display', 'block');
+            var lines = document.getElementsByClassName("line");
+            for (var i = 0; i < lines.length; i++) {
+                lines[i].style.display = "none";
+            }
+        }
+		</script>
+</head>
+
+<body>
+<div id="et">
+  <div id="upper">
+    <header>
+      <div class="container_12">
+        <div class="">
+          <div class="server-info"> <img src="../images/logo.png" class="logo"/> </div>
+          <nav id="main-nav" class="container_10">
+            <ul>
+              <li class="home current"> <a href="#" title="WOW">General Knowledge</a> </li>
+              <li class="write"> <a href="javascript:void(0)" class="this" onClick="highlightStart()" title="Highlight Text">Highlighter</a> </li>
+              <li class="users"> <a href="#" title="Zoom" id="zoom">Zoom</a>
+                <div class="zoomdiv">
+                  <div class="block-border">
+                    <div class="block-content" style="padding-top: 2px;"> <a id="closezoom" class="float-right" style="margin-top: -9px;margin-right: 3px;"><img src="../images/icons/fugue/cross-circle.png"></a>
+                      <div class=""><a id="zoom-in"><img src="../images/icons/zoomplus.png"></a><a id="zoom-out"><img src="../images/icons/zoomminus.png"></a></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="stats"><a href="javascript:void(0)" onClick="ChangePageViewMode()" title="Page View">Page View</a></li>
+              <li class="print"><a href="#" title="Print" id="btnPrint" onClick="printDiv();">Print</a></li>
+              <li class="backup"><a href="#" title="Help" onClick="openModal(); return false;">Help</a></li>
+              <li class="fullscreen"><a href="#" class="requestfullscreen" title="Full Screen">Full Screen</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    
+    <!-- Header --> 
+    
+    <!-- End server status --> 
+    <!-- Main nav --> 
+    
+  </div>
+  <!-- End main nav -->
+  <div class="clear"></div>
+  <!-- Sub nav -->
+  <div id="sub-nav">
+    <div class="container_12">
+      <div class="">
+        <div class="grid_6">
+          <ul id="breadcrumb">
+            <li><a href="#">General Knowledge</a></li>
+            <li><a href="#">Book 7</a></li>
+          </ul>
+        </div>
+        <div class="grid_6">
+          <ul id="status-infos">
+            <li> <a href="#" class="button"><img src="../images/icons/fugue/folder.png" width="16" height="16"> <strong>24</strong></a>
+              <div id="messages-list" class="result-block"> <span class="arrow"><span></span></span>
+                <ul class="small-files-list icon-mail">
+                  <li> <a href="../Chapter_1/index.html"> <strong>Chapter </strong> 1<br>
+                    <small>In the wilderness</small> </a> </li>
+                  <li> <a href="../Chapter_2/index.html"> <strong>Chapter </strong> 2<br>
+                    <small> Endangered and extinct</small> </a> </li>
+                  <li> <a href="../Chapter_3/index.html"> <strong>Chapter </strong> 3<br>
+                    <small> Marine life </small> </a> </li>
+                  <li> <a href="../Chapter_4/index.html"> <strong>Chapter </strong> 4<br>
+                    <small> Nobel Prize</small> </a> </li>
+                  <li> <a href="../Chapter_5/index.html"> <strong>Chapter </strong> 5<br>
+                    <small> United Nations </small> </a> </li>
+                  <li> <a href="../Chapter_6/index.html"> <strong>Chapter </strong> 6<br>
+                    <small> Express yourself </small> </a> </li>
+                  <li> <a href="../Chapter_7/index.html"> <strong>Chapter </strong> 7<br>
+                    <small>Global warning </small> </a> </li>
+                  <li> <a href="../Chapter_7/index.html#page1"> <strong>Chapter </strong> 8<br>
+                    <small> Risks and thrills </small> </a> </li>
+                  <li> <a href="../Chapter_9/index.html"> <strong>Chapter </strong> 9<br>
+                    <small> Quest for discovery </small> </a> </li>
+                  <li> <a href="../Chapter_10/index.html"> <strong>Chapter </strong> 10<br>
+                    <small> Around the world </small> </a> </li>
+                  <li> <a href="../Chapter_11/index.html"> <strong>Chapter </strong> 11<br>
+                    <small>Alluring Australia </small> </a> </li>
+                  <li> <a href="../Chapter_12/index.html"> <strong>Chapter </strong> 12<br>
+                    <small> Castles, palaces, and forts </small> </a> </li>
+                  <li> <a href="../Chapter_13/index.html"> <strong>Chapter </strong> 13<br>
+                    <small> Blast from the past </small> </a> </li>
+                  <li> <a href="../Chapter_14/index.html"> <strong>Chapter </strong> 14<br>
+                    <small>War of words </small> </a> </li>
+                  <li> <a href="../Chapter_15/index.html"> <strong>Chapter </strong> 15<br>
+                    <small> Bookworm </small> </a> </li>
+                  <li> <a href="../Chapter_16/index.html"> <strong>Chapter</strong> 16<br>
+                    <small> Music euphony </small> </a> </li>
+                  <li> <a href="../Chapter_17/index.html"> <strong>Chapter </strong> 17<br>
+                    <small> Art zone </small> </a> </li>
+                  <li> <a href="../Chapter_17/index.html#page1"> <strong>Chapter </strong> 18<br>
+                    <small> Time to play </small> </a> </li>
+                  <li> <a href="../Chapter_19/index.html"> <strong>Chapter </strong> 19<br>
+                    <small> Math-a-thon </small> </a> </li>
+                  <li> <a href="../Chapter_20/index.html"> <strong>Chapter </strong> 20<br>
+                    <small> Science quiz </small> </a> </li>
+                  <li> <a href="../Chapter_21/index.html"> <strong>Chapter </strong> 21<br>
+                    <small> Tech trivia </small> </a> </li>
+                  <li> <a href="../Chapter_22/index.html"> <strong>Chapter </strong> 22<br>
+                    <small> Money, money, money </small> </a> </li>
+        
+                  <li> <a href="../Activity/index.html"> <strong>Activity 1</strong> <br>
+                    <small>Over the years</small> </a> </li>
+                  <li> <a href="../Activity/index.html#page1"> <strong>Activity 2</strong> <br>
+                    <small> Tryst with Destiny </small> </a> </li>
+        
+                  <li> <a href="../chapter23/index.html"> <strong>Chapter </strong> 23<br>
+                    <small> Champions at Tokyo Olympics 2020 </small> </a> </li>
+        
+                  <li> <a href="../chapter24/index.html"> <strong>Chapter </strong> 24<br>
+                    <small> Knowing and fighting COVID-19 </small> </a> </li>
+                  <li> <a href="../Testpapers/index.html"> <strong>Test Paper 1 </strong> <br>
+                  </a> </li>
+                  <li> <a href="../Testpapers/index.html#page1"> <strong>Test Paper 2</strong> <br>
+                  </a> </li>
+                  <li> <a href="../Testpapers/index.html#page1"> <strong>Test Paper 3</strong> <br>
+                  </a> </li>
+                  <li> <a href="../Testpapers/index.html#page2"> <strong>Test Paper 4</strong> <br>
+                  </a> </li>
+                </ul>
+                <p id="messages-info" class="result-info"><a href="javascript:void()"
+                  onclick="url('../Cover/index.html#page2');">Go to Table of Contents &raquo;</a></p>
+                </div>
+            </li>
+            <li>
+              <form id="search-form" name="search-form">
+                <input type="text" name="s" id="SearchText" value="" autocomplete="off">
+                <input type="text" name="s" id="SearchCount" value="" autocomplete="off" disabled="" class="button">
+                <div class="tooltip" id="tooltip"> <span class="tooltiptext"> Not found!</span> </div>
+                <input type="submit" onClick="SearchTextFunc()" title="Search" class="nav-button" value="Search" id="searchtextbtn/">
+              </form>
+            </li>
+            <li class="panel"><a href="#" class="button"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="header-shadow"></div>
+<!-- End header --> 
+<!-- Always visible control bar --> 
+
+<!-- End control bar --> 
+<!-- Content -->
+<div class="fullscreen1">
+  <article class="container_12" id="book">
+    <div class="grid_10">
+      <div class="block-border" id="blockborder">
+        <div class="block-content">
+          <div class="flibook_own_wrapper">
+            <div class="fullscreenicon"><a href="#" class="requestfullscreen1" title="Full Screen"><img src="../images/fullscreen.png" style="display: none"></a><a href="#" title="Exit Full Screen" class="exitfullscreen" style=""><img src="../images/icons/fullscreen.png" /></a> </div>
+            <!--Book Pages Start -->
+            
+            <div class="book-wrapper">
+              <div class="bb-custom-wrapper scene">
+                <div id="bb-bookblock" name="bb-bookblock" class="bb-bookblock book" onClick="clickonCantainer(event)" onMouseUp="mouseupContainer(event)" onMouseDown="mousedownOnContainer(event)" onMouseMove="mousemoveOnContainer(event)"> 
+                  
+                  <!--Book Pages 1, 2 Start -->
+                  <div class="bb-item active page" id="page0">
+                    <div class="bb-custom-side front first" onmouseenter="SetMarkedPageOne()">
+                      <div style="position:absolute;overflow:hidden;    z-index: 99;left:0px;top:0px;-webkit-transform:translate(0.00px,0.00px);-ms-transform:translate(0.00px,0.00px);transform:translate(0.00px,0.00px);width:612px;height:841.89px">
+                        <div id="_idContainer349"> <img class="_idGenObjectAttribute-1 _idGenObjectAttribute-2" src="../GK_Book_7_CH_18-22_Folder-web-resources/image/SCIENCE_QUIZ_a_shutterstock_83279827.png" alt="" /> </div>
+                        <div id="_idContainer353" class="Basic-Text-Frame">
+                          <div style="width:9900px;height:720px;position:absolute;top:0px;left:0px;-webkit-transform-origin: 0% 0%; -webkit-transform: translate(0px,10.37px) rotate(0deg) scale(0.05);transform-origin: 0% 0%; transform: translate(0px,10.37px) rotate(0deg) scale(0.05);">
+                            <p class="Body_Rubric-text ParaOverride-1"><span id="_idTextSpan929" class="CharOverride-4" style="position:absolute;top:248.09px;left:616.04px;">&#9;</span><span id="_idTextSpan930" class="CharOverride-4" style="position:absolute;top:248.09px;left:659.95px;letter-spacing:-1.03px;">Identify </span><span id="_idTextSpan931" class="CharOverride-4" style="position:absolute;top:248.09px;left:1647.5px;">these </span><span id="_idTextSpan932" class="CharOverride-4" style="position:absolute;top:248.09px;left:2373.81px;letter-spacing:-0.2px;">famous </span><span id="_idTextSpan933" class="CharOverride-4" style="position:absolute;top:248.09px;left:3334.48px;">scientists </span><span id="_idTextSpan934" class="CharOverride-4" style="position:absolute;top:248.09px;left:4534.25px;letter-spacing:-0.67px;">from </span><span id="_idTextSpan935" class="CharOverride-4" style="position:absolute;top:248.09px;left:5174.05px;">the </span><span id="_idTextSpan936" class="CharOverride-4" style="position:absolute;top:248.09px;left:5628.2px;">clues </span><span id="_idTextSpan937" class="CharOverride-4" style="position:absolute;top:248.09px;left:6301.03px;letter-spacing:-0.79px;">given.</span></p>
+                            <div id="_idContainer352">
+                              <div id="_idContainer350" class="Icon _idGenObjectStyle-Disabled"> <img class="_idGenObjectAttribute-1 _idGenObjectAttribute-2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADkAAAA4CAYAAABHRFAgAAAACXBIWXMAABcRAAAXEQHKJvM/AAAB60lEQVRoQ+2aXXHDMBAGA6EQMoegFMqgEAohEPJQAIFQCIEgCIFgCGHgSjNKqzo+f6df+6w+7PTlGmvTzK2b8WEcx0Mt6PPty3L3P9/RfC3gQCpW6mwZJzyEX9HvlwQOpGAlPmYEpwyWSwthOBCLO7RAcMrNcrIc0eunAAdi8IJ3gRQSdp+EF3Q9KXBAijuUPyCSiOFaQhgOSKkgGJK1oeGABH8AdNBSRG9oOICg+VS0QrShoQQQlKSiFeyGhiILgimpaMWfDQ1lFgRzU9GKCxSaEayRipoYKDUjqUnQESdJbVNRCrkkrZuKHGSStK1UxIIladupkLAsSbpSwcFLkr5UcCxK7kHQMS9JOlPB8SxJelPBYaaCmlPBYUJB7angMHtKBYd5pGIQDGvF7CkVHP1I7uXOhqOTxdNNQrq5Gejmtq6bG/RAdC8bt/N/moONqz0t/19khaKa0yKT9KJa0yKX9KIa0xIn6UW1bdwkSW1piZf0oprSkiYZiKILrI37Q5yhDBDdYlqcmFuQP8/8QBEEbSMtT2IhUEICrZOWgQTP8BST9KItNq5YrJZkrbTcUsSqSDrsQY5UJi1O7ESFnn+FA7FQekOLioXAgRRInpZrLbEQOJCKPzwn5t6ErAd1Y4ADOdBvWpqLhXwDjK1rpSL6B94AAAAASUVORK5CYII=" alt="" /> </div>
+                              <div id="_idContainer351" class="Basic-Text-Frame">
+                                <div style="width:481.04px;height:594.93px;position:absolute;top:0px;left:0px;-webkit-transform-origin: 0% 0%; -webkit-transform: translate(0px,1.37px) rotate(0deg) scale(0.05);transform-origin: 0% 0%; transform: translate(0px,1.37px) rotate(0deg) scale(0.05);">
+                                  <p class="Body_Rubric-text ParaOverride-1"><span id="_idTextSpan928" class="ABC CharOverride-5" style="position:absolute;top:58.88px;left:0px;">A.</span></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div id="_idContainer356">
+                          <div id="_idContainer354" class="Basic-Text-Frame">
+                            <div style="width:7380px;height:1623.6px;position:absolute;top:0px;left:0px;-webkit-transform-origin: 0% 0%; -webkit-transform: translate(0px,3.27px) rotate(0deg) scale(0.05);transform-origin: 0% 0%; transform: translate(0px,3.27px) rotate(0deg) scale(0.05);">
+                              <p class="Body_body-para-right-number ParaOverride-1"><span id="_idTextSpan938" class="CharOverride-3" style="position:absolute;top:-18px;left:0px;">&#9;</span><span id="_idTextSpan939" class="CharOverride-3" style="position:absolute;top:-18px;left:331.28px;letter-spacing:-1.04px;">1.&#9;</span><span id="_idTextSpan940" class="CharOverride-3" style="position:absolute;top:-18px;left:639.94px;letter-spacing:0px;">.......................................................... </span><span id="_idTextSpan941" class="CharOverride-3" style="position:absolute;top:-18px;left:3971.65px;letter-spacing:-0.66px;">was </span><span id="_idTextSpan942" class="CharOverride-3" style="position:absolute;top:-18px;left:4477.8px;">one </span><span id="_idTextSpan943" class="CharOverride-3" style="position:absolute;top:-18px;left:4948.44px;letter-spacing:-2.48px;">of </span><span id="_idTextSpan944" class="CharOverride-3" style="position:absolute;top:-18px;left:5228.99px;letter-spacing:-1.83px;">India’s </span><span id="_idTextSpan945" class="CharOverride-3" style="position:absolute;top:-18px;left:5982.58px;">most </span><span id="_idTextSpan946" class="CharOverride-3" style="position:absolute;top:342px;left:639.94px;letter-spacing:-0.51px;">beloved </span><span id="_idTextSpan947" class="CharOverride-3" style="position:absolute;top:342px;left:1560.32px;letter-spacing:-0.66px;">presidents. </span><span id="_idTextSpan948" class="CharOverride-3" style="position:absolute;top:342px;left:2823.66px;letter-spacing:-0.88px;">He </span><span id="_idTextSpan949" class="CharOverride-3" style="position:absolute;top:342px;left:3184.61px;">is </span><span id="_idTextSpan950" class="CharOverride-3" style="position:absolute;top:342px;left:3421.73px;">called </span><span id="_idTextSpan951" class="CharOverride-3" style="position:absolute;top:342px;left:4119.64px;">the </span><span id="_idTextSpan952" class="CharOverride-3" style="position:absolute;top:342px;left:4538.91px;">‘Missile </span><span id="_idTextSpan953" class="CharOverride-3" style="position:absolute;top:342px;left:5409.13px;letter-spacing:-0.66px;">Man </span><span id="_idTextSpan954" class="CharOverride-3" style="position:absolute;top:342px;left:5952.97px;letter-spacing:-2.48px;">of </span><span id="_idTextSpan955" class="CharOverride-3" style="position:absolute;top:342px;left:6233.53px;letter-spacing:-1.41px;">India’ </span><span id="_idTextSpan956" class="CharOverride-3" style="position:absolute;top:342px;left:6871.92px;letter-spacing:-2.4px;">for </span><span id="_idTextSpan957" class="CharOverride-3" style="position:absolute;top:702px;left:639.94px;letter-spacing:-0.7px;">developing </span><span id="_idTextSpan958" class="CharOverride-3" style="position:absolute;top:702px;left:1886.24px;letter-spacing:-1.83px;">India’s </span><span id="_idTextSpan959" class="CharOverride-3" style="position:absolute;top:702px;left:2639.82px;">missile </span><span id="_idTextSpan960" class="CharOverride-3" style="position:absolute;top:702px;left:3439.97px;letter-spacing:-0.52px;">technology </span><span id="_idTextSpan961" class="CharOverride-3" style="position:absolute;top:702px;left:4708.84px;">and </span><span id="_idTextSpan962" class="CharOverride-3" style="position:absolute;top:702px;left:5180.67px;">ballistic </span><span id="_idTextSpan963" class="CharOverride-3" style="position:absolute;top:702px;left:6062.65px;letter-spacing:-0.72px;">programs </span><span id="_idTextSpan964" class="CharOverride-3" style="position:absolute;top:1062px;left:639.94px;">including </span><span id="_idTextSpan965" class="CharOverride-3" style="position:absolute;top:1062px;left:1672.16px;">the </span><span id="_idTextSpan966" class="Italics-Manual CharOverride-3" style="position:absolute;top:1062px;left:2091.44px;letter-spacing:-0.62px;">Agni </span><span id="_idTextSpan967" class="CharOverride-3" style="position:absolute;top:1062px;left:2632.15px;">and </span><span id="_idTextSpan968" class="Italics-Manual CharOverride-3" style="position:absolute;top:1062px;left:3103.98px;letter-spacing:-0.51px;">Prithvi </span><span id="_idTextSpan969" class="CharOverride-3" style="position:absolute;top:1062px;left:3855.17px;">missiles </span><span id="_idTextSpan970" class="CharOverride-3" style="position:absolute;top:1062px;left:4776.04px;">and </span><span id="_idTextSpan971" class="CharOverride-3" style="position:absolute;top:1062px;left:5243.79px;">the </span><span id="_idTextSpan972" class="Italics-Manual CharOverride-3" style="position:absolute;top:1062px;left:5663.06px;letter-spacing:-0.6px;">Pokhran </span><span id="_idTextSpan973" class="Italics-Manual CharOverride-3" style="position:absolute;top:1062px;left:6617.29px;">II </span><span id="_idTextSpan974" class="CharOverride-3" style="position:absolute;top:1422px;left:639.94px;letter-spacing:-0.69px;">nuclear </span><span id="_idTextSpan975" class="CharOverride-3" style="position:absolute;top:1422px;left:1503.68px;">tests. </span></p>
+                            </div>
+                          </div>
+                          <div id="_idContainer355" class="SHADEBOX _idGenObjectStyle-Disabled"> <img class="_idGenObjectAttribute-1 _idGenObjectAttribute-2" src="../GK_Book_7_CH_18-22_Folder-web-resources/image/A-P-J-Abdul-Kalam.png" alt="" /> <img xmlns="http://www.w3.org/1999/xhtml" src="img/video.png" class="vdo_icon" alt="vdo_icon" onClick="Openmodel('video1')" style="top: 44px;left: 0;"> </div>
+                        </div>
+                        <div id="_idContainer357" class="Basic-Text-Frame">
+                          <div style="width:9864.57px;height:903.6px;position:absolute;top:0px;left:0px;-webkit-transform-origin: 0% 0%; -webkit-transform: translate(0px,3.27px) rotate(0deg) scale(0.05);transform-origin: 0% 0%; transform: translate(0px,3.27px) rotate(0deg) scale(0.05);">
+                            <p class="Body_body-para-right-number ParaOverride-1"><span id="_idTextSpan976" class="CharOverride-3" style="position:absolute;top:-18px;left:0px;">&#9;</span><span id="_idTextSpan977" class="CharOverride-3" style="position:absolute;top:-18px;left:261.2px;">2.&#9;</span><span id="_idTextSpan978" class="CharOverride-3" style="position:absolute;top:-18px;left:639.94px;letter-spacing:0px;">.......................................................... </span><span id="_idTextSpan979" class="CharOverride-3" style="position:absolute;top:-18px;left:3971.65px;letter-spacing:-0.66px;">was </span><span id="_idTextSpan980" class="CharOverride-3" style="position:absolute;top:-18px;left:4477.8px;">an </span><span id="_idTextSpan981" class="CharOverride-3" style="position:absolute;top:-18px;left:4810.2px;">Indian-American </span><span id="_idTextSpan982" class="CharOverride-3" style="position:absolute;top:-18px;left:6665.86px;letter-spacing:-0.62px;">physicist </span><span id="_idTextSpan983" class="CharOverride-3" style="position:absolute;top:-18px;left:7675.28px;">who </span><span id="_idTextSpan984" class="CharOverride-3" style="position:absolute;top:-18px;left:8207.83px;letter-spacing:-1.47px;">received </span><span id="_idTextSpan985" class="CharOverride-3" style="position:absolute;top:-18px;left:9188.94px;">the </span><span id="_idTextSpan986" class="CharOverride-3" style="position:absolute;top:342px;left:639.94px;">1983 </span><span id="_idTextSpan987" class="CharOverride-3" style="position:absolute;top:342px;left:1167.92px;letter-spacing:-0.78px;">Physics </span><span id="_idTextSpan988" class="CharOverride-3" style="position:absolute;top:342px;left:2041.03px;letter-spacing:-0.44px;">Nobel </span><span id="_idTextSpan989" class="CharOverride-3" style="position:absolute;top:342px;left:2739.18px;letter-spacing:-0.76px;">Prize </span><span id="_idTextSpan990" class="CharOverride-3" style="position:absolute;top:342px;left:3336.3px;letter-spacing:-2.4px;">for </span><span id="_idTextSpan991" class="CharOverride-3" style="position:absolute;top:342px;left:3710.45px;">his </span><span id="_idTextSpan992" class="CharOverride-3" style="position:absolute;top:342px;left:4077.88px;letter-spacing:-0.58px;">work </span><span id="_idTextSpan993" class="CharOverride-3" style="position:absolute;top:342px;left:4686.75px;">on </span><span id="_idTextSpan994" class="CharOverride-3" style="position:absolute;top:342px;left:5020.58px;">the </span><span id="_idTextSpan995" class="CharOverride-3" style="position:absolute;top:342px;left:5439.86px;letter-spacing:-0.96px;">study </span><span id="_idTextSpan996" class="CharOverride-3" style="position:absolute;top:342px;left:6106.08px;letter-spacing:-2.48px;">of </span><span id="_idTextSpan997" class="CharOverride-3" style="position:absolute;top:342px;left:6382.56px;">the </span><span id="_idTextSpan998" class="CharOverride-3" style="position:absolute;top:342px;left:6801.83px;letter-spacing:-0.65px;">structure </span><span id="_idTextSpan999" class="CharOverride-3" style="position:absolute;top:342px;left:7866.93px;">and </span><span id="_idTextSpan1000" class="CharOverride-3" style="position:absolute;top:342px;left:8338.77px;letter-spacing:-0.77px;">evolution </span><span id="_idTextSpan1001" class="CharOverride-3" style="position:absolute;top:342px;left:9394.27px;letter-spacing:-2.48px;">of </span><span id="_idTextSpan1002" class="CharOverride-3" style="position:absolute;top:702px;left:639.94px;letter-spacing:-0.21px;">stars, </span><span id="_idTextSpan1003" class="CharOverride-3" style="position:absolute;top:702px;left:1310.24px;">as </span><span id="_idTextSpan1004" class="CharOverride-3" style="position:absolute;top:702px;left:1619.84px;letter-spacing:-0.58px;">well </span><span id="_idTextSpan1005" class="CharOverride-3" style="position:absolute;top:702px;left:2119.99px;">as </span><span id="_idTextSpan1006" class="CharOverride-3" style="position:absolute;top:702px;left:2434.14px;">his </span><span id="_idTextSpan1007" class="CharOverride-3" style="position:absolute;top:702px;left:2806.14px;letter-spacing:-0.96px;">study </span><span id="_idTextSpan1008" class="CharOverride-3" style="position:absolute;top:702px;left:3472.37px;letter-spacing:-2.48px;">of </span><span id="_idTextSpan1009" class="CharOverride-3" style="position:absolute;top:702px;left:3752.92px;">black </span><span id="_idTextSpan1010" class="CharOverride-3" style="position:absolute;top:702px;left:4384.59px;">holes.</span></p>
+                          </div>
+                        </div>
+                        <div id="_idContainer358" class="SHADE-BOX1 _idGenObjectStyle-Disabled"> <img class="_idGenObjectAttribute-1 _idGenObjectAttribute-2" src="../GK_Book_7_CH_18-22_Folder-web-resources/image/vikram_sarabhai.png" alt="" /> <img xmlns="http://www.w3.org/1999/xhtml" src="img/video.png" class="vdo_icon" alt="vdo_icon" onClick="Openmodel('video2')" style="top: 0;    left: 94px;transform: rotate(660deg);"> </div>
+                        <div id="_idContainer359" class="Basic-Text-Frame">
+                          <div style="width:7403.53px;height:1676.69px;position:absolute;top:0px;left:0px;-webkit-transform-origin: 0% 0%; -webkit-transform: translate(0px,3.27px) rotate(0deg) scale(0.05);transform-origin: 0% 0%; transform: translate(0px,3.27px) rotate(0deg) scale(0.05);">
+                            <p class="Body_body-para-right-number ParaOverride-1"><span id="_idTextSpan1011" class="CharOverride-3" style="position:absolute;top:-18px;left:0px;">&#9;</span><span id="_idTextSpan1012" class="CharOverride-3" style="position:absolute;top:-18px;left:257.6px;letter-spacing:-1.28px;">3.&#9;</span><span id="_idTextSpan1013" class="CharOverride-3" style="position:absolute;top:-18px;left:639.94px;letter-spacing:0px;">.......................................................... </span><span id="_idTextSpan1014" class="CharOverride-3" style="position:absolute;top:-18px;left:3976.21px;">is </span><span id="_idTextSpan1015" class="CharOverride-3" style="position:absolute;top:-18px;left:4213.32px;letter-spacing:-0.48px;">known </span><span id="_idTextSpan1016" class="CharOverride-3" style="position:absolute;top:-18px;left:4996.19px;">as </span><span id="_idTextSpan1017" class="CharOverride-3" style="position:absolute;top:-18px;left:5306.27px;">the </span><span id="_idTextSpan1018" class="CharOverride-3" style="position:absolute;top:-18px;left:5725.54px;letter-spacing:-3.39px;">Father </span><span id="_idTextSpan1019" class="CharOverride-3" style="position:absolute;top:-18px;left:6476.73px;letter-spacing:-2.48px;">of </span><span id="_idTextSpan1020" class="CharOverride-3" style="position:absolute;top:342px;left:639.94px;">the </span><span id="_idTextSpan1021" class="CharOverride-3" style="position:absolute;top:342px;left:1059.21px;">Indian </span><span id="_idTextSpan1022" class="CharOverride-3" style="position:absolute;top:342px;left:1786.16px;letter-spacing:-0.68px;">Space </span><span id="_idTextSpan1023" class="CharOverride-3" style="position:absolute;top:342px;left:2506.87px;letter-spacing:-0.93px;">Program. </span><span id="_idTextSpan1024" class="CharOverride-3" style="position:absolute;top:342px;left:3567.89px;letter-spacing:-0.88px;">He </span><span id="_idTextSpan1025" class="CharOverride-3" style="position:absolute;top:342px;left:3928.85px;">established </span><span id="_idTextSpan1026" class="CharOverride-3" style="position:absolute;top:342px;left:5230.83px;">the </span><span id="_idTextSpan1027" class="CharOverride-3" style="position:absolute;top:342px;left:5650.1px;">Indian </span><span id="_idTextSpan1028" class="CharOverride-3" style="position:absolute;top:342px;left:6377.05px;letter-spacing:-0.68px;">Space </span><span id="_idTextSpan1029" class="CharOverride-3" style="position:absolute;top:702px;left:639.94px;letter-spacing:-1.17px;">Research </span><span id="_idTextSpan1030" class="CharOverride-3" style="position:absolute;top:702px;left:1713.2px;letter-spacing:-0.66px;">Organisation </span><span id="_idTextSpan1031" class="CharOverride-3" style="position:absolute;top:702px;left:3183.42px;letter-spacing:-1.82px;">(ISRO) </span><span id="_idTextSpan1032" class="CharOverride-3" style="position:absolute;top:702px;left:3933.66px;">and </span><span id="_idTextSpan1033" class="CharOverride-3" style="position:absolute;top:702px;left:4400.93px;letter-spacing:-0.66px;">was </span><span id="_idTextSpan1034" class="CharOverride-3" style="position:absolute;top:702px;left:4907.08px;letter-spacing:-0.11px;">instrumental </span><span id="_idTextSpan1035" class="CharOverride-3" style="position:absolute;top:702px;left:6343.94px;">in </span><span id="_idTextSpan1036" class="CharOverride-3" style="position:absolute;top:702px;left:6595.22px;">the </span><span id="_idTextSpan1037" class="CharOverride-3" style="position:absolute;top:1062px;left:639.94px;letter-spacing:-0.76px;">development </span><span id="_idTextSpan1038" class="CharOverride-3" style="position:absolute;top:1062px;left:2117.11px;letter-spacing:-2.48px;">of </span><span id="_idTextSpan1039" class="CharOverride-3" style="position:absolute;top:1062px;left:2393.59px;">the </span><span id="_idTextSpan1040" class="CharOverride-3" style="position:absolute;top:1062px;left:2812.86px;letter-spacing:-0.81px;">program </span><span id="_idTextSpan1041" class="CharOverride-3" style="position:absolute;top:1062px;left:3814.61px;">that </span><span id="_idTextSpan1042" class="CharOverride-3" style="position:absolute;top:1062px;left:4319.8px;">launched </span><span id="_idTextSpan1043" class="CharOverride-3" style="position:absolute;top:1062px;left:5371.7px;letter-spacing:-1.83px;">India’s </span><span id="_idTextSpan1044" class="CharOverride-3" style="position:absolute;top:1062px;left:6121.93px;text-rendering:optimizeLegibility;letter-spacing:-0.24px;">first </span><span id="_idTextSpan1045" class="CharOverride-3" style="position:absolute;top:1422px;left:639.94px;">satellite, </span><span id="_idTextSpan1046" class="Italics-Manual CharOverride-3" style="position:absolute;top:1422px;left:1616.72px;letter-spacing:-0.4px;">Aryabhata</span><span id="_idTextSpan1047" class="CharOverride-3" style="position:absolute;top:1422px;left:2743.98px;">.</span></p>
+                          </div>
+                        </div>
+                        <div id="_idContainer360" class="SHADEBOX _idGenObjectStyle-Disabled"> <img class="_idGenObjectAttribute-1 _idGenObjectAttribute-2" src="../GK_Book_7_CH_18-22_Folder-web-resources/image/janaki_ammal_original.png" alt="" /> </div>
+                        <div id="_idContainer361" class="Basic-Text-Frame">
+                          <div style="width:7313.84px;height:1623.6px;position:absolute;top:0px;left:0px;-webkit-transform-origin: 0% 0%; -webkit-transform: translate(0px,3.27px) rotate(0deg) scale(0.05);transform-origin: 0% 0%; transform: translate(0px,3.27px) rotate(0deg) scale(0.05);">
+                            <p class="Body_body-para-right-number ParaOverride-1"><span id="_idTextSpan1048" class="CharOverride-3" style="position:absolute;top:-18px;left:0px;">&#9;</span><span id="_idTextSpan1049" class="CharOverride-3" style="position:absolute;top:-18px;left:261.68px;letter-spacing:-0.8px;">4.&#9;</span><span id="_idTextSpan1050" class="CharOverride-3" style="position:absolute;top:-18px;left:639.94px;letter-spacing:0px;">.......................................................... </span><span id="_idTextSpan1051" class="CharOverride-3" style="position:absolute;top:-18px;left:3971.65px;letter-spacing:-0.66px;">was </span><span id="_idTextSpan1052" class="CharOverride-3" style="position:absolute;top:-18px;left:4477.8px;letter-spacing:-3px;">a </span><span id="_idTextSpan1053" class="CharOverride-3" style="position:absolute;top:-18px;left:4669.32px;letter-spacing:-0.24px;">botanist </span><span id="_idTextSpan1054" class="CharOverride-3" style="position:absolute;top:-18px;left:5616.11px;">who </span><span id="_idTextSpan1055" class="CharOverride-3" style="position:absolute;top:342px;left:639.94px;">specialised </span><span id="_idTextSpan1056" class="CharOverride-3" style="position:absolute;top:342px;left:1902.32px;">in </span><span id="_idTextSpan1057" class="CharOverride-3" style="position:absolute;top:342px;left:2153.59px;">the </span><span id="_idTextSpan1058" class="CharOverride-3" style="position:absolute;top:342px;left:2572.86px;letter-spacing:-0.96px;">study </span><span id="_idTextSpan1059" class="CharOverride-3" style="position:absolute;top:342px;left:3239.09px;letter-spacing:-2.48px;">of </span><span id="_idTextSpan1060" class="CharOverride-3" style="position:absolute;top:342px;left:3515.57px;">the </span><span id="_idTextSpan1061" class="CharOverride-3" style="position:absolute;top:342px;left:3934.84px;letter-spacing:-0.54px;">chromosomes </span><span id="_idTextSpan1062" class="CharOverride-3" style="position:absolute;top:342px;left:5540.18px;letter-spacing:-2.48px;">of </span><span id="_idTextSpan1063" class="CharOverride-3" style="position:absolute;top:342px;left:5820.74px;letter-spacing:-0.18px;">plants. </span><span id="_idTextSpan1064" class="CharOverride-3" style="position:absolute;top:702px;left:639.94px;letter-spacing:-0.27px;">Invited </span><span id="_idTextSpan1065" class="CharOverride-3" style="position:absolute;top:702px;left:1439.36px;letter-spacing:-3.12px;">by </span><span id="_idTextSpan1066" class="CharOverride-3" style="position:absolute;top:702px;left:1762.88px;letter-spacing:-0.32px;">Prime </span><span id="_idTextSpan1067" class="CharOverride-3" style="position:absolute;top:702px;left:2457.19px;letter-spacing:-0.61px;">Minister </span><span id="_idTextSpan1068" class="CharOverride-3" style="position:absolute;top:702px;left:3407.81px;letter-spacing:-0.44px;">Nehru </span><span id="_idTextSpan1069" class="CharOverride-3" style="position:absolute;top:702px;left:4136.21px;">to </span><span id="_idTextSpan1070" class="CharOverride-3" style="position:absolute;top:702px;left:4425.64px;">head </span><span id="_idTextSpan1071" class="CharOverride-3" style="position:absolute;top:702px;left:5026.11px;">the </span><span id="_idTextSpan1072" class="CharOverride-3" style="position:absolute;top:702px;left:5445.38px;letter-spacing:-0.22px;">Botanical </span><span id="_idTextSpan1073" class="CharOverride-3" style="position:absolute;top:1062px;left:639.94px;letter-spacing:-2.09px;">Survey </span><span id="_idTextSpan1074" class="CharOverride-3" style="position:absolute;top:1062px;left:1439.37px;letter-spacing:-2.48px;">of </span><span id="_idTextSpan1075" class="CharOverride-3" style="position:absolute;top:1062px;left:1719.93px;">India, </span><span id="_idTextSpan1076" class="CharOverride-3" style="position:absolute;top:1062px;left:2370.8px;">she </span><span id="_idTextSpan1077" class="CharOverride-3" style="position:absolute;top:1062px;left:2820.31px;">also </span><span id="_idTextSpan1078" class="CharOverride-3" style="position:absolute;top:1062px;left:3327.42px;letter-spacing:-0.77px;">developed </span><span id="_idTextSpan1079" class="CharOverride-3" style="position:absolute;top:1062px;left:4516.84px;letter-spacing:-3px;">a </span><span id="_idTextSpan1080" class="CharOverride-3" style="position:absolute;top:1062px;left:4708.36px;">high-yielding </span><span id="_idTextSpan1081" class="CharOverride-3" style="position:absolute;top:1062px;left:6173.54px;letter-spacing:-1.17px;">variety </span><span id="_idTextSpan1082" class="CharOverride-3" style="position:absolute;top:1062px;left:6983.28px;letter-spacing:-2.48px;">of </span><span id="_idTextSpan1083" class="CharOverride-3" style="position:absolute;top:1422px;left:639.94px;letter-spacing:-0.65px;">sugarcane </span><span id="_idTextSpan1084" class="CharOverride-3" style="position:absolute;top:1422px;left:1835.36px;">that </span><span id="_idTextSpan1085" class="CharOverride-3" style="position:absolute;top:1422px;left:2340.55px;letter-spacing:-0.99px;">brought </span><span id="_idTextSpan1086" class="CharOverride-3" style="position:absolute;top:1422px;left:3265.73px;letter-spacing:-1.08px;">great </span><span id="_idTextSpan1087" class="CharOverride-3" style="position:absolute;top:1422px;left:3910.6px;letter-spacing:-1.11px;">prosperity </span><span id="_idTextSpan1088" class="CharOverride-3" style="position:absolute;top:1422px;left:5087.06px;">to </span><span id="_idTextSpan1089" class="CharOverride-3" style="position:absolute;top:1422px;left:5373.13px;letter-spacing:-0.16px;">farmers. </span></p>
+                          </div>
+                        </div>
+                        <div id="_idContainer371">
+                          <div id="_idContainer362" class="_idGenObjectStyle-Disabled"> <img class="_idGenObjectAttribute-1 _idGenObjectAttribute-2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA9IAAABxCAYAAAA585sDAAAACXBIWXMAABcRAAAXEQHKJvM/AAAEVUlEQVR4Xu3XwXEaQRBAUUIgFEJwCA5hQ3AoCoEQ7AwUAldnofNc8GJkUypJNC3Y3ZnZd3i3qe6e49+U37+eR0cAAABYyMtodzweNy3YFCENAADA8pqJaSENAABALZqIaSENAABATU4x/S2K2SUJaQAAAGo0REG7FCENAABArYYoapcgpAEAAKjZEIXt3IQ0AAAAtRuiuJ2TkAYAAKAFQxS4cxHSAAAAtOJHFLlzENIAAAC0ZB+F7tSENAAAAK1ZNKaFNAAAAC1aLKaFNAAAAK1aJKaFNAAAAC2bPaaFNAAAAK2bNaaFNAAAAD04jLZRBD+CkAYAAKAXs8S0kAYAAKAnk8e0kAYAAKA3k8a0kAYAAKBHk8W0kAYAAKBXk8S0kAYAAKBnL6NdFMcZQhoAAIDePTSmhTQAAABr8LCYFtIAAACsxUNiWkgDAACwJnfH9OZ1SLQIAAAAenFXTG9uWAAAAAC9OcX0EEWzkAYAAIC30jEtpAEAAFi7VEwLaQAAAEjEtJAGAACAs5tiWkgDAADARRjTQhoAAADeehLSAAAAkLMX0gAAAJDzYUwLaQAAAPjcu5gW0gAAAHDdXkgDAABAzl5IAwAAQM7P0VZIAwAAwO0OQhoAAAAShDQAAAAkCGkAAABIENIAAACQIKQBAAAgQUgDAABAgpAGAACABCENAAAACUIaAAAAEoQ0AAAAJAhpAAAASBDSAAAAkCCkAQAAIEFIAwAAQIKQBgAAgAQhDQAAAAlCGgAAABKENAAAACQIaQAAAEgQ0gAAAJAgpAEAACBBSAMAAECCkAYAAIAEIQ0AAAAJQhoAAAAShDQAAAAkCGkAAABIENIAAACQIKQBAAAg4RTSh+gRAAAAcHYK6W0R0wAAAHCTzfH4P6b30WMAAABYu78h/U8R0wAAAHDVm5AW0wAAAHDdu5AW0wAAAPC5D0NaTAMAAMDHPg1pMQ0AAADvXQ3p15j+EQ0BAACAtQhD+jWmh2gQAAAArEEY0WIaAAAALsKAFtMAAABwEcazmAYAAICLMJzFNAAAAFyE0Xwlpr+PXqIFAAAA0JMwmIOY3hUxDQAAwIqEsRwpYhoAAIAVCUP5FkVMAwAAsBJhJN+qiGkAAABWIAzkjCKmAQAA6FwYx1nlHNOHaDEAAAC0KAzjrxgHb4uYBgAAoENhFH9VEdMAAAB0KAziexQxDQAAQGfCGL5XEdMAAAB0JAzhRyhiGgAAgE6EEfwo5RzTz9FBAAAAULMwgB9tXLqPjgIAAIBaheE7hSKmAQAAaFQYvVMpYhoAAIAGhcE7pSKmAQAAaEwYu1MrYhoAAICGhKE7h/GQp+hQAAAAqEEYuXMZjxmiYwEAAGBpYeDOqYhpAAAAKhfG7dyKmAYAAKBiYdguoYhpAAAAKhVG7VKKmAYAAKBCYdAuqYhpAAAAKhPG7NLGI3ejl+gjAAAAMIcwZGtQxDQAAACVCCO2FkVMAwAAUIE/Lw6BrwAvx8AAAAAASUVORK5CYII=" alt="" /> </div>
+                          <div id="_idContainer365">
+                            <div id="_idContainer363" class="_idGenObjectStyle-Disabled"> <img class="_idGenObjectAttribute-1 _idGenObjectAttribute-2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOAAAABECAYAAACYoDkZAAAACXBIWXMAABcRAAAXEQHKJvM/AAAEtElEQVR4Xu3dwZXaMBDG8S2BEiiBElwCJbgESqAESqAE0oFL4JqbS9jzXAiDrSC08ozt2GiT/A+/l5ddDZZkfZbYDS8f8vPHrdfeHe42t9vtI+f+vf3dZ1ST2iftW6Ptdeha969v+2sd75qk7pK0PRrXaOJrOG3b/vvW+HcyPKZj1GboGqld8vrW3N7672/u6hGvHZyie+e1jdVJ39L7kNpFbasRrx/ma9O3t+5NLF1julauRvs2ae/17Zq572P6pvdmm/TLu5+PhukXG2MBWgNVVbJYvU4fBq4ztMjVaeLCqCe0Vdb4rfrryBscix8OY+umLNZgN6L/X66TjN1rf56y8NJryLgHxOMBFNXotXQurPXSJOMYM3fnpOY8oualbmxNbmKtBTj0QjoxtSS7h9iBPQ9cozZqdAGlu8boXVm6h4IuYGty5o4/3QG0X9bC+HICkG7s1lge45du4VXyDKNVc5FnAEOdtzhOEj3N+1qrRq9/SK6h4zd3Jnm9N1pXiz1nh6RPWuON/5ypORntHzXy9eF4Mdp/9v1I10Dj1NQfmW8cZyzAaqB9NaPmOFRj9GtooM2Mmjnjz9bI+8Y/VDNn/FbNO8Y/WDNj/FbN6uMfU0MAlxl/tkbeN34COL1m9fGPqck1CMfJKjHUYdVKd+SI23tHkCZTU4t9BLkk7ZVOvnUEOWZqrCPI4ziVqbGOINrndM50bNacXWX6+JukvdK+WuM/ZWqORvtwnEprzk7N1PG3kl8z3vhzc2YeQZP2YfxT14w3/tya8cafPYICeBMCCBREAIGCCCBQEAEECiKAQEEEECiIAAIFEUCgIAIIFEQAgYIIIFAQAQQKIoBAQQQQKIgAAgURQKAgAggURACBggggUBABBAoigEBBBBAoiAACBRFAoCACCBREAIGCCCBQEAEECiKAQEEEECiIAAIFEUCgIAIIFEQAgYI0gNb/4w5gRRrAs9cIwDo0gLXXCMA6NIBbrxGAdXzcbrwPBEoJATx4DQEsLwSQYyhQwCOAfQgvXmMAy4oDWHmNASzrdwD7EDZeAYDlpAHceQUAlvMSwD6ER68IwDK+BJDfCwLvMxTAzV3rFQP4M9kARu8HCSGwosEARjshPxkFVmIGMAqifmKC3RBYmBu+JIh76T4/yA9pgAW4oTPCqMdT/dcz+msLDSVHVWAiN2hzSPcDnJNwbAVMbpj+lHS7pO6Qn15nVqbHZt2l9R+dHxP6cayqt898/yLs8FiBG6AlyXNxN9GfasmdUoMeQqaB2nr9mkKeu3vpBwr+Ae6Ceyd53YHCruMt9LZvq7vYzrvGUqR7D/y/fYRL5zo8PLf9PIQfzHn3CRnuQvtOpPvgsIb0bUHzyL/zKxoNUDiRaKA0ZL+P5iPmQR9IOhff7aEUHhjat6q3yfS9isRvQ8JGsMo9dhcYxpHnTrDKjRohDlCQe78bL7StN665+tc/yOsiDmGIv3Z1xjWVzoPeh73XxznkuQnUmbGc5HWuXe4FMY907xXDQk9vlLeIclp5BmovmSf530yegT3L9IfYZz83tXed78ZtgHVIF9Bw1Gnk9f1u+Ls+UWtZcaf6rqTbacL8pMfAeH5W2ene5RddupJR1S8NkwAAAABJRU5ErkJggg==" alt="" /> </div>
+                            <div id="_idContainer364" class="Basic-Text-Frame">
+                              <div style="width:1884.76px;height:288px;position:absolute;top:0px;left:0px;-webkit-transform-origin: 0% 0%; -webkit-transform: translate(0px,7.55px) rotate(0deg) scale(0.05);transform-origin: 0% 0%; transform: translate(0px,7.55px) rotate(0deg) scale(0.05);">
+                                <p class="Body_Rubric_Did-you-know ParaOverride-1"><span id="_idTextSpan1090" class="CharOverride-2" style="position:absolute;top:-12.32px;left:0px;">Did </span><span id="_idTextSpan1091" class="CharOverride-2" style="position:absolute;top:-12.32px;left:420.83px;letter-spacing:-5.11px;">you </span><span id="_idTextSpan1092" class="CharOverride-2" style="position:absolute;top:-12.32px;left:971.57px;letter-spacing:-6.86px;">know</span></p>
+                              </div>
+                            </div>
+                          </div>
+                          <div id="_idContainer366">
+                            <div style="width:8605.98px;height:707.68px;position:absolute;top:0px;left:0px;-webkit-transform-origin: 0% 0%; -webkit-transform: translate(0px,3.27px) rotate(0deg) scale(0.05);transform-origin: 0% 0%; transform: translate(0px,3.27px) rotate(0deg) scale(0.05);">
+                              <p class="Body_Did-You-Know ParaOverride-1"><span id="_idTextSpan1093" class="CharOverride-3" style="position:absolute;top:-18px;left:0px;letter-spacing:-4.25px;">Twenty </span><span id="_idTextSpan1094" class="CharOverride-3" style="position:absolute;top:-18px;left:840.48px;letter-spacing:-0.88px;">years </span><span id="_idTextSpan1095" class="CharOverride-3" style="position:absolute;top:-18px;left:1506.71px;letter-spacing:-2.48px;">of </span><span id="_idTextSpan1096" class="CharOverride-3" style="position:absolute;top:-18px;left:1787.26px;letter-spacing:-1.38px;">Sir </span><span id="_idTextSpan1097" class="CharOverride-3" style="position:absolute;top:-18px;left:2131.42px;letter-spacing:-0.52px;">Isaac </span><span id="_idTextSpan1098" class="CharOverride-3" style="position:absolute;top:-18px;left:2761.65px;letter-spacing:-1.87px;">Newton’s </span><span id="_idTextSpan1099" class="CharOverride-3" style="position:absolute;top:-18px;left:3839.24px;letter-spacing:-0.58px;">work </span><span id="_idTextSpan1100" class="CharOverride-3" style="position:absolute;top:-18px;left:4443.55px;letter-spacing:-0.66px;">was </span><span id="_idTextSpan1101" class="CharOverride-3" style="position:absolute;top:-18px;left:4949.71px;letter-spacing:-1.42px;">destroyed </span><span id="_idTextSpan1102" class="CharOverride-3" style="position:absolute;top:-18px;left:6110.57px;letter-spacing:-0.92px;">after </span><span id="_idTextSpan1103" class="CharOverride-3" style="position:absolute;top:-18px;left:6702.4px;">his </span><span id="_idTextSpan1104" class="CharOverride-3" style="position:absolute;top:-18px;left:7074.39px;">dog </span><span id="_idTextSpan1105" class="CharOverride-3" style="position:absolute;top:-18px;left:7555.82px;letter-spacing:-0.18px;">Diamond </span><span id="_idTextSpan1106" class="CharOverride-3" style="position:absolute;top:342px;left:0px;letter-spacing:-1.05px;">knocked </span><span id="_idTextSpan1107" class="CharOverride-3" style="position:absolute;top:342px;left:960.23px;letter-spacing:-1.92px;">over </span><span id="_idTextSpan1108" class="CharOverride-3" style="position:absolute;top:342px;left:1504.78px;letter-spacing:-3px;">a </span><span id="_idTextSpan1109" class="CharOverride-3" style="position:absolute;top:342px;left:1696.3px;">candle </span><span id="_idTextSpan1110" class="CharOverride-3" style="position:absolute;top:342px;left:2477.97px;">and </span><span id="_idTextSpan1111" class="CharOverride-3" style="position:absolute;top:342px;left:2949.8px;">set </span><span id="_idTextSpan1112" class="CharOverride-3" style="position:absolute;top:342px;left:3347.47px;text-rendering:optimizeLegibility;letter-spacing:-1.3px;">fire </span><span id="_idTextSpan1113" class="CharOverride-3" style="position:absolute;top:342px;left:3765.78px;">to </span><span id="_idTextSpan1114" class="CharOverride-3" style="position:absolute;top:342px;left:4055.21px;">his </span><span id="_idTextSpan1115" class="CharOverride-3" style="position:absolute;top:342px;left:4427.21px;letter-spacing:-0.13px;">manuscripts! </span></p>
+                            </div>
+                          </div>
+                          <div id="_idContainer367" class="Icon"> <img class="_idGenObjectAttribute-1 _idGenObjectAttribute-2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA6sAAAAGCAYAAAAliAgoAAAACXBIWXMAABcRAAAXEQHKJvM/AAAARUlEQVR4Xu3XMREAMAzEsPAJo7IuogZCt9wPGrSZgOuefgAAAJCkfgEAAABsM6sAAADEMasAAADEMasAAADEMasAAADEGVcMVahgOlaXAAAAAElFTkSuQmCC" alt="" /> </div>
+                          <div id="_idContainer370">
+                            <div id="_idContainer368" class="_idGenObjectStyle-Disabled"> <img class="_idGenObjectAttribute-1 _idGenObjectAttribute-2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAA1CAYAAADCvfKlAAAACXBIWXMAABcRAAAXEQHKJvM/AAADFUlEQVRoQ+2YzZGzMAyGUwIl7F72nBIoISVQQkqgBEqgBBrQDCW4BEqgg3wWWEEY2ZJJJvsd9vBO1llbeqy/hFwej8elVPD98+XVeHVeo9fDa/Zy4W8ufK8P+yvNNpe6IQK6CwCzAJTT4FVr/kxwAao3OC0VRvx6Cs4frF6AmoJoPQfx90htERzeKBgqTRkHIZgYaobjXkz1oR4lsMYAIDnSRJAucc5l4RhYiVNKYekZKc29CAdr4eOBMajEGTl0II+TnOJ6bCS40WDIqlz6LKDVE84vavZPzUCppA6VgPi643DvjNoZUVpRVFIVr7XSqJXut4qa5U4dqoVeEt2WXyxuBr5Hs8fhBq8R4TrDAQskGrzBWr+oPtqD6Srp5FmqtzMpfra/YaCjPwTPZQv9O4IrDT2/RCuBMcBeOEuQA+y/cu0YLiegONyUAwtwV8XHBPuU097pVbhOgwuAORup9VJzZzsVdTOAVQZ7McOu5rTD/BCHuxvgsCkcfB+ilIKkHljgOsMhCXIpaAMc2XdgCwTZXubcDWy3SikbPTimzFJGC4+1JiTR+EnWHazDmCJhDcBzHxmxhpv/3YLyqAfrjCPbmNZc1GL7My/aeKN0U2eBCjavzAYVeQwRa4Jt3vXcmBS9Gbb0maAie9ZUSpC31E1pAzpoNBAB7G4AiIPg+BrtSKlog/EvDSIBVjOHGlQM2MEalPYA96pgi36u8CUofHVsvT1DvEOwzkuqz5KoTbA1ApZRSzZVp5pgnZMdc+ZAHxkxvCNx26pzBaxmt44datHjZ+h198OOCpCBikePFrFcFFFN7EcFiaAayM8vLVop9ZI/FYhFyjFjZyHMYCVwFC0nGD8julz2G40KxuA0hxoMjRlaq9+iVbBCOGoIirLUwQMYP6PVDYVwBEBQjp3F11rzdRauZEzEgNkfpt8BpwFJgHjOlMJX4Eq7lKLcarbfAZcbvCmN/zPc8Ek4DUbSH1wKTkv1r8LlNH0KrnSUUFQ/AmcB+TU4LXL844rrI3CWmpsEwI/AdQEwVg/rQ7ikBk4+mJP+ATOct8yEy3fnAAAAAElFTkSuQmCC" alt="" /> </div>
+                            <div id="_idContainer369" class="_idGenObjectStyle-Disabled"> <img class="_idGenObjectAttribute-1 _idGenObjectAttribute-2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAABcRAAAXEQHKJvM/AAAAmElEQVQ4T2P4//8/AzLeq6hWAMQXgPg/EgbxJwCxArp6ZI0GQPwATSM23IBhAFTzByI0w/ACdAMekGgA3CUwPxNSjAsrgAxADzBS8AQGIhThwwcoNeA/JQaAAv4BuQbAYu0AOYEIi26QIQXkRuMGqEECIAME9hKXhNFxAfWSMgmZCWQJZmZCMgTknQQgPoDmIhAfFFYY2RkAoLIRJBuWjP0AAAAASUVORK5CYII=" alt="" /> </div>
+                          </div>
+                        </div>
+                        <div id="_idContainer372" class="Basic-Text-Frame">
+                          <div style="width:9864.57px;height:1440px;position:absolute;top:0px;left:0px;-webkit-transform-origin: 0% 0%; -webkit-transform: translate(0px,3.27px) rotate(0deg) scale(0.05);transform-origin: 0% 0%; transform: translate(0px,3.27px) rotate(0deg) scale(0.05);">
+                            <p class="Body_body-para-right-number ParaOverride-1"><span id="_idTextSpan1116" class="CharOverride-3" style="position:absolute;top:-18px;left:0px;">&#9;</span><span id="_idTextSpan1117" class="CharOverride-3" style="position:absolute;top:-18px;left:264.08px;letter-spacing:-1.28px;">5.&#9;</span><span id="_idTextSpan1118" class="CharOverride-3" style="position:absolute;top:-18px;left:639.94px;letter-spacing:0px;">.......................................................... </span><span id="_idTextSpan1119" class="CharOverride-3" style="position:absolute;top:-18px;left:3971.65px;letter-spacing:-0.66px;">was </span><span id="_idTextSpan1120" class="CharOverride-3" style="position:absolute;top:-18px;left:4477.8px;">an </span><span id="_idTextSpan1121" class="CharOverride-3" style="position:absolute;top:-18px;left:4810.2px;">ornithologist </span><span id="_idTextSpan1122" class="CharOverride-3" style="position:absolute;top:-18px;left:6243.69px;">who </span><span id="_idTextSpan1123" class="CharOverride-3" style="position:absolute;top:-18px;left:6776.24px;">is </span><span id="_idTextSpan1124" class="CharOverride-3" style="position:absolute;top:-18px;left:7013.36px;letter-spacing:-0.48px;">known </span><span id="_idTextSpan1125" class="CharOverride-3" style="position:absolute;top:-18px;left:7796.23px;">as </span><span id="_idTextSpan1126" class="CharOverride-3" style="position:absolute;top:-18px;left:8106.3px;">the </span><span id="_idTextSpan1127" class="CharOverride-3" style="position:absolute;top:-18px;left:8525.57px;letter-spacing:-1.44px;">‘Bird </span><span id="_idTextSpan1128" class="CharOverride-3" style="position:absolute;top:-18px;left:9080.68px;letter-spacing:-0.66px;">Man </span><span id="_idTextSpan1129" class="CharOverride-3" style="position:absolute;top:-18px;left:9624.52px;letter-spacing:-2.48px;">of </span><span id="_idTextSpan1130" class="CharOverride-3" style="position:absolute;top:342px;left:639.94px;letter-spacing:-4.65px;">India’. </span><span id="_idTextSpan1131" class="CharOverride-3" style="position:absolute;top:342px;left:1310.72px;">His </span><span id="_idTextSpan1132" class="CharOverride-3" style="position:absolute;top:342px;left:1713.44px;text-rendering:optimizeLegibility;letter-spacing:-0.51px;">efforts </span><span id="_idTextSpan1133" class="CharOverride-3" style="position:absolute;top:342px;left:2497.02px;">led </span><span id="_idTextSpan1134" class="CharOverride-3" style="position:absolute;top:342px;left:2885.57px;">to </span><span id="_idTextSpan1135" class="CharOverride-3" style="position:absolute;top:342px;left:3170.92px;">the </span><span id="_idTextSpan1136" class="CharOverride-3" style="position:absolute;top:342px;left:3590.19px;letter-spacing:-0.72px;">creation </span><span id="_idTextSpan1137" class="CharOverride-3" style="position:absolute;top:342px;left:4545.86px;letter-spacing:-2.48px;">of </span><span id="_idTextSpan1138" class="CharOverride-3" style="position:absolute;top:342px;left:4822.34px;">the </span><span id="_idTextSpan1139" class="CharOverride-3" style="position:absolute;top:342px;left:5241.61px;letter-spacing:-0.7px;">Bharatpur </span><span id="_idTextSpan1140" class="CharOverride-3" style="position:absolute;top:342px;left:6400.55px;letter-spacing:-1.73px;">Bird </span><span id="_idTextSpan1141" class="CharOverride-3" style="position:absolute;top:342px;left:6896.38px;letter-spacing:-0.94px;">Sanctuary. </span><span id="_idTextSpan1142" class="CharOverride-3" style="position:absolute;top:342px;left:8101.64px;letter-spacing:-2.04px;">After </span><span id="_idTextSpan1143" class="CharOverride-3" style="position:absolute;top:342px;left:8704.02px;letter-spacing:-0.41px;">extensive </span><span id="_idTextSpan1144" class="CharOverride-3" style="position:absolute;top:702px;left:639.94px;letter-spacing:-1.3px;">research, </span><span id="_idTextSpan1145" class="CharOverride-3" style="position:absolute;top:702px;left:1713.68px;">he </span><span id="_idTextSpan1146" class="CharOverride-3" style="position:absolute;top:702px;left:2046.56px;">published </span><span id="_idTextSpan1147" class="CharOverride-3" style="position:absolute;top:702px;left:3155.1px;">the </span><span id="_idTextSpan1148" class="CharOverride-3" style="position:absolute;top:702px;left:3574.37px;">most </span><span id="_idTextSpan1149" class="CharOverride-3" style="position:absolute;top:702px;left:4187.8px;letter-spacing:-0.94px;">comprehensive </span><span id="_idTextSpan1150" class="CharOverride-3" style="position:absolute;top:702px;left:5904.26px;">book </span><span id="_idTextSpan1151" class="CharOverride-3" style="position:absolute;top:702px;left:6502.09px;">on </span><span id="_idTextSpan1152" class="CharOverride-3" style="position:absolute;top:702px;left:6840px;letter-spacing:-0.34px;">sub-continental </span><span id="_idTextSpan1153" class="CharOverride-3" style="position:absolute;top:702px;left:8608.78px;letter-spacing:-1.2px;">birds </span><span id="_idTextSpan1154" class="CharOverride-3" style="position:absolute;top:702px;left:9212.6px;">called </span><span id="_idTextSpan1155" class="CharOverride-3" style="position:absolute;top:1062px;left:639.94px;">the </span><span id="_idTextSpan1156" class="Italics-Manual CharOverride-3" style="position:absolute;top:1062px;left:1059.21px;letter-spacing:-0.29px;">Handbook </span><span id="_idTextSpan1157" class="Italics-Manual CharOverride-3" style="position:absolute;top:1062px;left:2226.55px;letter-spacing:-2.48px;">of </span><span id="_idTextSpan1158" class="Italics-Manual CharOverride-3" style="position:absolute;top:1062px;left:2503.03px;">the </span><span id="_idTextSpan1159" class="Italics-Manual CharOverride-3" style="position:absolute;top:1062px;left:2922.3px;letter-spacing:-1.44px;">Birds </span><span id="_idTextSpan1160" class="Italics-Manual CharOverride-3" style="position:absolute;top:1062px;left:3534.77px;letter-spacing:-2.48px;">of </span><span id="_idTextSpan1161" class="Italics-Manual CharOverride-3" style="position:absolute;top:1062px;left:3815.33px;letter-spacing:-1px;">India </span><span id="_idTextSpan1162" class="Italics-Manual CharOverride-3" style="position:absolute;top:1062px;left:4401.4px;">and </span><span id="_idTextSpan1163" class="Italics-Manual CharOverride-3" style="position:absolute;top:1062px;left:4873.24px;letter-spacing:-0.32px;">Pakistan.</span></p>
+                          </div>
+                        </div>
+                        <div id="_idContainer373"> <img class="_idGenObjectAttribute-1 _idGenObjectAttribute-2" src="../GK_Book_7_CH_18-22_Folder-web-resources/image/tree.png" alt="" /> </div>
+                        <div id="_idContainer374"> <img class="_idGenObjectAttribute-1 _idGenObjectAttribute-2" src="../GK_Book_7_CH_18-22_Folder-web-resources/image/frame_21.png" alt="" /> </div>
+                        <div id="_idContainer375"> <img class="_idGenObjectAttribute-1 _idGenObjectAttribute-2" src="../GK_Book_7_CH_18-22_Folder-web-resources/image/stone.png" alt="" /> </div>
+                        <div id="_idContainer376" class="Basic-Text-Frame">
+                          <div style="width:7674.65px;height:479.51px;position:absolute;top:0px;left:0px;-webkit-transform-origin: 0% 0%; -webkit-transform: translate(0px,6.8px) rotate(0deg) scale(0.05);transform-origin: 0% 0%; transform: translate(0px,6.8px) rotate(0deg) scale(0.05);">
+                            <p class="Body_CH ParaOverride-1"><span id="_idTextSpan1164" class="CharOverride-1" style="position:absolute;top:-17.65px;left:0px;letter-spacing:13.5px;-webkit-transform-origin: 0% 497.16px;-webkit-transform:matrix(0.84,0,0,1,0,0);transform-origin: 0% 497.16px;transform:matrix(0.84,0,0,1,0,0);">20. </span><span id="_idTextSpan1165" class="CharOverride-1" style="position:absolute;top:-17.65px;left:956.32px;letter-spacing:15.75px;-webkit-transform-origin: 0% 497.16px;-webkit-transform:matrix(0.84,0,0,1,0,0);transform-origin: 0% 497.16px;transform:matrix(0.84,0,0,1,0,0);">Science </span><span id="_idTextSpan1166" class="CharOverride-1" style="position:absolute;top:-17.65px;left:3034.36px;letter-spacing:13.5px;-webkit-transform-origin: 0% 497.16px;-webkit-transform:matrix(0.84,0,0,1,0,0);transform-origin: 0% 497.16px;transform:matrix(0.84,0,0,1,0,0);">quiz</span></p>
+                          </div>
+                        </div>
+                        <div id="_idContainer379">
+                          <div id="_idContainer377" class="Icon"> <img class="_idGenObjectAttribute-1 _idGenObjectAttribute-2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADoAAAA6CAYAAADhu0ooAAAACXBIWXMAABcRAAAXEQHKJvM/AAADZUlEQVRoQ+1bgXGrMAx9I2QERsgIjJARGCEjMEJHYISOwAgZISN0g3wEFpaN4Zk2aXHu9+5dwJZkyZJsGSgejwdegeGvHnAd8DGgH3Ab8Ihwd32fA1rHc2KyvwNKkAtRcEDjlP5KGLUHMikySRUbNxeUgEGUweS12Lg7Qk8JThHvGaHnU14XGTXTg4ESrDJOHuwSxonCZ8ZP5DbOQCu7/4nBlGBFGfHA17OU2BincpNpx5IJ2J3HlCAxcG8Gvb3CwMS4cfSI4RfGF8hgBGaw2sys/F4Zz7OBKadtHn8wnpmXEbgBmsiLFeN5JTCtA6qPeJqGco7QZq/Q30Bi8jf12iOsY4P/NhCm0+cmLRFyWCMVmPKW6rnGXJmZWmU+CqLIa5I0K4w9MmP/KMBUgT2cgxYFS4rhusVwZFgHLfoiwhN8yP76PvlTIEy5JuiLCLu1GSkFUQjPaWcJKviErpnAIwPT4UIu2rnNdKo3eybo6IBfhe9zm+nU2K6ZoBJgvNqM965xMQOlAz5Xx4pJG/WQm30aODoQrjknbdSwLWrfZIA/0l3kpn63sFXAH+fkd66ENqv/EuE8Oe4k1uqWMZYGhHk614c1YywR1tDbmxuq9vklmDGVCBOxk6GMoVT8N/TdYA294w2rIoU1VC9qxlQi4MvbuaAv7tFJDjQ15aJ1F29zclHA1/G34IYxlgbjxE5uTsa9b1U0wK8/V23QMqlhzKUgcmCljXpU65mAUgD/eGhMSW2srPVMSAkwUTruJrajdx0dE3J0IHwTOK47qc7gCXeJSDmNEpSGyJvV3L5BVGTtC5+bXdCeINSSsLgCAisvmMa+BLF9dVhMWRhF4+IbpDWmi2Fq2CB/DYTvRZOPbbeY9TGooGaD/RVcBGpeym9yx2BCOviYP9ziFBkpOlartDsEHSqMMYWrNXLTETkCxVhdiQUt43k1sPwukUYbFWqEd8bYHn9UE8NvIZqTWXpQgmiQJprJlvE8C86LNo0kyrJLVUqQGPCM8JvdO16Yu85AO55M8GKfZKAEGwo0CL+MFoNlS6oYLwP85+bWQEGHHV4MZDKCDIVa+GfDNnfE6Euu4Zg81yaMUwOz5KzKZwS5QPqD/9j4PgEbFTH9Fd/04EI/RrAXmLwsnvxA2jtbE9Hhyf/vovgHPDmind2/PCIAAAAASUVORK5CYII=" alt="" /> </div>
+                          <div id="_idContainer378">
+                            <div style="width:560.18px;height:401.47px;position:absolute;top:0px;left:0px;-webkit-transform-origin: 0% 0%; -webkit-transform: translate(0px,1.09px) rotate(0deg) scale(0.05);transform-origin: 0% 0%; transform: translate(0px,1.09px) rotate(0deg) scale(0.05);">
+                              <p class="ParaOverride-1"><span id="_idTextSpan1167" class="CharOverride-6" style="position:absolute;top:54.33px;left:117.37px;">64</span></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div id="_idContainer380" class="SHADE-BOX1 _idGenObjectStyle-Disabled"> <img class="_idGenObjectAttribute-1 _idGenObjectAttribute-2" src="../GK_Book_7_CH_18-22_Folder-web-resources/image/Homi-Jahangir-Bhabha.png" alt="" /><img xmlns="http://www.w3.org/1999/xhtml" src="img/video.png" class="vdo_icon" alt="vdo_icon" onClick="Openmodel('video3')" style="top: 0;    left: 94px;transform: rotate(660deg);"> </div>
+                        <div id="_idContainer381" class="Basic-Text-Frame">
+                          <div style="width:7344.57px;height:1360.35px;position:absolute;top:0px;left:0px;-webkit-transform-origin: 0% 0%; -webkit-transform: translate(0px,3.27px) rotate(0deg) scale(0.05);transform-origin: 0% 0%; transform: translate(0px,3.27px) rotate(0deg) scale(0.05);">
+                            <p class="Body_body-para-right-number ParaOverride-1"><span id="_idTextSpan1168" class="CharOverride-3" style="position:absolute;top:-18px;left:0px;">&#9;</span><span id="_idTextSpan1169" class="CharOverride-3" style="position:absolute;top:-18px;left:253.04px;letter-spacing:-1.28px;">6.&#9;</span><span id="_idTextSpan1170" class="CharOverride-3" style="position:absolute;top:-18px;left:639.94px;letter-spacing:-3.6px;">A </span><span id="_idTextSpan1171" class="CharOverride-3" style="position:absolute;top:-18px;left:847.53px;letter-spacing:-0.69px;">nuclear </span><span id="_idTextSpan1172" class="CharOverride-3" style="position:absolute;top:-18px;left:1715.36px;letter-spacing:-0.57px;">physicist, </span><span id="_idTextSpan1173" class="CharOverride-3" style="position:absolute;top:-18px;left:2788.14px;">.......................................................... </span><span id="_idTextSpan1174" class="CharOverride-3" style="position:absolute;top:-18px;left:6124.41px;">is </span><span id="_idTextSpan1175" class="CharOverride-3" style="position:absolute;top:-18px;left:6361.53px;letter-spacing:-0.48px;">known </span><span id="_idTextSpan1176" class="CharOverride-3" style="position:absolute;top:342px;left:639.94px;">as </span><span id="_idTextSpan1177" class="CharOverride-3" style="position:absolute;top:342px;left:950.01px;">the </span><span id="_idTextSpan1178" class="CharOverride-3" style="position:absolute;top:342px;left:1365.92px;letter-spacing:-0.79px;">father </span><span id="_idTextSpan1179" class="CharOverride-3" style="position:absolute;top:342px;left:2092.63px;letter-spacing:-2.48px;">of </span><span id="_idTextSpan1180" class="CharOverride-3" style="position:absolute;top:342px;left:2369.11px;">the </span><span id="_idTextSpan1181" class="CharOverride-3" style="position:absolute;top:342px;left:2788.38px;">Indian </span><span id="_idTextSpan1182" class="CharOverride-3" style="position:absolute;top:342px;left:3515.33px;letter-spacing:-0.69px;">Nuclear </span><span id="_idTextSpan1183" class="CharOverride-3" style="position:absolute;top:342px;left:4419.4px;letter-spacing:-0.93px;">Program. </span><span id="_idTextSpan1184" class="CharOverride-3" style="position:absolute;top:342px;left:5480.42px;">His </span><span id="_idTextSpan1185" class="CharOverride-3" style="position:absolute;top:342px;left:5883.13px;letter-spacing:-0.93px;">ground-</span><span id="_idTextSpan1186" class="CharOverride-3" style="position:absolute;top:702px;left:639.94px;letter-spacing:-0.72px;">breaking </span><span id="_idTextSpan1187" class="CharOverride-3" style="position:absolute;top:702px;left:1641.44px;letter-spacing:-0.82px;">theory </span><span id="_idTextSpan1188" class="CharOverride-3" style="position:absolute;top:702px;left:2417.35px;letter-spacing:-2.48px;">of </span><span id="_idTextSpan1189" class="CharOverride-3" style="position:absolute;top:702px;left:2697.91px;">scattering </span><span id="_idTextSpan1190" class="CharOverride-3" style="position:absolute;top:702px;left:3864.28px;letter-spacing:-2.48px;">of </span><span id="_idTextSpan1191" class="CharOverride-3" style="position:absolute;top:702px;left:4144.84px;letter-spacing:-0.72px;">positron </span><span id="_idTextSpan1192" class="CharOverride-3" style="position:absolute;top:702px;left:5107.22px;letter-spacing:-3.12px;">by </span><span id="_idTextSpan1193" class="CharOverride-3" style="position:absolute;top:702px;left:5430.74px;letter-spacing:-0.65px;">electrons </span><span id="_idTextSpan1194" class="CharOverride-3" style="position:absolute;top:702px;left:6503.52px;">is </span><span id="_idTextSpan1195" class="CharOverride-3" style="position:absolute;top:1062px;left:639.94px;">named </span><span id="_idTextSpan1196" class="CharOverride-3" style="position:absolute;top:1062px;left:1451.85px;letter-spacing:-0.92px;">after </span><span id="_idTextSpan1197" class="CharOverride-3" style="position:absolute;top:1062px;left:2043.67px;">him.</span></p>
+                          </div>
+                        </div>
+                        <div class="input1" id="box6" style="top: 190px;left: 84px;width: 163px;"><span>APJ Abdul Kalam</span></div>
+                        <div class="input1" id="box9" style="top: 289px;left: 77px;width: 172px;"><span>Subrahmanyan Chandrasekhar</span></div>
+                        <div class="input1" id="box2" style="top: 446px;left: 84px;width: 163px;"><span>Janaki Ammal</span></div>
+                        <div class="input1" id="box1" style="top: 350px;left: 203px;width: 166px;"><span>Vikram Sarabhai</span></div>
+                        <div class="input1" id="box7" style="top: 542px;left: 83px;width: 165px;"><span>Salim Ali</span></div>
+                        <div class="input1" id="box8" style="top: 619px;left: 316px;width: 165px;"><span>Homi Bhaba</span></div>
+                      </div>
+                    </div>
+                    <div class="bb-custom-side second back" onmouseenter="SetMarkedPageSecond()">
+                      <div class="secondsub" style="position:absolute;left:-4px;top:0px;-webkit-transform:translate(612px,0.00px);-ms-transform:translate(612px,0.00px);transform:translate(612px,0.00px);width:612px;height:841.89px">
+                        <div id="_idContainer382"> <img class="_idGenObjectAttribute-1 _idGenObjectAttribute-2" src="../GK_Book_7_CH_18-22_Folder-web-resources/image/SCIENCE_QUIZ_a_shutterstock_832798271.png" alt="" /> </div>
+                        <div id="_idContainer386">
+                          <div id="_idContainer383"> <img class="_idGenObjectAttribute-1 _idGenObjectAttribute-2" src="../GK_Book_7_CH_18-22_Folder-web-resources/image/HB11.png" alt="" /> </div>
+                          <div id="_idContainer384"> <img class="_idGenObjectAttribute-1 _idGenObjectAttribute-2" src="../GK_Book_7_CH_18-22_Folder-web-resources/image/HB12.png" alt="" /> </div>
+                          <div id="_idContainer385">
+                            <div style="width:8891.17px;height:1060.42px;position:absolute;top:0px;left:0px;-webkit-transform-origin: 0% 0%; -webkit-transform: translate(0px,3.27px) rotate(0deg) scale(0.05);transform-origin: 0% 0%; transform: translate(0px,3.27px) rotate(0deg) scale(0.05);">
+                              <p class="Body_Body- ParaOverride-1"><span id="_idTextSpan1198" class="CharOverride-3" style="position:absolute;top:-18px;left:0px;letter-spacing:-0.53px;"></span><span id="_idTextSpan1199" class="CharOverride-3" style="position:absolute;top:-18px;left:628.55px;letter-spacing:-1.24px;"></span><span id="_idTextSpan1200" class="CharOverride-3" style="position:absolute;top:-18px;left:2520px;letter-spacing:-1px;"></span><span id="_idTextSpan1201" class="CharOverride-3" style="position:absolute;top:-18px;left:3240.23px;"></span><span id="_idTextSpan1202" class="CharOverride-3" style="position:absolute;top:-18px;left:5220px;"></span><span id="_idTextSpan1203" class="CharOverride-3" style="position:absolute;top:-18px;left:5861.51px;"></span></p>
+                              <p class="Body_Body- ParaOverride-1"><span id="_idTextSpan1204" class="CharOverride-3" style="position:absolute;top:342px;left:0px;letter-spacing:-0.41px;"></span><span id="_idTextSpan1205" class="CharOverride-3" style="position:absolute;top:342px;left:740.15px;"></span><span id="_idTextSpan1206" class="CharOverride-3" style="position:absolute;top:342px;left:2520px;letter-spacing:-0.52px;"></span><span id="_idTextSpan1207" class="CharOverride-3" style="position:absolute;top:342px;left:3067.91px;letter-spacing:-0.86px;"></span><span id="_idTextSpan1208" class="CharOverride-3" style="position:absolute;top:342px;left:5220px;"></span><span id="_idTextSpan1209" class="CharOverride-3" style="position:absolute;top:342px;left:6039.35px;"></span></p>
+                              <p class="Body_Body- ParaOverride-1"><span id="_idTextSpan1210" class="CharOverride-3" style="position:absolute;top:702px;left:0px;letter-spacing:-5.96px;"></span><span id="_idTextSpan1211" class="CharOverride-3" style="position:absolute;top:702px;left:650.87px;letter-spacing:-0.24px;"></span><span id="_idTextSpan1212" class="CharOverride-3" style="position:absolute;top:702px;left:2520px;letter-spacing:-5.58px;"></span><span id="_idTextSpan1213" class="CharOverride-3" style="position:absolute;top:702px;left:2957.27px;"> </span><span id="_idTextSpan1214" class="CharOverride-3" style="position:absolute;top:702px;left:3640.78px;"></span><span id="_idTextSpan1215" class="CharOverride-3" style="position:absolute;top:702px;left:5220px;letter-spacing:-0.59px;"></span><span id="_idTextSpan1216" class="CharOverride-3" style="position:absolute;top:702px;left:6918.46px;letter-spacing:-0.42px;"></span></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div id="_idContainer394">
+                          <div id="_idContainer387"> <img class="_idGenObjectAttribute-1 _idGenObjectAttribute-2" src="../GK_Book_7_CH_18-22_Folder-web-resources/image/frame_5.png" alt="" /> </div>
+                          <div id="_idContainer388"> <img class="_idGenObjectAttribute-1 _idGenObjectAttribute-2" src="data:image/png;base64,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" alt="" /> </div>
+                          <div id="_idContainer391">
+                            <div id="_idContainer389" class="_idGenObjectStyle-Disabled"> <img class="_idGenObjectAttribute-1 _idGenObjectAttribute-2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAV0AAAACCAYAAAD7Jw8hAAAACXBIWXMAABcRAAAXEQHKJvM/AAAAUUlEQVRIS2NgSJ+VAMQbgPj/KCYJHxjFZOGGUUwyLgBih1FMMjb4//8/w2DDCEb6LAGG0QJ4FNMGX2AgXBiPYlQMyocNo5hkHMBAuDAeSGwAAPTJy8vSprtzAAAAAElFTkSuQmCC" alt="" /> </div>
+                            <div id="_idContainer390" class="Basic-Text-Frame">
+                              <div style="width:3064.84px;height:288px;position:absolute;top:0px;left:0px;-webkit-transform-origin: 0% 0%; -webkit-transform: translate(0px,3.91px) rotate(0deg) scale(0.05);transform-origin: 0% 0%; transform: translate(0px,3.91px) rotate(0deg) scale(0.05);">
+                                <p class="Body_Rubric_Let’s-Think- ParaOverride-1"><span id="_idTextSpan1217" class="CharOverride-9" style="position:absolute;top:-14.08px;left:0px;letter-spacing:-3.68px;">Let’s </span><span id="_idTextSpan1218" class="CharOverride-9" style="position:absolute;top:-14.08px;left:727.67px;">Think!</span></p>
+                              </div>
+                            </div>
+                          </div>
+                          <div id="_idContainer392">
+                            <div style="width:6753.7px;height:1040.35px;position:absolute;top:0px;left:0px;-webkit-transform-origin: 0% 0%; -webkit-transform: translate(0px,3.27px) rotate(0deg) scale(0.05);transform-origin: 0% 0%; transform: translate(0px,3.27px) rotate(0deg) scale(0.05);">
+                              <p class="Body_LETS-THINK-TEXT ParaOverride-1"><span id="_idTextSpan1219" class="Italics-Manual CharOverride-3" style="position:absolute;top:-18px;left:0px;letter-spacing:-0.42px;">The </span><span id="_idTextSpan1220" class="Italics-Manual CharOverride-3" style="position:absolute;top:-18px;left:464.4px;letter-spacing:-0.18px;">Quantum </span><span id="_idTextSpan1221" class="Italics-Manual CharOverride-3" style="position:absolute;top:-18px;left:1553.27px;">Indians,</span><span id="_idTextSpan1222" class="CharOverride-3" style="position:absolute;top:-18px;left:2390.38px;"> </span><span id="_idTextSpan1223" class="CharOverride-3" style="position:absolute;top:-18px;left:2455.65px;letter-spacing:-0.72px;">released </span><span id="_idTextSpan1224" class="CharOverride-3" style="position:absolute;top:-18px;left:3451.88px;">in </span><span id="_idTextSpan1225" class="CharOverride-3" style="position:absolute;top:-18px;left:3707.23px;letter-spacing:-0.64px;">2013, </span><span id="_idTextSpan1226" class="CharOverride-3" style="position:absolute;top:-18px;left:4288.26px;">is </span><span id="_idTextSpan1227" class="CharOverride-3" style="position:absolute;top:-18px;left:4525.37px;letter-spacing:-3px;">a </span><span id="_idTextSpan1228" class="CharOverride-3" style="position:absolute;top:-18px;left:4713.53px;text-rendering:optimizeLegibility;">film </span><span id="_idTextSpan1229" class="CharOverride-3" style="position:absolute;top:-18px;left:5176.49px;">about </span><span id="_idTextSpan1230" class="CharOverride-3" style="position:absolute;top:342px;left:0px;">the </span><span id="_idTextSpan1231" class="CharOverride-3" style="position:absolute;top:342px;left:419.27px;letter-spacing:-0.82px;">life </span><span id="_idTextSpan1232" class="CharOverride-3" style="position:absolute;top:342px;left:808.54px;">and </span><span id="_idTextSpan1233" class="CharOverride-3" style="position:absolute;top:342px;left:1275.82px;letter-spacing:-0.48px;">works </span><span id="_idTextSpan1234" class="CharOverride-3" style="position:absolute;top:342px;left:2001.32px;letter-spacing:-2.48px;">of </span><span id="_idTextSpan1235" class="CharOverride-3" style="position:absolute;top:342px;left:2277.8px;letter-spacing:-1.08px;">three </span><span id="_idTextSpan1236" class="CharOverride-3" style="position:absolute;top:342px;left:2919.07px;">Indian </span><span id="_idTextSpan1237" class="CharOverride-3" style="position:absolute;top:342px;left:3646.02px;letter-spacing:-0.12px;">scientists. </span><span id="_idTextSpan1238" class="CharOverride-3" style="position:absolute;top:342px;left:4788.88px;">Find </span><span id="_idTextSpan1239" class="CharOverride-3" style="position:absolute;top:342px;left:5311.35px;">out </span><span id="_idTextSpan1240" class="CharOverride-3" style="position:absolute;top:342px;left:5732.06px;">the </span><span id="_idTextSpan1241" class="CharOverride-3" style="position:absolute;top:702px;left:0px;">names </span><span id="_idTextSpan1242" class="CharOverride-3" style="position:absolute;top:702px;left:789.11px;letter-spacing:-2.48px;">of </span><span id="_idTextSpan1243" class="CharOverride-3" style="position:absolute;top:702px;left:1065.59px;">the </span><span id="_idTextSpan1244" class="CharOverride-3" style="position:absolute;top:702px;left:1484.86px;letter-spacing:-0.13px;">scientists </span><span id="_idTextSpan1245" class="CharOverride-3" style="position:absolute;top:702px;left:2571.32px;">and </span><span id="_idTextSpan1246" class="CharOverride-3" style="position:absolute;top:702px;left:3038.59px;">what </span><span id="_idTextSpan1247" class="CharOverride-3" style="position:absolute;top:702px;left:3647.94px;letter-spacing:-1.82px;">they </span><span id="_idTextSpan1248" class="CharOverride-3" style="position:absolute;top:702px;left:4186.98px;letter-spacing:-1.62px;">are </span><span id="_idTextSpan1249" class="CharOverride-3" style="position:absolute;top:702px;left:4603.13px;">famous </span><span id="_idTextSpan1250" class="CharOverride-3" style="position:absolute;top:702px;left:5479.36px;letter-spacing:-4.08px;">for.</span></p>
+                            </div>
+                          </div>
+                          <div id="_idContainer393" class="Icon _idGenObjectStyle-Disabled"> <img class="_idGenObjectAttribute-1 _idGenObjectAttribute-2" src="data:image/png;base64,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" alt="" /> </div>
+                        </div>
+                        <div id="_idContainer395" class="Basic-Text-Frame">
+                          <div style="width:9864.57px;height:1026.43px;position:absolute;top:0px;left:0px;-webkit-transform-origin: 0% 0%; -webkit-transform: translate(0px,3.27px) rotate(0deg) scale(0.05);transform-origin: 0% 0%; transform: translate(0px,3.27px) rotate(0deg) scale(0.05);">
+                            <p class="Body_body-para-right-number ParaOverride-1"><span id="_idTextSpan1251" class="CharOverride-3" style="position:absolute;top:-18px;left:0px;">&#9;</span><span id="_idTextSpan1252" class="CharOverride-3" style="position:absolute;top:-18px;left:292.16px;letter-spacing:-6.72px;">7.&#9;</span><span id="_idTextSpan1253" class="CharOverride-3" style="position:absolute;top:-18px;left:639.94px;letter-spacing:-3.6px;">A </span><span id="_idTextSpan1254" class="CharOverride-3" style="position:absolute;top:-18px;left:847.53px;letter-spacing:0px;">chemist </span><span id="_idTextSpan1255" class="CharOverride-3" style="position:absolute;top:-18px;left:1767.92px;letter-spacing:-3.12px;">by </span><span id="_idTextSpan1256" class="CharOverride-3" style="position:absolute;top:-18px;left:2091.43px;letter-spacing:0px;">education, </span><span id="_idTextSpan1257" class="CharOverride-3" style="position:absolute;top:-18px;left:3291.41px;">.......................................................... </span><span id="_idTextSpan1258" class="CharOverride-3" style="position:absolute;top:-18px;left:6623.13px;letter-spacing:-0.66px;">was </span><span id="_idTextSpan1259" class="CharOverride-3" style="position:absolute;top:-18px;left:7125.2px;">the </span><span id="_idTextSpan1260" class="CharOverride-3" style="position:absolute;top:-18px;left:7541.12px;text-rendering:optimizeLegibility;letter-spacing:-0.24px;">first </span><span id="_idTextSpan1261" class="CharOverride-3" style="position:absolute;top:-18px;left:8034.3px;letter-spacing:-0.48px;">woman </span><span id="_idTextSpan1262" class="CharOverride-3" style="position:absolute;top:-18px;left:8899.49px;">to </span><span id="_idTextSpan1263" class="CharOverride-3" style="position:absolute;top:-18px;left:9188.93px;">be </span><span id="_idTextSpan1264" class="CharOverride-3" style="position:absolute;top:342px;left:639.94px;letter-spacing:-1.39px;">accorded </span><span id="_idTextSpan1265" class="CharOverride-3" style="position:absolute;top:342px;left:1713.93px;letter-spacing:-3px;">a </span><span id="_idTextSpan1266" class="CharOverride-3" style="position:absolute;top:342px;left:1905.44px;letter-spacing:-0.79px;">Doctor </span><span id="_idTextSpan1267" class="CharOverride-3" style="position:absolute;top:342px;left:2713.75px;letter-spacing:-2.48px;">of </span><span id="_idTextSpan1268" class="CharOverride-3" style="position:absolute;top:342px;left:2994.31px;letter-spacing:-0.33px;">Science </span><span id="_idTextSpan1269" class="CharOverride-3" style="position:absolute;top:342px;left:3885.66px;">title by an Indian university. She is best known for the </span><span id="_idTextSpan1279" class="CharOverride-3" style="position:absolute;top:702px;left:639.94px;">development of cancer medication, and anti-malarial and anti-epileptic drugs. </span></p>
+                          </div>
+                        </div>
+                        <div id="_idContainer396" class="Basic-Text-Frame">
+                          <div style="width:7550.08px;height:1440px;position:absolute;top:0px;left:0px;-webkit-transform-origin: 0% 0%; -webkit-transform: translate(0px,3.27px) rotate(0deg) scale(0.05);transform-origin: 0% 0%; transform: translate(0px,3.27px) rotate(0deg) scale(0.05);">
+                            <p class="Body_body-para-right-number ParaOverride-1"><span id="_idTextSpan1285" class="CharOverride-3" style="position:absolute;top:-18px;left:0px;">&#9;</span><span id="_idTextSpan1286" class="CharOverride-3" style="position:absolute;top:-18px;left:246.33px;letter-spacing:-1.2px;">8.&#9;</span><span id="_idTextSpan1287" class="CharOverride-3" style="position:absolute;top:-18px;left:639.94px;letter-spacing:0px;">.......................................................... </span><span id="_idTextSpan1288" class="CharOverride-3" style="position:absolute;top:-18px;left:3976.21px;">is </span><span id="_idTextSpan1289" class="CharOverride-3" style="position:absolute;top:-18px;left:4213.32px;letter-spacing:-3px;">a </span><span id="_idTextSpan1290" class="CharOverride-3" style="position:absolute;top:-18px;left:4404.84px;letter-spacing:-1.04px;">renowned </span><span id="_idTextSpan1291" class="CharOverride-3" style="position:absolute;top:-18px;left:5563.55px;letter-spacing:-0.14px;">scientist </span><span id="_idTextSpan1292" class="CharOverride-3" style="position:absolute;top:-18px;left:6528.81px;">who </span><span id="_idTextSpan1293" class="CharOverride-3" style="position:absolute;top:-18px;left:7056.8px;letter-spacing:-0.66px;">was </span><span id="_idTextSpan1294" class="CharOverride-3" style="position:absolute;top:342px;left:639.94px;">the </span><span id="_idTextSpan1295" class="CharOverride-3" style="position:absolute;top:342px;left:1059.21px;letter-spacing:-1.05px;">Program </span><span id="_idTextSpan1296" class="CharOverride-3" style="position:absolute;top:342px;left:2063.83px;letter-spacing:-1.49px;">Director </span><span id="_idTextSpan1297" class="CharOverride-3" style="position:absolute;top:342px;left:3006.78px;letter-spacing:-2.4px;">for </span><span id="_idTextSpan1298" class="CharOverride-3" style="position:absolute;top:342px;left:3376.85px;">the </span><span id="_idTextSpan1299" class="Italics-Manual CharOverride-3" style="position:absolute;top:342px;left:3796.12px;letter-spacing:-0.62px;">Agni </span><span id="_idTextSpan1300" class="Italics-Manual CharOverride-3" style="position:absolute;top:342px;left:4336.84px;">IV</span><span id="_idTextSpan1301" class="Italic CharOverride-8" style="position:absolute;top:342px;left:4547.07px;"> </span><span id="_idTextSpan1302" class="CharOverride-3" style="position:absolute;top:342px;left:4603.47px;">and </span><span id="_idTextSpan1303" class="Italics-Manual CharOverride-3" style="position:absolute;top:342px;left:5075.3px;letter-spacing:-0.62px;">Agni </span><span id="_idTextSpan1304" class="Italics-Manual CharOverride-3" style="position:absolute;top:342px;left:5608.58px;">V</span><span id="_idTextSpan1305" class="CharOverride-3" style="position:absolute;top:342px;left:5753.78px;"> </span><span id="_idTextSpan1306" class="CharOverride-3" style="position:absolute;top:342px;left:5819.06px;">missiles </span><span id="_idTextSpan1307" class="CharOverride-3" style="position:absolute;top:342px;left:6739.92px;">and </span><span id="_idTextSpan1308" class="CharOverride-3" style="position:absolute;top:342px;left:7211.76px;">is </span><span id="_idTextSpan1309" class="CharOverride-3" style="position:absolute;top:702px;left:639.94px;">the </span><span id="_idTextSpan1310" class="CharOverride-3" style="position:absolute;top:702px;left:1055.85px;text-rendering:optimizeLegibility;letter-spacing:-0.24px;">first </span><span id="_idTextSpan1311" class="CharOverride-3" style="position:absolute;top:702px;left:1549.04px;letter-spacing:-0.48px;">woman </span><span id="_idTextSpan1312" class="CharOverride-3" style="position:absolute;top:702px;left:2414.23px;">to </span><span id="_idTextSpan1313" class="CharOverride-3" style="position:absolute;top:702px;left:2703.66px;">head </span><span id="_idTextSpan1314" class="CharOverride-3" style="position:absolute;top:702px;left:3308.21px;letter-spacing:-3px;">a </span><span id="_idTextSpan1315" class="CharOverride-3" style="position:absolute;top:702px;left:3499.73px;">missile </span><span id="_idTextSpan1316" class="CharOverride-3" style="position:absolute;top:702px;left:4303.96px;letter-spacing:-0.81px;">project </span><span id="_idTextSpan1317" class="CharOverride-3" style="position:absolute;top:702px;left:5131.7px;">in </span><span id="_idTextSpan1318" class="CharOverride-3" style="position:absolute;top:702px;left:5387.06px;">India. </span><span id="_idTextSpan1319" class="CharOverride-3" style="position:absolute;top:702px;left:6035.52px;letter-spacing:-0.36px;">She </span><span id="_idTextSpan1320" class="CharOverride-3" style="position:absolute;top:702px;left:6500.4px;">is </span><span id="_idTextSpan1321" class="CharOverride-3" style="position:absolute;top:702px;left:6734.15px;letter-spacing:-1.41px;">fondly </span><span id="_idTextSpan1322" class="CharOverride-3" style="position:absolute;top:1062px;left:639.94px;letter-spacing:-0.48px;">known </span><span id="_idTextSpan1323" class="CharOverride-3" style="position:absolute;top:1062px;left:1422.81px;">as </span><span id="_idTextSpan1324" class="CharOverride-3" style="position:absolute;top:1062px;left:1732.88px;">the </span><span id="_idTextSpan1325" class="CharOverride-3" style="position:absolute;top:1062px;left:2152.15px;">‘Missile </span><span id="_idTextSpan1326" class="CharOverride-3" style="position:absolute;top:1062px;left:3022.38px;letter-spacing:-1.64px;">Woman </span><span id="_idTextSpan1327" class="CharOverride-3" style="position:absolute;top:1062px;left:3907.01px;letter-spacing:-2.48px;">of </span><span id="_idTextSpan1328" class="CharOverride-3" style="position:absolute;top:1062px;left:4187.57px;letter-spacing:-4.42px;">India.’</span></p>
+                          </div>
+                        </div>
+                        <div id="_idContainer397" class="SHADE-BOX1 _idGenObjectStyle-Disabled"> <img class="_idGenObjectAttribute-1 _idGenObjectAttribute-2" src="../GK_Book_7_CH_18-22_Folder-web-resources/image/tessy_thom.png" alt="" /> <img xmlns="http://www.w3.org/1999/xhtml" src="img/video.png" class="vdo_icon" alt="vdo_icon" onClick="Openmodel('video4')" style="top: 0;    left: 94px;transform: rotate(660deg);"> </div>
+                        <div id="_idContainer400">
+                          <div id="_idContainer398" class="Basic-Text-Frame">
+                            <div style="width:7380px;height:1263.6px;position:absolute;top:0px;left:0px;-webkit-transform-origin: 0% 0%; -webkit-transform: translate(0px,3.27px) rotate(0deg) scale(0.05);transform-origin: 0% 0%; transform: translate(0px,3.27px) rotate(0deg) scale(0.05);">
+                              <p class="Body_body-para-right-number ParaOverride-1"><span id="_idTextSpan1329" class="CharOverride-3" style="position:absolute;top:-18px;left:0px;">&#9;</span><span id="_idTextSpan1330" class="CharOverride-3" style="position:absolute;top:-18px;left:254.48px;letter-spacing:-2.48px;">9.&#9;</span><span id="_idTextSpan1331" class="CharOverride-3" style="position:absolute;top:-18px;left:639.94px;letter-spacing:0px;">.......................................................... </span><span id="_idTextSpan1332" class="CharOverride-3" style="position:absolute;top:-18px;left:3976.21px;">is </span><span id="_idTextSpan1333" class="CharOverride-3" style="position:absolute;top:-18px;left:4213.32px;letter-spacing:-3px;">a </span><span id="_idTextSpan1334" class="CharOverride-3" style="position:absolute;top:-18px;left:4400.28px;letter-spacing:-0.82px;">world-renowned </span><span id="_idTextSpan1335" class="CharOverride-3" style="position:absolute;top:342px;left:639.94px;letter-spacing:-0.58px;">oceanographer </span><span id="_idTextSpan1336" class="CharOverride-3" style="position:absolute;top:342px;left:2359.27px;">who </span><span id="_idTextSpan1337" class="CharOverride-3" style="position:absolute;top:342px;left:2891.83px;">became </span><span id="_idTextSpan1338" class="CharOverride-3" style="position:absolute;top:342px;left:3818.69px;">the </span><span id="_idTextSpan1339" class="CharOverride-3" style="position:absolute;top:342px;left:4234.61px;text-rendering:optimizeLegibility;letter-spacing:-0.24px;">first </span><span id="_idTextSpan1340" class="CharOverride-3" style="position:absolute;top:342px;left:4732.35px;">Indian </span><span id="_idTextSpan1341" class="CharOverride-3" style="position:absolute;top:342px;left:5454.75px;letter-spacing:-0.48px;">woman </span><span id="_idTextSpan1342" class="CharOverride-3" style="position:absolute;top:342px;left:6319.94px;">to </span><span id="_idTextSpan1343" class="CharOverride-3" style="position:absolute;top:342px;left:6605.29px;letter-spacing:-1.34px;">travel </span><span id="_idTextSpan1344" class="CharOverride-3" style="position:absolute;top:702px;left:639.94px;">to </span><span id="_idTextSpan1345" class="CharOverride-3" style="position:absolute;top:702px;left:922.17px;letter-spacing:-1.27px;">Antarctica </span><span id="_idTextSpan1346" class="CharOverride-3" style="position:absolute;top:702px;left:2085.43px;letter-spacing:-1.08px;">where </span><span id="_idTextSpan1347" class="CharOverride-3" style="position:absolute;top:702px;left:2834.94px;">she </span><span id="_idTextSpan1348" class="CharOverride-3" style="position:absolute;top:702px;left:3284.45px;letter-spacing:-1.34px;">stayed </span><span id="_idTextSpan1349" class="CharOverride-3" style="position:absolute;top:702px;left:4073.32px;letter-spacing:-2.4px;">for </span><span id="_idTextSpan1350" class="CharOverride-3" style="position:absolute;top:702px;left:4447.47px;letter-spacing:-1.68px;">many </span><span id="_idTextSpan1351" class="CharOverride-3" style="position:absolute;top:702px;left:5107.71px;letter-spacing:-0.21px;">months </span><span id="_idTextSpan1352" class="CharOverride-3" style="position:absolute;top:702px;left:5989.46px;letter-spacing:-1.08px;">researching </span><span id="_idTextSpan1353" class="CharOverride-3" style="position:absolute;top:1062px;left:639.94px;">the </span><span id="_idTextSpan1354" class="CharOverride-3" style="position:absolute;top:1062px;left:1054.65px;letter-spacing:-0.58px;">waters </span><span id="_idTextSpan1355" class="CharOverride-3" style="position:absolute;top:1062px;left:1874.24px;">and </span><span id="_idTextSpan1356" class="CharOverride-3" style="position:absolute;top:1062px;left:2346.07px;">marine </span><span id="_idTextSpan1357" class="CharOverride-3" style="position:absolute;top:1062px;left:3169.5px;letter-spacing:-0.82px;">life </span><span id="_idTextSpan1358" class="CharOverride-3" style="position:absolute;top:1062px;left:3554.69px;letter-spacing:-1.08px;">there.</span></p>
+                            </div>
+                          </div>
+                          <div id="_idContainer399" class="SHADEBOX _idGenObjectStyle-Disabled"> <img class="_idGenObjectAttribute-1 _idGenObjectAttribute-2" src="../GK_Book_7_CH_18-22_Folder-web-resources/image/aditi-pant.png" alt="" /> </div>
+                        </div>
+                        <div id="_idContainer404" class="Basic-Text-Frame">
+                          <div style="width:9864.57px;height:4882.91px;position:absolute;top:0px;left:0px;-webkit-transform-origin: 0% 0%; -webkit-transform: translate(0px,10.37px) rotate(0deg) scale(0.05);transform-origin: 0% 0%; transform: translate(0px,10.37px) rotate(0deg) scale(0.05);">
+                            <p class="Body_Rubric-text ParaOverride-1"><span id="_idTextSpan1360" class="CharOverride-4" style="position:absolute;top:212.72px;left:543.94px;">&#9;</span><span id="_idTextSpan1361" class="CharOverride-4" style="position:absolute;top:212.72px;left:659.95px;letter-spacing:-0.56px;">Match </span><span id="_idTextSpan1362" class="CharOverride-4" style="position:absolute;top:212.72px;left:1485.39px;">the </span><span id="_idTextSpan1363" class="CharOverride-4" style="position:absolute;top:212.72px;left:1939.54px;letter-spacing:-0.53px;">following </span><span id="_idTextSpan1364" class="CharOverride-4" style="position:absolute;top:212.72px;left:3109.37px;letter-spacing:-0.1px;">international </span><span id="_idTextSpan1365" class="CharOverride-4" style="position:absolute;top:212.72px;left:4719.35px;letter-spacing:0px;">scientists </span><span id="_idTextSpan1366" class="CharOverride-4" style="position:absolute;top:212.72px;left:5918px;">to </span><span id="_idTextSpan1367" class="CharOverride-4" style="position:absolute;top:212.72px;left:6230.75px;letter-spacing:-0.98px;">their </span><span id="_idTextSpan1368" class="CharOverride-4" style="position:absolute;top:212.72px;left:6854.58px;letter-spacing:-0.4px;">discoveries.</span></p>
+                            <div>
+                              <p class="Body_body-para-right-number ParaOverride-1"><span id="_idTextSpan1369" class="CharOverride-3" style="position:absolute;top:883.31px;left:1017.57px;letter-spacing:-1.56px;">1.</span></p>
+                            </div>
+                            <div>
+                              <p class="Body_body-para-right-number ParaOverride-1"><span id="_idTextSpan1370" class="CharOverride-3" style="position:absolute;top:883.31px;left:1583.93px;letter-spacing:-0.58px;">Enrico </span><span id="_idTextSpan1371" class="CharOverride-3" style="position:absolute;top:883.31px;left:2324.32px;letter-spacing:-3.12px;">Fermi</span></p>
+                            </div>
+                            <div>
+                              <p class="Body_body-para-right-number ParaOverride-1"><span id="_idTextSpan1372" class="CharOverride-3" style="position:absolute;top:883.31px;left:6470.17px;letter-spacing:-1.84px;">a) </span></p>
+                            </div>
+                            <div>
+                              <p class="Body_body-para-right-number ParaOverride-1"><span id="_idTextSpan1373" class="CharOverride-3" style="position:absolute;top:883.31px;left:7116.17px;">penicillin</span></p>
+                            </div>
+                            <div>
+                              <p class="Body_body-para-right-number ParaOverride-1"><span id="_idTextSpan1374" class="CharOverride-3" style="position:absolute;top:1586.91px;left:982.53px;">2. </span></p>
+                            </div>
+                            <div>
+                              <p class="Body_body-para-right-number ParaOverride-1"><span id="_idTextSpan1375" class="CharOverride-3" style="position:absolute;top:1586.91px;left:1583.93px;letter-spacing:-0.77px;">Alexander </span><span id="_idTextSpan1376" class="CharOverride-3" style="position:absolute;top:1586.91px;left:2732.07px;letter-spacing:-0.27px;">Fleming</span></p>
+                            </div>
+                            <div>
+                              <p class="Body_body-para-right-number ParaOverride-1"><span id="_idTextSpan1377" class="CharOverride-3" style="position:absolute;top:1586.91px;left:6470.17px;letter-spacing:-4.44px;">b)</span></p>
+                            </div>
+                            <div>
+                              <p class="Body_body-para-right-number ParaOverride-1"><span id="_idTextSpan1378" class="CharOverride-3" style="position:absolute;top:1586.91px;left:7116.17px;letter-spacing:-2.13px;">rockets</span></p>
+                            </div>
+                            <div>
+                              <p class="Body_body-para-right-number ParaOverride-1"><span id="_idTextSpan1379" class="CharOverride-3" style="position:absolute;top:2290.51px;left:980.73px;letter-spacing:-1.28px;">3. </span></p>
+                            </div>
+                            <div>
+                              <p class="Body_body-para-right-number ParaOverride-1"><span id="_idTextSpan1380" class="CharOverride-3" style="position:absolute;top:2290.51px;left:1583.93px;letter-spacing:-0.56px;">Jonas </span><span id="_idTextSpan1381" class="CharOverride-3" style="position:absolute;top:2290.51px;left:2279.44px;">Salk</span></p>
+                            </div>
+                            <div>
+                              <p class="Body_body-para-right-number ParaOverride-1"><span id="_idTextSpan1382" class="CharOverride-3" style="position:absolute;top:2290.51px;left:6470.17px;letter-spacing:-2.04px;">c)</span></p>
+                            </div>
+                            <div>
+                              <p class="Body_body-para-right-number ParaOverride-1"><span id="_idTextSpan1383" class="CharOverride-3" style="position:absolute;top:2290.51px;left:7116.17px;letter-spacing:-0.69px;">nuclear </span><span id="_idTextSpan1384" class="CharOverride-3" style="position:absolute;top:2290.51px;left:8040.8px;letter-spacing:-2.08px;">reactor, </span><span id="_idTextSpan1385" class="CharOverride-3" style="position:absolute;top:2290.51px;left:8990.9px;">atomic </span><span id="_idTextSpan1386" class="CharOverride-3" style="position:absolute;top:2290.51px;left:9898.05px;">bomb</span></p>
+                            </div>
+                            <div>
+                              <p class="Body_body-para-right-number ParaOverride-1"><span id="_idTextSpan1387" class="CharOverride-3" style="position:absolute;top:2994.11px;left:982.77px;letter-spacing:-1.2px;">4.</span></p>
+                            </div>
+                            <div>
+                              <p class="Body_body-para-right-number ParaOverride-1"><span id="_idTextSpan1388" class="CharOverride-3" style="position:absolute;top:2994.11px;left:1583.93px;letter-spacing:-0.58px;">Robert </span><span id="_idTextSpan1389" class="CharOverride-3" style="position:absolute;top:2994.11px;left:2388.15px;letter-spacing:-1.23px;">Goddard</span></p>
+                            </div>
+                            <div>
+                              <p class="Body_body-para-right-number ParaOverride-1"><span id="_idTextSpan1390" class="CharOverride-3" style="position:absolute;top:2994.11px;left:6470.17px;">d)</span></p>
+                            </div>
+                            <div>
+                              <p class="Body_body-para-right-number ParaOverride-1"><span id="_idTextSpan1391" class="CharOverride-3" style="position:absolute;top:2994.11px;left:7116.17px;">vitamins</span></p>
+                            </div>
+                            <div>
+                              <p class="Body_body-para-right-number ParaOverride-1"><span id="_idTextSpan1392" class="CharOverride-3" style="position:absolute;top:3697.71px;left:983.97px;letter-spacing:-1.28px;">5. </span></p>
+                            </div>
+                            <div>
+                              <p class="Body_body-para-right-number ParaOverride-1"><span id="_idTextSpan1393" class="CharOverride-3" style="position:absolute;top:3697.71px;left:1583.93px;letter-spacing:-1.87px;">Frederick </span><span id="_idTextSpan1394" class="CharOverride-3" style="position:absolute;top:3697.71px;left:2649.99px;letter-spacing:-0.54px;">Gowland </span><span id="_idTextSpan1395" class="CharOverride-3" style="position:absolute;top:3697.71px;left:3678.86px;letter-spacing:-0.38px;">Hopkins</span></p>
+                            </div>
+                            <div>
+                              <p class="Body_body-para-right-number ParaOverride-1"><span id="_idTextSpan1396" class="CharOverride-3" style="position:absolute;top:3697.71px;left:6470.17px;letter-spacing:-2px;">e) </span></p>
+                            </div>
+                            <div>
+                              <p class="Body_body-para-right-number ParaOverride-1"><span id="_idTextSpan1397" class="CharOverride-3" style="position:absolute;top:3697.71px;left:7116.17px;">polio </span><span id="_idTextSpan1398" class="CharOverride-3" style="position:absolute;top:3697.71px;left:7740.8px;letter-spacing:-0.89px;">vaccine</span></p>
+                            </div>
+                            <div id="_idContainer403">
+                              <div id="_idContainer401" class="Icon _idGenObjectStyle-Disabled"> <img class="_idGenObjectAttribute-1 _idGenObjectAttribute-2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADkAAAA4CAYAAABHRFAgAAAACXBIWXMAABcRAAAXEQHKJvM/AAAB60lEQVRoQ+2aXXHDMBAGA6EQMoegFMqgEAohEPJQAIFQCIEgCIFgCGHgSjNKqzo+f6df+6w+7PTlGmvTzK2b8WEcx0Mt6PPty3L3P9/RfC3gQCpW6mwZJzyEX9HvlwQOpGAlPmYEpwyWSwthOBCLO7RAcMrNcrIc0eunAAdi8IJ3gRQSdp+EF3Q9KXBAijuUPyCSiOFaQhgOSKkgGJK1oeGABH8AdNBSRG9oOICg+VS0QrShoQQQlKSiFeyGhiILgimpaMWfDQ1lFgRzU9GKCxSaEayRipoYKDUjqUnQESdJbVNRCrkkrZuKHGSStK1UxIIladupkLAsSbpSwcFLkr5UcCxK7kHQMS9JOlPB8SxJelPBYaaCmlPBYUJB7angMHtKBYd5pGIQDGvF7CkVHP1I7uXOhqOTxdNNQrq5Gejmtq6bG/RAdC8bt/N/moONqz0t/19khaKa0yKT9KJa0yKX9KIa0xIn6UW1bdwkSW1piZf0oprSkiYZiKILrI37Q5yhDBDdYlqcmFuQP8/8QBEEbSMtT2IhUEICrZOWgQTP8BST9KItNq5YrJZkrbTcUsSqSDrsQY5UJi1O7ESFnn+FA7FQekOLioXAgRRInpZrLbEQOJCKPzwn5t6ErAd1Y4ADOdBvWpqLhXwDjK1rpSL6B94AAAAASUVORK5CYII=" alt="" /> </div>
+                              <div id="_idContainer402" class="Basic-Text-Frame">
+                                <div style="width:305.76px;height:432px;position:absolute;top:0px;left:0px;-webkit-transform-origin: 0% 0%; -webkit-transform: translate(0px,1.37px) rotate(0deg) scale(0.05);transform-origin: 0% 0%; transform: translate(0px,1.37px) rotate(0deg) scale(0.05);">
+                                  <p class="Body_Rubric-text ParaOverride-1"><span id="_idTextSpan1359" class="ABC CharOverride-5" style="position:absolute;top:58.88px;left:0px;letter-spacing:-7.92px;">B.</span></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div id="_idContainer407">
+                          <div id="_idContainer405">
+                            <div style="width:560.18px;height:401.47px;position:absolute;top:0px;left:0px;-webkit-transform-origin: 0% 0%; -webkit-transform: translate(0px,1.09px) rotate(0deg) scale(0.05);transform-origin: 0% 0%; transform: translate(0px,1.09px) rotate(0deg) scale(0.05);">
+                              <p class="ParaOverride-1"><span id="_idTextSpan1399" class="CharOverride-6" style="position:absolute;top:54.33px;left:119.62px;">65</span></p>
+                            </div>
+                          </div>
+                          <div id="_idContainer406" class="Icon"> <img class="_idGenObjectAttribute-1 _idGenObjectAttribute-2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADoAAAA6CAYAAADhu0ooAAAACXBIWXMAABcRAAAXEQHKJvM/AAADZUlEQVRoQ+1bgXGrMAx9I2QERsgIjJARGCEjMEJHYISOwAgZISN0g3wEFpaN4Zk2aXHu9+5dwJZkyZJsGSgejwdegeGvHnAd8DGgH3Ab8Ihwd32fA1rHc2KyvwNKkAtRcEDjlP5KGLUHMikySRUbNxeUgEGUweS12Lg7Qk8JThHvGaHnU14XGTXTg4ESrDJOHuwSxonCZ8ZP5DbOQCu7/4nBlGBFGfHA17OU2BincpNpx5IJ2J3HlCAxcG8Gvb3CwMS4cfSI4RfGF8hgBGaw2sys/F4Zz7OBKadtHn8wnpmXEbgBmsiLFeN5JTCtA6qPeJqGco7QZq/Q30Bi8jf12iOsY4P/NhCm0+cmLRFyWCMVmPKW6rnGXJmZWmU+CqLIa5I0K4w9MmP/KMBUgT2cgxYFS4rhusVwZFgHLfoiwhN8yP76PvlTIEy5JuiLCLu1GSkFUQjPaWcJKviErpnAIwPT4UIu2rnNdKo3eybo6IBfhe9zm+nU2K6ZoBJgvNqM965xMQOlAz5Xx4pJG/WQm30aODoQrjknbdSwLWrfZIA/0l3kpn63sFXAH+fkd66ENqv/EuE8Oe4k1uqWMZYGhHk614c1YywR1tDbmxuq9vklmDGVCBOxk6GMoVT8N/TdYA294w2rIoU1VC9qxlQi4MvbuaAv7tFJDjQ15aJ1F29zclHA1/G34IYxlgbjxE5uTsa9b1U0wK8/V23QMqlhzKUgcmCljXpU65mAUgD/eGhMSW2srPVMSAkwUTruJrajdx0dE3J0IHwTOK47qc7gCXeJSDmNEpSGyJvV3L5BVGTtC5+bXdCeINSSsLgCAisvmMa+BLF9dVhMWRhF4+IbpDWmi2Fq2CB/DYTvRZOPbbeY9TGooGaD/RVcBGpeym9yx2BCOviYP9ziFBkpOlartDsEHSqMMYWrNXLTETkCxVhdiQUt43k1sPwukUYbFWqEd8bYHn9UE8NvIZqTWXpQgmiQJprJlvE8C86LNo0kyrJLVUqQGPCM8JvdO16Yu85AO55M8GKfZKAEGwo0CL+MFoNlS6oYLwP85+bWQEGHHV4MZDKCDIVa+GfDNnfE6Euu4Zg81yaMUwOz5KzKZwS5QPqD/9j4PgEbFTH9Fd/04EI/RrAXmLwsnvxA2jtbE9Hhyf/vovgHPDmind2/PCIAAAAASUVORK5CYII=" alt="" /> </div>
+                        </div>
+                        <div class="input1" id="box4" style="top: 46px;left: 216px;width: 163px;"><span>Asima Chatterjee</span></div>
+                        <div class="input1" id="box3" style="top: 117px;left: 200px;width: 162px;"><span>Tessy Thomas</span></div>
+                        <div class="input1" id="box5" style="top: 216px;left: 84px;width: 164px;"><span>Aditi Pant</span></div>
+                        <div class="btnbar" style="bottom:417px">
+                          <input type="button" value="Show Answers" onClick="ShowAnsEx2()">
+                        </div>
+                        <div id="mtfGame">
+                          <div class="Match1 l_clsOption" id="l1"></div>
+                          <div class="Match1 l_clsOption" id="l2"></div>
+                          <div class="Match1 l_clsOption" id="l3"></div>
+                          <div class="Match1 l_clsOption" id="l4"></div>
+                          <div class="Match1 l_clsOption" id="l5"></div>
+                          <div class="Match1 r_clsOption" id="r1"></div>
+                          <div class="Match1 r_clsOption" id="r2"></div>
+                          <div class="Match1 r_clsOption" id="r3"></div>
+                          <div class="Match1 r_clsOption" id="r4"></div>
+                          <div class="Match1 r_clsOption" id="r5"></div>
+                        </div>
+                        <div class="btnbar">
+                          <input type="button" value="Show Answers" onClick="ShowAnsEx1()">
+                        </div>
+                        <div id="matchA" style="position: absolute;top: 458px;left: 289px;opacity: 1;"> <img src="img/match_page_65.png" style="width:80px;display:none;" id="matchpage65" > </div>
+                        <div style="position: absolute;left: 0px;top: 3px;">
+                          <div class="text ui-draggable ui-draggable-handle" id="text1" style="top:331px;left: 76px;">Homi Bhaba</div>
+                          <div class="text ui-draggable ui-draggable-handle" id="text2" style="top: 351px;left: 76px;">Janaki Ammal</div>
+                          <div class="text ui-draggable ui-draggable-handle" id="text3" style="top: 371px;left: 76px;">Tessy Thomas</div>
+                          <div class="text ui-draggable ui-draggable-handle" id="text4" style="top: 331px;left: 206px;">Asima Chatterjee</div>
+                          <div class="text ui-draggable ui-draggable-handle" id="text5" style="top: 351px;left: 206px;">Aditi Pant</div>
+                          <div class="text ui-draggable ui-draggable-handle" id="text6" style="top: 371px;left: 206px;">APJ Abdul Kalam</div>
+                          <div class="text ui-draggable ui-draggable-handle" id="text7" style="top: 331px;left: 345px;">Salim Ali</div>
+                          <div class="text ui-draggable ui-draggable-handle" id="text8" style="top: 351px;left: 345px;">Vikram Sarabhai</div>
+                          <div class="text ui-draggable ui-draggable-handle" id="text9" style="top: 371px;left: 345px;">Subrahmanyan Chandrasekhar</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <nav> <a id="bb-nav-prev" href="javascript:void(0)" onClick="PageNavigation('prev')"  class="bb-custom-icon bb-custom-icon-arrow-left">Previous</a> <a id="bb-nav-next" href="javascript:void(0)" onClick="PageNavigation('next')" class="bb-custom-icon bb-custom-icon-arrow-right">Next</a> </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+  <div id="commonmodel" class="modal" style="display:none;"> 
+    <!-- Modal content -->
+    <div class="modal-content"> <span xmlns="http://www.w3.org/1999/xhtml"><img class="close" src="img/close.png" alt="" onClick="CloseModel()"/></span>
+      <video width="100%" height="345" controls="controls" id="myvideo">
+        <source src="" type="video/mp4" id="myvideosrc" />
+        Your browser does not support the video tag. </video>
+    </div>
+  </div>
+  <!-- Charts library -->
+  <div id="browsermodel" class="modal">
+    <div class="modal-content" style="width:685px">
+      <div class="modal-body"> <img src="../img/opps browser check.jpg" style=" float:left;  width: 30%; margin-top: 19px;" /> <img src="../img/compatible.jpg" style="  margin-top: 35px;    margin-left: 35px;" /> <a href="https://www.google.co.in/chrome/" target="_blank" style="    margin-left: 40px;"><img src="../img/download.png" /></a> </div>
+    </div>
+  </div>
+ <!-- <div id="Expiredmodel" class="modal" style="background-color: hsla(0, 0%, 0%, 0.92);">
+    <div class="modal-content">
+      <div class="modal-body"> <img src="../img/oopsproductvalidity.png" style="width: 100%;" /> </div>
+    </div>
+  </div> -->
+</div>
+<script type="text/javascript" src="../js/jquery.fullscreen.min.js"></script> 
+<script src="../js/common.js"></script> 
+<script src="../js/standard.js"></script> 
+<!--[if lte IE 8]><script src="js/standard.ie.js"></script><![endif]--> 
+<script src="../js/jquery.tip.js"></script> 
+<script src="../js/jquery.contextMenu.js"></script> 
+<!-- Custom styles lib --> 
+<script type='text/javascript' src="../js/modernizr.custom.js"></script> 
+<script src="../js/jquery.modal.js"></script> 
+<!-- Charts library --> 
+<script type="text/javascript" src="../js/bxslider.js"></script><!-- BX Slider --> 
+<script type='text/javascript' src="../js/jquerypp.custom.js"></script> <!-- Bookblock Custom js --> 
+<script type='text/javascript' src="../js/bookblock.js"></script> <!-- Book Block js --> 
+<script type="text/javascript" src="../js/custom.js"></script><!-- Custom js --> 
+<script src="../js/ShellFunctions.js" type="text/javascript"></script>
+<div id="modal" style="display:none"></div>
+</body>
+</html>
